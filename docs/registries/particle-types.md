@@ -4,7 +4,7 @@
 
 Allows you to register custom particles.
 
-Note that in order for the particles to appear on the client, you'll still need to provide a sprite sheet using the client-side [Particle Providers](/docs/helpers/client/particle-providers) Helper.
+Note that in order for the particles to appear on the client, you'll still need to provide a sprite sheet using the client-side [Particle Providers](/docs/client-helpers/particle-providers) Helper.
 
 ### Methods
 

@@ -10,7 +10,7 @@ Unified API is a simple, general purpose API to aid in multiloader development. 
 
 ### Setup
 
-Unified API is built on [Unimined](https://github.com/unimined/Unimined), and it is recommended that you setup (or migrate) your workspace using something similar. The [Getting Started](/docs/getting-started) page will guide you through creating a Unimined project with Unified API.
+Unified API is built on [Unimined](https://github.com/unimined/Unimined), and it is recommended that you setup (or migrate) your workspace using something similar. The [Getting Started](/docs/introduction/getting-started) page will guide you through creating a Unimined project with Unified API.
 
 ### Supported Versions
 

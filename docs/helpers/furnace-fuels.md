@@ -5,7 +5,7 @@
 Allows registering an item as a furnace fuel.
 
 :::info
-It is recommended that you use the [furnace fuel component](/docs/unified-components) instead.
+It is recommended that you use the [furnace fuel component](/docs/unified-item-components) instead.
 :::
 
 ### Methods

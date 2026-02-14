@@ -102,4 +102,4 @@ In your common mod inits, you'll need to make sure they're being called from the
 
 As you can see above, we've split the init calls specifically for NeoForge. This is because NeoForge requires us to register our content early, but does not let us access it until after registry creation has finished. We register our content first, and then we call our remaining classes, so that `.get()` is accessible on our custom content as we've ensured that the registering process has finished.
 
-You'll also notice that we call `NeoForgeUnifiedRegistries.registerBus` before we initialise the registries - this is done to ensure the deffered registers are setup before they are called. For more information on Unified API's multiloader registries & how NeoForge handles its registries, please refer [here](/docs/registries).
+You'll also notice that we call `NeoForgeUnifiedRegistries.registerBus` before we initialise the registries - this is done to ensure the deffered registers are setup before they are called. For more information on Unified API's multiloader registries & how NeoForge handles its registries, please refer [here](/docs/unified-registries).

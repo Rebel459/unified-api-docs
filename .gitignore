@@ -1,3 +1,4 @@
 *.code-workspace
 /.vitepress/cache
 commands.txt
+/.vitepress/dist
