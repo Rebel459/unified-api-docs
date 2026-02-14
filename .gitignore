@@ -2,3 +2,4 @@
 /.vitepress/cache
 commands.txt
 /.vitepress/dist
+/node_modules
