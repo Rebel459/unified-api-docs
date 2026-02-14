@@ -2,21 +2,22 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/unified-api-docs/',
   title: "Unified API",
   description: "Documentation",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Documentation', link: '/docs/unified-api' }
+      { text: 'Documentation', link: '/unified-api' }
     ],
 
     sidebar: [
       {
         text: 'Introduction',
         items: [
-          { text: 'Unified API', link: '/docs/unified-api' },
-          { text: 'Getting Started', link: '/docs/introduction/getting-started' }
+          { text: 'Unified API', link: '/unified-api' },
+          { text: 'Getting Started', link: '/introduction/getting-started' }
         ]
       },
       {
@@ -26,23 +27,23 @@ export default defineConfig({
             text: 'Common',
             collapsed: true,
             items: [
-              { text: 'Unified Registries', link: '/docs/unified-registries' },
-              { text: 'Items', link: '/docs/registries/items' },
-              { text: 'Blocks', link: '/docs/registries/blocks' },
-              { text: 'Entity Types', link: '/docs/registries/entity-types' },
-              { text: 'Creative Tabs', link: '/docs/registries/creative-tabs' },
-              { text: 'Mob Effects', link: '/docs/registries/mob-effects' },
-              { text: 'Data Component Types', link: '/docs/registries/data-component-types' },
-              { text: 'Particle Types', link: '/docs/registries/particle-types' },
-              { text: 'Sound Events', link: '/docs/registries/sound-events' }
+              { text: 'Unified Registries', link: '/unified-registries' },
+              { text: 'Items', link: '/registries/items' },
+              { text: 'Blocks', link: '/registries/blocks' },
+              { text: 'Entity Types', link: '/registries/entity-types' },
+              { text: 'Creative Tabs', link: '/registries/creative-tabs' },
+              { text: 'Mob Effects', link: '/registries/mob-effects' },
+              { text: 'Data Component Types', link: '/registries/data-component-types' },
+              { text: 'Particle Types', link: '/registries/particle-types' },
+              { text: 'Sound Events', link: '/registries/sound-events' }
             ]
           },
           {
             text: 'Client',
             collapsed: true,
             items: [
-              { text: 'Unified Client Registries', link: '/docs/unified-client-registries' },
-              { text: 'Key Mappings', link: '/docs/client-registries/key-mappings' }
+              { text: 'Unified Client Registries', link: '/unified-client-registries' },
+              { text: 'Key Mappings', link: '/client-registries/key-mappings' }
             ]
           }
         ]
@@ -54,26 +55,26 @@ export default defineConfig({
             text: 'Common',
             collapsed: true,
             items: [
-              { text: 'Unified Helpers', link: '/docs/unified-helpers' },
-              { text: 'Platform', link: '/docs/helpers/platform' },
-              { text: 'Packs', link: '/docs/helpers/packs' },
-              { text: 'Creative Entries', link: '/docs/helpers/creative-entries' },
-              { text: 'Loot Tables', link: '/docs/helpers/loot-tables' },
-              { text: 'Network Payloads', link: '/docs/helpers/network-payloads' },
-              { text: 'Strippable Blocks', link: '/docs/helpers/strippable-blocks' },
-              { text: 'Furnace Fuels', link: '/docs/helpers/furnace-fuels' }
+              { text: 'Unified Helpers', link: '/unified-helpers' },
+              { text: 'Platform', link: '/helpers/platform' },
+              { text: 'Packs', link: '/helpers/packs' },
+              { text: 'Creative Entries', link: '/helpers/creative-entries' },
+              { text: 'Loot Tables', link: '/helpers/loot-tables' },
+              { text: 'Network Payloads', link: '/helpers/network-payloads' },
+              { text: 'Strippable Blocks', link: '/helpers/strippable-blocks' },
+              { text: 'Furnace Fuels', link: '/helpers/furnace-fuels' }
             ]
           },
           {
             text: 'Client',
             collapsed: true,
             items: [
-              { text: 'Unified Client Helpers', link: '/docs/unified-client-helpers' },
-              { text: 'Network Payloads', link: '/docs/client-helpers/network-payloads' },
-              { text: 'Block Layers', link: '/docs/client-helpers/block-layers' },
-              { text: 'Particle Providers', link: '/docs/client-helpers/particle-providers' },
-              { text: 'Entity Renderers', link: '/docs/client-helpers/entity-renderers' },
-              { text: 'Tooltips', link: '/docs/client-helpers/tooltips' }
+              { text: 'Unified Client Helpers', link: '/unified-client-helpers' },
+              { text: 'Network Payloads', link: '/client-helpers/network-payloads' },
+              { text: 'Block Layers', link: '/client-helpers/block-layers' },
+              { text: 'Particle Providers', link: '/client-helpers/particle-providers' },
+              { text: 'Entity Renderers', link: '/client-helpers/entity-renderers' },
+              { text: 'Tooltips', link: '/client-helpers/tooltips' }
             ]
           }
         ]
@@ -85,23 +86,23 @@ export default defineConfig({
             text: 'Common',
             collapsed: true,
             items: [
-              { text: 'Unified Events', link: '/docs/unified-events' },
-              { text: 'Modify Item Components', link: '/docs/events/modify-item-components' },
-              { text: 'Command Registration', link: '/docs/events/command-registration' },
-              { text: 'Player Join', link: '/docs/events/player-join' },
-              { text: 'Player Leave', link: '/docs/events/player-leave' },
-              { text: 'Player Respawn', link: '/docs/events/player-respawn' }
+              { text: 'Unified Events', link: '/unified-events' },
+              { text: 'Modify Item Components', link: '/events/modify-item-components' },
+              { text: 'Command Registration', link: '/events/command-registration' },
+              { text: 'Player Join', link: '/events/player-join' },
+              { text: 'Player Leave', link: '/events/player-leave' },
+              { text: 'Player Respawn', link: '/events/player-respawn' }
             ]
           },
           {
             text: 'Client',
             collapsed: true,
             items: [
-              { text: 'Unified Client Events', link: '/docs/unified-client-events' },
-              { text: 'Start Tick', link: '/docs/client-events/start-tick' },
-              { text: 'End Tick', link: '/docs/client-events/end-tick' },
-              { text: 'Hotbar Gui', link: '/docs/client-events/hotbar-gui' },
-              { text: 'Abstract Screen', link: '/docs/client-events/abstract-screen' }
+              { text: 'Unified Client Events', link: '/unified-client-events' },
+              { text: 'Start Tick', link: '/client-events/start-tick' },
+              { text: 'End Tick', link: '/client-events/end-tick' },
+              { text: 'Hotbar Gui', link: '/client-events/hotbar-gui' },
+              { text: 'Abstract Screen', link: '/client-events/abstract-screen' }
             ]
           }
         ]
@@ -113,9 +114,9 @@ export default defineConfig({
             text: 'Common',
             collapsed: true,
             items: [
-              { text: 'Unified Item Components', link: '/docs/unified-item-components' },
-              { text: 'Pack Info', link: '/docs/utilities/pack-info' },
-              { text: 'Platform', link: '/docs/utilities/platform' }
+              { text: 'Unified Item Components', link: '/unified-item-components' },
+              { text: 'Pack Info', link: '/utilities/pack-info' },
+              { text: 'Platform', link: '/utilities/platform' }
             ]
           }
         ]
