@@ -17,12 +17,12 @@ hero:
 features:
   - title: Registries
     details: Documentation on Unified's multiloader registries
-    link: /docs/registries
+    link: /unified-registries
   - title: Helpers
     details: Documentation on Unified's helper methods, such as loot tables & creative entries
-    link: /docs/helpers
+    link: /unified-helpers
   - title: Events
     details: Documentation on Unified's many events
-    link: /docs/events
+    link: /unified-events
 ---
 
