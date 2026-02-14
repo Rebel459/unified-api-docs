@@ -1,0 +1,11 @@
+:root {
+  --vp-layout-max-width: clamp(500px, 95vw, 2500px);
+}
+
+.VPDoc .content-container {
+  max-width: clamp(500px, 80vw, 2500px) !important;
+}
+
+html {
+  scrollbar-gutter: stable;
+}
