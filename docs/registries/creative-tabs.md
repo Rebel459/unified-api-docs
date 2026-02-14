@@ -2,7 +2,7 @@
 
 **Class: `UnifiedRegistries.CreativeTabs`**
 
-This class allows you to register custom Creative Tabs. Note that your items are added to the Creative Inventory at a later stage, using the [Creative Entries](/docs/helpers/creative-entries) method.
+This class allows you to register custom Creative Tabs. Note that your items are added to the Creative Inventory at a later stage, using the [Creative Entries](/helpers/creative-entries) method.
 
 The tab icon uses a supplier (eg `() -> Items.COAL` for a vanilla item) in order to ensure safe access of modded items during the registry stage.
 

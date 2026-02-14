@@ -4,7 +4,7 @@
 
 Unified Registries allow us to register content for both Fabric and NeoForge simultaneously, using Suppliers to ensure that we remain compliant with NeoForge's staged registry system.
 
-In NeoForge, as discussed back in [Getting Started](/docs/introduction/getting-started), mod initialisation and registries are staged:
+In NeoForge, as discussed back in [Getting Started](/introduction/getting-started), mod initialisation and registries are staged:
 - first, deferred registries are created, before the actual registering of content is completed (and therefore registered content cannot yet be accessed in this stage)
 - then, the rest of the mod runs as normal, during which the registered content can be accessed using `.get()`
 

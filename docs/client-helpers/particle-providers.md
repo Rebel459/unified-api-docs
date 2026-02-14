@@ -2,7 +2,7 @@
 
 **Class: `UnifiedHelpers.ParticleProviders`**
 
-Used to provide a registered [Particle Type](/docs/registries/particle-types) with a sprite sheet / particle provider.
+Used to provide a registered [Particle Type](/registries/particle-types) with a sprite sheet / particle provider.
 
 ### Methods
 ```

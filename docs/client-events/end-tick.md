@@ -2,7 +2,7 @@
 
 **Class: `UnifiedClientEvents.EndTick`**
 
-Runs at the end of every client tick. Can be useful for providing custom functionality to [Key Mappings](/docs/client-registries/key-mappings).
+Runs at the end of every client tick. Can be useful for providing custom functionality to [Key Mappings](/client-registries/key-mappings).
 
 ### Example
 

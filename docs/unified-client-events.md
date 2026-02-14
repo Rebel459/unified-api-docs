@@ -2,7 +2,7 @@
 
 **Class: `UnifiedClientEvents`**
 
-Unified Client Events work similarly to common [Unified Events](/docs/unified-events), with the obvious exception of having to run only on the client.
+Unified Client Events work similarly to common [Unified Events](/unified-events), with the obvious exception of having to run only on the client.
 
 The general syntax for Unified API client events is pretty simple:
 

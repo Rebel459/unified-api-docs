@@ -4,7 +4,7 @@
 
 Used to send packets from the client to the server.
 
-[UnifiedHelpers.NetworkPayloads](/docs/helpers/network-payloads) handles all other client-to-server & server-to-client behaviour.
+[UnifiedHelpers.NetworkPayloads](/helpers/network-payloads) handles all other client-to-server & server-to-client behaviour.
 
 There are a couple things to note with Unified API's networking payloads
 - all payloads registries / handlers are combined

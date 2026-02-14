@@ -4,7 +4,7 @@
 
 Allows easily adding vanilla & modded items to vanilla & modded creative tabs.
 
-To create your own custom Creative Tab, check out [Creative Tabs](/docs/registries/creative-tabs)
+To create your own custom Creative Tab, check out [Creative Tabs](/registries/creative-tabs)
 
 You can either use `add` to append the end of a tab, `addBefore` to insert items before an existing entry or `addAfter` to insert items after an existing entry. Multiple ItemLikes or ItemStacks are accepted.
 

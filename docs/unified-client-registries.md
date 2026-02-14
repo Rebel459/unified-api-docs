@@ -2,7 +2,7 @@
 
 **Class: `UnifiedClientRegistries`**
 
-Unified Client Registries work much like the common [Unified Registries](/docs/unified-registries), except for content that is specifically client-side.
+Unified Client Registries work much like the common [Unified Registries](/unified-registries), except for content that is specifically client-side.
 
 Whilst these still use Suppliers for NeoForge safety, you do not need to do any extra work when calling these from NeoForge - simply using the regular NeoForge client initialiser will do.
 
