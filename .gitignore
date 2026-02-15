@@ -4,3 +4,4 @@ commands.txt
 /.vitepress/dist
 /node_modules
 /docs/.vitepress/dist
+/.idea
