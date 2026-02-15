@@ -11,10 +11,10 @@ The `accessHotbar` event is particularly useful over an equivalent mixin as Fabr
 ### Example
 
 ```
-UnifiedClientEvents.Gui.accessHotbar(((gui, guiGraphics, deltaTracker) -> {
+UnifiedClientEvents.Gui.accessCrosshair(((gui, guiGraphics, deltaTracker) -> {
     // your custom behaviour here
 }));
-UnifiedClientEvents.Gui.accessCrosshair(((gui, guiGraphics, deltaTracker) -> {
+UnifiedClientEvents.Gui.accessHotbar(((gui, guiGraphics, deltaTracker) -> {
     // your custom behaviour here
 }));
 ```

@@ -1,13 +1,19 @@
 # Player Join
 
-**Class: `UnifiedEvents.PlayerJoin`**
+**Class: `UnifiedEvents.Player`**
 
-Runs when a player joins the world.
+Various player-related events.
 
-### Example
+### Methods
 
 ```
-UnifiedEvents.PlayerJoin.access(player -> {
+UnifiedEvents.Player.accessJoin(player -> {
+    // your custom behaviour here
+});
+UnifiedEvents.Player.accessLeave(player -> {
+    // your custom behaviour here
+});
+UnifiedEvents.Player.accessRespawn(player -> {
     // your custom behaviour here
 });
 ```

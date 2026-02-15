@@ -31,6 +31,7 @@ export default defineConfig({
               { text: 'Items', link: '/registries/items' },
               { text: 'Blocks', link: '/registries/blocks' },
               { text: 'Entity Types', link: '/registries/entity-types' },
+              { text: 'Block Entity Types', link: '/registries/block-entity-types' },
               { text: 'Creative Tabs', link: '/registries/creative-tabs' },
               { text: 'Mob Effects', link: '/registries/mob-effects' },
               { text: 'Data Component Types', link: '/registries/data-component-types' },
@@ -89,9 +90,7 @@ export default defineConfig({
               { text: 'Unified Events', link: '/unified-events' },
               { text: 'Modify Item Components', link: '/events/modify-item-components' },
               { text: 'Command Registration', link: '/events/command-registration' },
-              { text: 'Player Join', link: '/events/player-join' },
-              { text: 'Player Leave', link: '/events/player-leave' },
-              { text: 'Player Respawn', link: '/events/player-respawn' }
+              { text: 'Player', link: '/events/player' }
             ]
           },
           {
@@ -99,10 +98,9 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: 'Unified Client Events', link: '/unified-client-events' },
-              { text: 'Start Tick', link: '/client-events/start-tick' },
-              { text: 'End Tick', link: '/client-events/end-tick' },
-              { text: 'Hotbar Gui', link: '/client-events/hotbar-gui' },
-              { text: 'Abstract Screen', link: '/client-events/abstract-screen' }
+              { text: 'Tick', link: '/client-events/tick' },
+              { text: 'Gui', link: '/client-events/gui' },
+              { text: 'Screen', link: '/client-events/screen' }
             ]
           }
         ]

@@ -7,7 +7,7 @@ Unified Events allow you to inject custom behaviour into various game events in 
 The general syntax for Unified API events is pretty simple:
 
 ```
-UnifiedEvents.PlayerJoin.access(player -> {
+UnifiedEvents.Player.accessJoin(player -> {
     // your custom behaviour here
 });
 ```
