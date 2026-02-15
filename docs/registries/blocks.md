@@ -5,7 +5,7 @@
 Blocks are registered normally, as you'd expect.
 
 ::: info
-Unified API also adds an extra block registry method to allow you bind your custom block to an existing block entity in a multiloader-friendly manner, as per the example. You can also register custom [Block Entity Types](registries/block-entity-types)
+Unified API also adds an extra block registry method to allow you bind your custom block to an existing block entity in a multiloader-friendly manner, as per the example. You can also register custom [Block Entity Types](/registries/block-entity-types)
 :::
 
 ### Methods
