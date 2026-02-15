@@ -8,6 +8,10 @@ Unified API is a simple, general purpose API to aid in multiloader development. 
 - platform-agnostic [events](unified-events), so that mods can implement custom behaviour in common code
 - useful utilities such as new [item components](unified-item-components)
 
+::: warning
+Unified API is currently in beta. Whilst there's a ton of content in the API already, bugs may arise, and features may change as development progresses. You can report issues [here](http://github.com/rebel459/unified-api/issues).
+:::
+
 ### Setup
 
 Unified API is built on [Unimined](https://github.com/unimined/Unimined), and it is recommended that you setup (or migrate) your workspace using something similar. The [Getting Started](/introduction/getting-started) page will guide you through creating a Unimined project with Unified API.
