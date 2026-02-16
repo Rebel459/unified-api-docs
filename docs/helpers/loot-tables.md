@@ -1,6 +1,6 @@
 # Loot Tables
 
-**Class: `UnifiedHelpers.LootTables`**
+**Class: `UnifiedHelpers / HelpersImpl.LootTables`**
 
 Allows you to add to any vanilla or modded loot table.
 
@@ -17,14 +17,13 @@ void addItem(List<ResourceKey<LootTable>> tables, ItemLike item, int chance);
 ### Example
 
 ```
-var lootTables = UnifiedHelpers.LootTables.get()
-lootTables.addPool(
+UnifiedHelpers.LOOT_TABLES.addPool(
         BuiltInLootTables.SIMPLE_DUNGEON,
         LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
                 .add(EmptyLootItem.emptyItem().setWeight(5))
                 .add(LootItem.lootTableItem(ModItems.EXAMPLE_ITEM.get()))
 );
-lootTables.addItem(
+UnifiedHelpers.LOOT_TABLES.addItem(
         BuiltInLootTables.SIMPLE_DUNGEON,
         Items.DIAMOND,
         50

@@ -1,6 +1,6 @@
 # Creative Entries
 
-**Class: `UnifiedHelpers.CreativeEntries`**
+**Class: `UnifiedHelpers / HelpersImpl.CreativeEntries`**
 
 Allows easily adding vanilla & modded items to vanilla & modded creative tabs.
 
@@ -23,6 +23,5 @@ void addBefore(ResourceKey<CreativeModeTab> tab, ItemLike existingItem, ItemStac
 ### Example
 
 ```
-var entries = UnifiedHelpers.CreativeEntries.get()
-entries.addAfter(CreativeModeTabs.COMBAT, Items.BOW, ModItems.SHORTBOW, ModItems.LONGBOW)
+UnifiedHelpers.CREATIVE_ENTRIES.addAfter(CreativeModeTabs.COMBAT, Items.BOW, ModItems.SHORTBOW, ModItems.LONGBOW)
 ```

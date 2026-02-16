@@ -1,6 +1,6 @@
 # Platform
 
-**Class: `UnifiedHelpers.Platform`**
+**Class: `UnifiedHelpers / HelpersImpl.Platform`**
 
 Loader-agnostic way to check the current mod loader and loaded mods.
 
@@ -14,8 +14,7 @@ boolean isModLoaded(String modId);
 ### Example
 
 ```
-var platform = UnifiedHelpers.Platform.get()
-if (platform.getPlatform() == Platform.FABRIC && platform.isModLoaded("mod_name")) {
+if (UnifiedHelpers.PLATFORM.getPlatform() == Platform.FABRIC && UnifiedHelpers.PLATFORM.isModLoaded("mod_name")) {
     // run your code here
 }
 ```

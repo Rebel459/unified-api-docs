@@ -1,6 +1,6 @@
 # Furnace Fuels
 
-**Class: `UnifiedHelpers.FurnaceFuels`**
+**Class: `UnifiedHelpers / HelpersImpl.FurnaceFuels`**
 
 Allows registering an item as a furnace fuel.
 
@@ -16,6 +16,5 @@ void add(ItemLike item, int ticks)
 ### Example
 
 ```
-var fuels = UnifiedHelpers.FurnaceFuels.get()
-fuels.add(ModItems.EXAMPLE_ITEM.get(), 160)
+UnifiedHelpers.FURNACE_FUELS.add(ModItems.EXAMPLE_ITEM.get(), 160)
 ```

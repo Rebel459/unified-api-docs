@@ -1,6 +1,6 @@
 # Strippable Blocks
 
-**Class: `UnifiedHelpers.StrippableBlocks`**
+**Class: `UnifiedHelpers / HelpersImpl.StrippableBlocks`**
 
 Provides a way to setup block stripping behaviour.
 
@@ -12,6 +12,5 @@ void add(Block original, Block stripped);
 ### Example
 
 ```
-var strippables = UnifiedHelpers.StrippableBlocks.get()
-strippables.add(ModBlocks.LOG, ModBlocks.STRIPPED_LOG)
+UnifiedHelpers.STRIPPABLE_BLOCKS.add(ModBlocks.LOG, ModBlocks.STRIPPED_LOG)
 ```

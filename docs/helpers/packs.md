@@ -1,6 +1,6 @@
 # Packs
 
-**Class: `UnifiedHelpers.Packs`**
+**Class: `UnifiedHelpers / HelpersImpl.Packs`**
 
 Allows you to register multiloader resource or data packs.
 
@@ -16,7 +16,6 @@ void add(Identifier id, PackInfo info);
 ### Example
 
 ```
-var packs = UnifiedHelpers.Packs.get()
-packs.add(Identifier.fromNamespaceAndPath(ModName.MOD_ID, "example_datapack"), PackInfo.REQUIRED_DATA)
-packs.add(Identifier.fromNamespaceAndPath(ModName.MOD_ID, "example_resourcepack"), PackInfo.OPTIONAL_RESOURCES)
+UnifiedHelpers.PACKS.add(Identifier.fromNamespaceAndPath(ModName.MOD_ID, "example_datapack"), PackInfo.REQUIRED_DATA)
+UnifiedHelpers.PACKS.add(Identifier.fromNamespaceAndPath(ModName.MOD_ID, "example_resourcepack"), PackInfo.OPTIONAL_RESOURCES)
 ```

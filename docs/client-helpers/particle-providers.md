@@ -1,6 +1,6 @@
 # Particle Providers
 
-**Class: `UnifiedHelpers.ParticleProviders`**
+**Class: `UnifiedClientHelpers / ClientHelpersImpl.ParticleProviders`**
 
 Used to provide a registered [Particle Type](/registries/particle-types) with a sprite sheet / particle provider.
 

@@ -1,13 +1,13 @@
-# Modify Item Components
+# Item Components
 
-**Class: `UnifiedEvents.ModifyItemComponents`**
+**Class: `UnifiedEvents.ItemComponents`**
 
 This event is extremely powerful, as it allows you to dynamically filter and modify the components on any given item.
 
 ### Example
 
 ```
-UnifiedEvents.ModifyItemComponents.access(
+UnifiedEvents.ItemComponents.modify(
         item -> {
             return true; // used to filter applicable items, returning true just skips this
         },

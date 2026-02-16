@@ -61,7 +61,7 @@ export default defineConfig({
               { text: 'Packs', link: '/helpers/packs' },
               { text: 'Creative Entries', link: '/helpers/creative-entries' },
               { text: 'Loot Tables', link: '/helpers/loot-tables' },
-              { text: 'Network Payloads', link: '/helpers/network-payloads' },
+              { text: 'Networking', link: '/helpers/networking' },
               { text: 'Strippable Blocks', link: '/helpers/strippable-blocks' },
               { text: 'Furnace Fuels', link: '/helpers/furnace-fuels' }
             ]
@@ -71,7 +71,7 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: 'Unified Client Helpers', link: '/unified-client-helpers' },
-              { text: 'Network Payloads', link: '/client-helpers/network-payloads' },
+              { text: 'Networking', link: '/client-helpers/networking' },
               { text: 'Block Layers', link: '/client-helpers/block-layers' },
               { text: 'Particle Providers', link: '/client-helpers/particle-providers' },
               { text: 'Entity Renderers', link: '/client-helpers/entity-renderers' },
@@ -88,9 +88,9 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: 'Unified Events', link: '/unified-events' },
-              { text: 'Modify Item Components', link: '/events/modify-item-components' },
-              { text: 'Command Registration', link: '/events/command-registration' },
-              { text: 'Player', link: '/events/player' }
+              { text: 'Item Components', link: '/events/item-components' },
+              { text: 'Commands', link: '/events/commands' },
+              { text: 'Players', link: '/events/players' }
             ]
           },
           {
@@ -98,9 +98,9 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: 'Unified Client Events', link: '/unified-client-events' },
-              { text: 'Tick', link: '/client-events/tick' },
-              { text: 'Gui', link: '/client-events/gui' },
-              { text: 'Screen', link: '/client-events/screen' }
+              { text: 'Ticks', link: '/client-events/ticks' },
+              { text: 'Guis', link: '/client-events/guis' },
+              { text: 'Screens', link: '/client-events/screens' }
             ]
           }
         ]

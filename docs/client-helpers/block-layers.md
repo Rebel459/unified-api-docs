@@ -1,6 +1,6 @@
 # Block Layers
 
-**Class: `UnifiedHelpers.BlockLayers`**
+**Class: `UnifiedClientHelpers / ClientHelpersImpl.BlockLayers`**
 
 ::: info
 This helper method has been removed in 26.1 and above, as this process is now handled automatically by vanilla.
