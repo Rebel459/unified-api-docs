@@ -6,4 +6,4 @@ Unified Helpers include a ton of custom helper methods to extend functionality i
 
 All Unified API helper methods are accessed through `UnifiedHelpers.HELPER_NAME`.
 
-A helper method of notice is [UnifiedHelpers.Platform](/helpers/platform), which allows you to get the current mod loader, as well as check for specific mods in a cross-loader manner.
+A helper method of notice is [UnifiedHelpers.PLATFORM](/helpers/platform), which allows you to get the current mod loader, as well as check for specific mods in a cross-loader manner.
