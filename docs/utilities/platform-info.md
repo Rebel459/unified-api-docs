@@ -1,6 +1,6 @@
-# Platform
+# Platform Info
 
-**Class: `Platform`**
+**Class: `PlatformInfo`**
 
 A simple enum class used to represent the mod loader.
 

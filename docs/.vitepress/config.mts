@@ -114,7 +114,8 @@ export default defineConfig({
             items: [
               { text: 'Unified Item Components', link: '/unified-item-components' },
               { text: 'Pack Info', link: '/utilities/pack-info' },
-              { text: 'Platform', link: '/utilities/platform' }
+              { text: 'Platform Info', link: '/utilities/platform-info' },
+              { text: 'Environment Info', link: '/utilities/env-info' }
             ]
           }
         ]

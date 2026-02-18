@@ -6,7 +6,9 @@ Loader-agnostic way to check the current mod loader and loaded mods.
 
 ### Methods
 ```
-Platform getPlatform();
+PlatformInfo getPlatform();
+
+EnvInfo getEnvironment();
 
 boolean isModLoaded(String modId);
 ```
@@ -14,7 +16,7 @@ boolean isModLoaded(String modId);
 ### Example
 
 ```
-if (UnifiedHelpers.PLATFORM.getPlatform() == Platform.FABRIC && UnifiedHelpers.PLATFORM.isModLoaded("mod_name")) {
+if (UnifiedHelpers.PLATFORM.getPlatform() == PlatformInfo.FABRIC && UnifiedHelpers.getEnvironment() == EnvInfo.SERVER && UnifiedHelpers.PLATFORM.isModLoaded("mod_name")) {
     // run your code here
 }
 ```

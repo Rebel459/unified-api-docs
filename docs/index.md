@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Unified API"
   text: "Documentation"
-  tagline: A multiloader API built on Unimined, allowing for easy cross-loader development
+  tagline: A multiloader API built to enable easy cross-loader mod development
   actions:
     - theme: brand
       text: Getting Started
