@@ -9,28 +9,31 @@ There's also [UnifiedClientHelpers.NETWORKING](/client-helpers/networking), whic
 There are a couple things to note with Unified API's networking payloads
 - all payloads registries / handlers are combined
 - all networking from this class should be registered in common, not client (don't worry, this is server-safe!)
-- payloads / serverplayers have to be manually cast on the objects in the handler due to the multiloader setup, see the below example for details
+- you can chose between registering you packets as configuration or play packets
 
 ### Methods
 ```
-<T extends CustomPacketPayload> void registerC2S(CustomPacketPayload.Type<T> type, StreamCodec<? super B, T> codec);
-<T extends CustomPacketPayload> void registerS2C(CustomPacketPayload.Type<T> type, StreamCodec<? super B, T> codec);
+<T extends CustomPacketPayload> void registerPlayC2S(CustomPacketPayload.Type<T> type, StreamCodec<? super RegistryFriendlyByteBuf, T> codec);
+<T extends CustomPacketPayload> void registerPlayS2C(CustomPacketPayload.Type<T> type, StreamCodec<? super RegistryFriendlyByteBuf, T> codec);
+<T extends CustomPacketPayload> void registerConfigC2S(CustomPacketPayload.Type<T> type, StreamCodec<? super FriendlyByteBuf, T> codec);
+<T extends CustomPacketPayload> void registerConfigS2C(CustomPacketPayload.Type<T> type, StreamCodec<? super FriendlyByteBuf, T> codec);
 
-<T extends CustomPacketPayload> void registerC2S(CustomPacketPayload.Type<T> type, StreamCodec<RegistryFriendlyByteBuf, T> codec, BiConsumer<T, ServerPlayer> handler);
-<T extends CustomPacketPayload> void registerS2C(CustomPacketPayload.Type<T> type, StreamCodec<RegistryFriendlyByteBuf, T> codec, Consumer<T> handler);
+<T extends CustomPacketPayload> void registerPlayC2S(CustomPacketPayload.Type<T> type, StreamCodec<? super RegistryFriendlyByteBuf, T> codec, BiConsumer<T, ServerPlayer> handler);
+<T extends CustomPacketPayload> void registerPlayS2C(CustomPacketPayload.Type<T> type, StreamCodec<? super RegistryFriendlyByteBuf, T> codec, Consumer<T> handler);
+<T extends CustomPacketPayload> void registerConfigC2S(CustomPacketPayload.Type<T> type, StreamCodec<? super FriendlyByteBuf, T> codec, BiConsumer<T, ServerPlayer> handler);
+<T extends CustomPacketPayload> void registerConfigS2C(CustomPacketPayload.Type<T> type, StreamCodec<? super FriendlyByteBuf, T> codec, Consumer<T> handler);
 ```
 
 ### Example
 
 ```
-UnifiedHelpers.NETWORKING.registerS2C(ExamplePacket.Sync.TYPE, ExamplePacket.Sync.CODEC, (payload) -> {
+UnifiedHelpers.NETWORKING.registerPlayS2C(ExamplePacket.Sync.TYPE, ExamplePacket.Sync.CODEC, (packet) -> {
     Player player = Minecraft.getInstance().player;
     if (player instanceof ExampleInterface interface) {
-        interface.setPercentageDamage(((ExamplePacket.Sync)payload).percentageDamage()); // here, we've manually cast the payload to ExamplePacket.Sync
+        interface.setPercentageDamage(packet.percentageDamage()); // here, we've manually cast the payload to ExamplePacket.Sync
     }
 });
-UnifiedHelpers.NETWORKING.registerC2S(ExamplePacket.Request.TYPE, ExamplePacket.Request.CODEC, (payload, context) -> {
-    ServerPlayer player = (ServerPlayer) context; // as you can see, we manually cast the context to ServerPlayer
+UnifiedHelpers.NETWORKING.registerPlayC2S(ExamplePacket.Request.TYPE, ExamplePacket.Request.CODEC, (packet, player) -> {
     if (player instanceof ExampleInterface interface) {
         int current = interface.getPercentageDamage();
         networking.send(new ExamplePacket.Sync(current), player);
