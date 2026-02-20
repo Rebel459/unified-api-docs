@@ -25,6 +25,9 @@ In your root `build.gradle`, add the following:
         maven { url = "https://api.modrinth.com/maven" }
     }
 ```
+
+In your common `build.gradle`, add the following:
+
 ```
 dependencies {
     modCompileOnly("maven.modrinth:unified-api:${unified_version}-fabric")
