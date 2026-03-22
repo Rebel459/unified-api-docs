@@ -1,12 +1,15 @@
 # Getting Started
 
-This page will guide you through getting started with a multiloader project using Unimined and the Unified API. It is assumed that you are already somewhat familiar with mod development using [IntelliJ IDEA](https://www.jetbrains.com/idea/).
+This page will guide you through getting started with a multiloader project and the Unified API. It is assumed that you are already somewhat familiar with mod development using [IntelliJ IDEA](https://www.jetbrains.com/idea/).
 
-### Using Unimined
+### Multiloader Setup
 
-The recommended way to use the Unified API is through Unimined, which allows for easy multiloader development on modern versions through common/fabric/neoforge branches. Architectury Loom is also supported, however Unimined is preferred due to Arch loom being outdated on new releases.
+The recommended way to use the Unified API is through either Unimined or the multiloader template, both of which allow for easy multiloader development on modern versions through common/fabric/neoforge branches. Architectury Loom is also supported, however it is not recommended seeing as Arch loom is outdated on new releases.
 
-To create a new workspace with Unimined, or to migrate your existing single-loader or architectury workspace, you can either [install Unimined directly](https://github.com/unimined/Unimined), or (recommended) **download / clone this [template Unimined project](https://github.com/firstdarkdev/fdd-xplat).**
+I would recommend you use the [multiloader template](https://github.com/jaredlll08/MultiLoader-Template) to setup your workspace. **[A 26.1 fork can also be found here](https://github.com/AyOhEe/MultiLoader-Template/tree/26.1)**, though you'll need to update the gradle.properties from snapshot-7 to the full release
+
+Alternatively, to create (or migrate) a new workspace with Unimined, you can either [install Unimined directly](https://github.com/unimined/Unimined), or download / clone this [template Unimined project](https://github.com/firstdarkdev/fdd-xplat).
+**
 
 ### Adding the Unified API
 

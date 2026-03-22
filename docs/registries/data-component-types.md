@@ -8,6 +8,8 @@ Allows you to register custom item components.
 
 ```
 <T> Supplier<DataComponentType<T>> register(String path, UnaryOperator<DataComponentType.Builder<T>> unaryOperator);
+
+void addAlias(Identifier convertedFrom, Identifier convertedTo);
 ```
 
 ### Example

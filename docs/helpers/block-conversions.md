@@ -1,21 +1,24 @@
-# Packs
+# Block Conversions
 
-**Class: `UnifiedHelpers / HelpersImpl.Packs`**
+**Class: `UnifiedHelpers / BlockConversions`**
 
-Allows you to register multiloader resource or data packs.
-
-Note that all packs must be located in common/.../resources/resourcepacks, as Fabric hardcodes the required directory.
-
-Uses [PackInfo](/utilities/pack-info).
+Allows to easily create block conversion functionality, such as axes stripping logs.
 
 ### Methods
 ```
-void add(Identifier id, PackInfo info);
+default void addStrippable(Block originalBlock, Block convertedBlock)
+
+default void addWaxed(Block block, Block waxedBlock, Block exposedBlock, Block waxedExposedBlock, Block weatheredBlock, Block waxedWeatheredBlock, Block oxidizedBlock, Block waxedOxidizedBlock)
+
+default void add(Predicate<ItemStack> item, Block originalBlock, Block convertedBlock, SoundEvent sound)
+default void add(Predicate<ItemStack> item, Block originalBlock, Block convertedBlock, SoundEvent sound, float volume, float pitch)
+default void add(Predicate<ItemStack> item, Block originalBlock, Block convertedBlock, Consumer<UseOnContext> context)
 ```
 
 ### Example
 
 ```
-UnifiedHelpers.PACKS.add(Identifier.fromNamespaceAndPath(ModName.MOD_ID, "example_datapack"), PackInfo.REQUIRED_DATA)
-UnifiedHelpers.PACKS.add(Identifier.fromNamespaceAndPath(ModName.MOD_ID, "example_resourcepack"), PackInfo.OPTIONAL_RESOURCES)
+UnifiedHelpers.BLOCK_CONVERSIONS.addStrippable(ExampleMod.EXAMPLE_LOG, ExampleMod.EXAMPLE_STRIPPED_LOG)
+
+UnifiedHelpers.BLOCK_CONVERSIONS.add(item -> item.is(ItemTags.PICKAXES), Blocks.STONE_BRICKS, Blocks.CHISELED_STONE_BRICKS, ModSounds.PICKAXE_CHISELS)
 ```

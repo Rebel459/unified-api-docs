@@ -59,3 +59,7 @@ public static final Supplier<Item> EXAMPLE_ITEM = ITEMS.register("example_item",
 ```
 
 As you can see, the syntax is nearly identical to vanilla / fabric registries, except we wrap our registerd `Item` with `Supplier`, and (with items specifically) also use `() ->` to wrap our `Item.Properties` with `Supplier` to ensure we can safely access any custom components we've created. That's it - no extra work for any registries, so it's easy to get started, or even convert an existing single-loader project with a simple find-replace.
+
+::: info
+Most Unified registries also contain the `void addAlias(Identifier convertedFrom, Identifier convertedTo);` method, in order to easily create registry aliases.
+:::

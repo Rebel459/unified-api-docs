@@ -2,18 +2,32 @@
 
 **Class: `UnifiedEvents.ItemComponents`**
 
-This event is extremely powerful, as it allows you to dynamically filter and modify the components on any given item.
+This event is extremely useful, as it allows you to dynamically modify the components on any given item.
+
+### Methods
+
+```
+UnifiedEvents.ItemComponents.modify((item, builder) -> {
+    // your component modifications here
+});
+
+UnifiedEvents.ItemComponents.modifyWithFilter(
+        item -> {
+            return true; // used to filter applicable items
+        },
+        (builder, item) -> {
+            // your component modifications here
+});
+```
 
 ### Example
 
 ```
 UnifiedEvents.ItemComponents.modify(
-        item -> {
-            return true; // used to filter applicable items, returning true just skips this
-        },
         (builder, item) -> {
             if (item.getDefaultInstance().is(Items.TRIDENT)) {
-                builder.set(DataComponents.REPAIRABLE, new Repairable(holderGetter.getOrThrow(CRItemTags.TRIDENT_REPAIR_MATERIALS))); // use the builder to set components
+                builder.set(DataComponents.REPAIRABLE, new Repairable(holderGetter.getOrThrow(CRItemTags.TRIDENT_REPAIR_MATERIALS)));
+                // you can also use UnifiedHelpers.DATA_COMPONENTS.add(builder, DataComponents.REPAIRABLE, new Repairable(holderGetter.getOrThrow(CRItemTags.TRIDENT_REPAIR_MATERIALS))) if you'd like to avoid overwriting existing components
             }
         });
 ```

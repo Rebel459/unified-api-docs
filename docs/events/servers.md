@@ -1,19 +1,19 @@
-# Players
+# Servers
 
-**Class: `UnifiedEvents.Players`**
+**Class: `UnifiedEvents.Servers`**
 
-Various player-related events.
+Various server-related events.
 
 ### Methods
 
 ```
-UnifiedEvents.Player.onJoin(player -> {
+UnifiedEvents.Servers.onDatapackLoad(minecraftServer -> {
     // your custom behaviour here
 });
-UnifiedEvents.Player.onLeave(player -> {
+UnifiedEvents.Servers.onStart(minecraftServer -> {
     // your custom behaviour here
 });
-UnifiedEvents.Player.onRespawn(player -> {
+UnifiedEvents.Servers.onStop(minecraftServer -> {
     // your custom behaviour here
 });
 ```

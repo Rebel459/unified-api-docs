@@ -13,4 +13,6 @@ Whilst it's recommended you bind your blocks to your custom block entity here, y
 ```
 @NotNull <T extends BlockEntity> Supplier<BlockEntityType<T>> register(String path, @NotNull BlockEntityType.BlockEntitySupplier<T> builder);
 @NotNull <T extends BlockEntity> Supplier<BlockEntityType<T>> register(String path, @NotNull BlockEntityType.BlockEntitySupplier<T> builder, Block... blocks);
+
+void addAlias(Identifier convertedFrom, Identifier convertedTo);
 ```

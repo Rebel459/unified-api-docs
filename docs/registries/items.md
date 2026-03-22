@@ -10,6 +10,8 @@ Items are registered similarly to vanilla, though you must make sure to use a Su
 Supplier<Item> register(String path, Function<Item.Properties, Item> function, Supplier<Item.Properties> properties);
 
 <T extends Block> Supplier<BlockItem> registerBlockItem(String path, Supplier<T> blockSupplier, Supplier<Item.Properties> properties);
+
+void addAlias(Identifier convertedFrom, Identifier convertedTo);
 ```
 
 ### Example

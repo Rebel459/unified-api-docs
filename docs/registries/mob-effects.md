@@ -8,6 +8,8 @@ Allows you to register custom mob effects.
 
 ```
 Holder<MobEffect> register(String path, MobEffect effect);
+
+void addAlias(Identifier convertedFrom, Identifier convertedTo);
 ```
 
 ### Example

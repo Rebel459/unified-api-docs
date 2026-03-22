@@ -8,6 +8,8 @@ Allows you to register custom entities.
 
 ```
 <T extends Entity> @NotNull Supplier<EntityType<T>> register(String path, EntityType.@NotNull Builder<T> builder);
+
+void addAlias(Identifier convertedFrom, Identifier convertedTo);
 ```
 
 ### Example

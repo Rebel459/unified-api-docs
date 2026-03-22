@@ -1,21 +1,24 @@
-# Packs
+# Data Components
 
-**Class: `UnifiedHelpers / HelpersImpl.Packs`**
+**Class: `UnifiedHelpers / DataComponents`**
 
-Allows you to register multiloader resource or data packs.
+Allows for simple appending of item components to any ItemLike (Block or Item).
 
-Note that all packs must be located in common/.../resources/resourcepacks, as Fabric hardcodes the required directory.
+Includes additional methods for `UnifiedDataComponents.FURNACE_FUEL` and `UnifiedDataComponents.COMPOST`.
 
-Uses [PackInfo](/utilities/pack-info).
+Can also be used with a `DataComponentMap.Builder` provided by `UnifiedEvents.ItemComponents` in order to add components without overwriting existing ones.
 
 ### Methods
 ```
-void add(Identifier id, PackInfo info);
+default <T> void add(DataComponentMap.Builder builder, DataComponentType<T> type, T value)
+default <T> void add(ItemLike itemLike, DataComponentType<T> type, T value)
+
+default void addFurnaceFuel(ItemLike itemLike, int ticks)
+default void addCompost(ItemLike itemLike, float chance)
 ```
 
 ### Example
 
 ```
-UnifiedHelpers.PACKS.add(Identifier.fromNamespaceAndPath(ModName.MOD_ID, "example_datapack"), PackInfo.REQUIRED_DATA)
-UnifiedHelpers.PACKS.add(Identifier.fromNamespaceAndPath(ModName.MOD_ID, "example_resourcepack"), PackInfo.OPTIONAL_RESOURCES)
+UnifiedHelpers.DATA_COMPONENTS.addFurnaceFuel(ExampleMod.EXAMPLE_PLANKS, 150)
 ```

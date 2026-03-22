@@ -1,19 +1,37 @@
-# Item Components
+# Loot Tables
 
-**Class: `UnifiedEvents.ItemComponents`**
+**Class: `UnifiedEvents.LootTables`**
 
-This event is extremely powerful, as it allows you to dynamically filter and modify the components on any given item.
+This event allows you to add pools to any given loot table, similarly to the fabric loot api.
+
+### Methods
+
+```
+UnifiedEvents.LootTables.modify(lootTable -> {
+            // your loot table additions here
+        }
+);
+
+UnifiedEvents.LootTables.modifyWithFilter(lootTableKey -> {
+            return true;
+        },
+        lootTable -> {
+            // your loot table additions here
+        }
+);
+```
 
 ### Example
 
 ```
-UnifiedEvents.ItemComponents.modify(
-        item -> {
-            return true; // used to filter applicable items, returning true just skips this
-        },
-        (builder, item) -> {
-            if (item.getDefaultInstance().is(Items.TRIDENT)) {
-                builder.set(DataComponents.REPAIRABLE, new Repairable(holderGetter.getOrThrow(CRItemTags.TRIDENT_REPAIR_MATERIALS))); // use the builder to set components
+UnifiedEvents.LootTables.modify(lootTable -> {
+            LootPool.Builder pool;
+            if (lootTable.getKey() == BuiltInLootTables.SIMPLE_DUNGEON) {
+                pool = LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(EmptyLootItem.emptyItem().setWeight(11))
+                        .add(LootItem.lootTableItem(Items.DIAMOND).setWeight(1));
+                lootTable.addPool(pool);
             }
-        });
+        }
+);
 ```

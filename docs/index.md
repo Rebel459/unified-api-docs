@@ -9,19 +9,19 @@ hero:
   actions:
     - theme: brand
       text: Getting Started
-      link: /introduction/getting-started
+      link: /about/getting-started
     - theme: alt
       text: Source Code
       link: https://github.com/Rebel459/unified-api
 
 features:
-  - title: Registries
-    details: Documentation on Unified's multiloader registries
-    link: /unified-registries
-  - title: Helpers
-    details: Documentation on Unified's helper methods, such as loot tables & creative entries
-    link: /unified-helpers
-  - title: Events
-    details: Documentation on Unified's many events
-    link: /unified-events
+  - title: About
+    details: View the Unified API documentation
+    link: /unified-api
+  - title: Changelog
+    details: View the full Unified API changelogs
+    link: /about/changelog
+  - title: Migration Guide
+    details: View the guide on migrating between major Unified API releases
+    link: /about/migration-guide
 ---

@@ -14,10 +14,12 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Introduction',
+        text: 'About',
         items: [
           { text: 'Unified API', link: '/unified-api' },
-          { text: 'Getting Started', link: '/introduction/getting-started' }
+          { text: 'Getting Started', link: '/about/getting-started' },
+          { text: 'Changelog', link: '/about/changelog' },
+          { text: 'Migration Guide', link: '/about/migration-guide' }
         ]
       },
       {
@@ -60,10 +62,10 @@ export default defineConfig({
               { text: 'Platform', link: '/helpers/platform' },
               { text: 'Packs', link: '/helpers/packs' },
               { text: 'Creative Entries', link: '/helpers/creative-entries' },
-              { text: 'Loot Tables', link: '/helpers/loot-tables' },
               { text: 'Networking', link: '/helpers/networking' },
-              { text: 'Strippable Blocks', link: '/helpers/strippable-blocks' },
-              { text: 'Furnace Fuels', link: '/helpers/furnace-fuels' }
+              { text: 'Block Conversions', link: '/helpers/block-conversions' },
+              { text: 'Data Components', link: '/helpers/data-components' },
+              { text: 'Biome Modifications', link: '/helpers/biome-modifications' }
             ]
           },
           {
@@ -72,7 +74,6 @@ export default defineConfig({
             items: [
               { text: 'Unified Client Helpers', link: '/unified-client-helpers' },
               { text: 'Networking', link: '/client-helpers/networking' },
-              { text: 'Block Layers', link: '/client-helpers/block-layers' },
               { text: 'Particle Providers', link: '/client-helpers/particle-providers' },
               { text: 'Entity Renderers', link: '/client-helpers/entity-renderers' },
               { text: 'Tooltips', link: '/client-helpers/tooltips' }
@@ -88,9 +89,11 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: 'Unified Events', link: '/unified-events' },
+              { text: 'Loot Tables', link: '/events/loot-tables' },
               { text: 'Item Components', link: '/events/item-components' },
               { text: 'Commands', link: '/events/commands' },
-              { text: 'Players', link: '/events/players' }
+              { text: 'Players', link: '/events/players' },
+              { text: 'Servers', link: '/events/servers' }
             ]
           },
           {
@@ -108,11 +111,11 @@ export default defineConfig({
       {
         text: 'Utilities',
         items: [
+          { text: 'Unified Data Components', link: '/unified-data-components' },
           {
-            text: 'Common',
+            text: 'Utilities',
             collapsed: true,
             items: [
-              { text: 'Unified Item Components', link: '/unified-item-components' },
               { text: 'Pack Info', link: '/utilities/pack-info' },
               { text: 'Platform Info', link: '/utilities/platform-info' },
               { text: 'Environment Info', link: '/utilities/env-info' }
