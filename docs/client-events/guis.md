@@ -11,10 +11,10 @@ The `renderHotbar` event is particularly useful over an equivalent mixin as Fabr
 ### Example
 
 ```
-UnifiedClientEvents.Gui.renderCrosshair(((gui, guiGraphics, deltaTracker) -> {
+UnifiedClientEvents.Gui.renderCrosshair(((gui, graphics, deltaTracker) -> {
     // your custom behaviour here
 }));
-UnifiedClientEvents.Gui.renderHotbar(((gui, guiGraphics, deltaTracker) -> {
+UnifiedClientEvents.Gui.renderHotbar(((gui, graphics, deltaTracker) -> {
     // your custom behaviour here
 }));
 ```
