@@ -61,11 +61,11 @@ export default defineConfig({
               { text: 'Unified Helpers', link: '/unified-helpers' },
               { text: 'Platform', link: '/helpers/platform' },
               { text: 'Packs', link: '/helpers/packs' },
+              { text: 'Biome Modifications', link: '/helpers/biome-modifications' },
               { text: 'Creative Entries', link: '/helpers/creative-entries' },
               { text: 'Networking', link: '/helpers/networking' },
               { text: 'Block Conversions', link: '/helpers/block-conversions' },
-              { text: 'Data Components', link: '/helpers/data-components' },
-              { text: 'Biome Modifications', link: '/helpers/biome-modifications' }
+              { text: 'Data Components', link: '/helpers/data-components' }
             ]
           },
           {
