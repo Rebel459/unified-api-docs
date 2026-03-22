@@ -14,8 +14,7 @@ Renames
 - - renamed `add` to `insert`
 - - renamed `addAfter` to `insertAfter`
 - - renamed `addBefore` to `insertBefore`
-- `UnifiedEvents.ItemComponents`
-- - added new `modify` method, which is a simpler event with no predicate filter
+- `UnifiedEvents.ItemComponents`=
 - - renamed old `modify` method to `modifyWithFilter`
 - renamed `UnifiedItemComponents` to `UnifiedDataComponents`
 

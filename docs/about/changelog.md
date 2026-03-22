@@ -30,6 +30,7 @@ Changed
 - - renamed `addAfter` to `insertAfter`
 - - renamed `addBefore` to `insertBefore`
 - `UnifiedEvents.ItemComponents`
+- - builder now provides a full `DataComponentMap.Builder`
 - - added new `modify` method, which is a simpler event with no predicate filter
 - - renamed old `modify` method to `modifyWithFilter`
 - renamed `UnifiedItemComponents` to `UnifiedDataComponents`
