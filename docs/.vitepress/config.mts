@@ -113,7 +113,7 @@ export default defineConfig({
         items: [
           { text: 'Unified Data Components', link: '/unified-data-components' },
           {
-            text: 'Utilities',
+            text: 'Enums',
             collapsed: true,
             items: [
               { text: 'Pack Info', link: '/utilities/pack-info' },
