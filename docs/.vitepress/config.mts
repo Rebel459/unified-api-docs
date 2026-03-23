@@ -112,6 +112,7 @@ export default defineConfig({
         text: 'Utilities',
         items: [
           { text: 'Unified Data Components', link: '/unified-data-components' },
+          { text: 'Unified Item Tags', link: '/unified-item-tags' },
           {
             text: 'Enums',
             collapsed: true,
