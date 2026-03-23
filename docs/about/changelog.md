@@ -17,6 +17,8 @@ What's New
 - - full loot table modification api, akin to the fabric loot table api
 - `UnifiedDataComponents.COMPOST`
 - - data-driven compost functionality
+- `UnifiedItemTags`
+- - currently contains the "unified:persistent_cooldowns" tag, which allows you to make item cooldowns persist even when a player quits the world
 
 Changed
 - added `addAlias` method to Unified registries
