@@ -11,7 +11,6 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Documentation', link: '/unified-api' }
     ],
-
     sidebar: [
       {
         text: 'About',
@@ -112,7 +111,7 @@ export default defineConfig({
         text: 'Utilities',
         items: [
           { text: 'Unified Data Components', link: '/unified-data-components' },
-          { text: 'Unified Item Tags', link: '/unified-item-tags' }
+          { text: 'Unified Item Tags', link: '/unified-item-tags' },
           {
             text: 'Enums',
             collapsed: true,
