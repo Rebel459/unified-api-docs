@@ -16,7 +16,7 @@ Changed
 - `UnifiedRegistries.Items`
 - - now returns `SuppliedItem` instead of `Supplier<Item>` in all relevant methods
 - `UnifiedRegistries.Blocks`
-- - - now returns `SuppliedBlock` instead of `Supplier<Block>` in all relevant methods
+- - now returns `SuppliedBlock` instead of `Supplier<Block>` in all relevant methods
 - `UnifiedHelpers.CREATIVE_ENTRIES`
 - - methods which previously accepted `ItemStack` now require `ItemStackTemplate`
 - - - this change fixes relevant methods which previously caused loading failure on 26.1
