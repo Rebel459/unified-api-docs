@@ -6,7 +6,8 @@ Unified API is a simple, general purpose API to aid in multiloader development. 
 - unified, cross-loader [registries](unified-registries)
 - various [helpers](unified-helpers) to allow access to features such as loot table or creative inventory injection
 - platform-agnostic [events](unified-events), so that mods can implement custom behaviour in common code
-- useful utilities such as new [components](unified-data-components)
+- useful utilities such as new [components](/utilities/unified-data-components) or [tags](/utilities/unified-item-tags)
+- custom supplier interfaces for [items](/utilities/supplied-item) and [blocks](/utilities/supplied-block)
 
 ::: warning
 Unified API is currently in beta. Whilst there's a ton of content in the API already, bugs may arise, and features may change as development progresses. You can report issues [here](http://github.com/rebel459/unified-api/issues).
