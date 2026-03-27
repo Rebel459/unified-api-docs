@@ -108,17 +108,25 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Utilities',
+        text: 'Classes',
         items: [
-          { text: 'Unified Data Components', link: '/unified-data-components' },
-          { text: 'Unified Item Tags', link: '/unified-item-tags' },
+          {
+            text: 'Utilities',
+            collapsed: true,
+            items: [
+              { text: 'Unified Data Components', link: '/utilities/data-components' },
+              { text: 'Unified Item Tags', link: '/utilities/unified-item-tags' },
+              { text: 'Supplied Item', link: '/utilities/supplied-item' },
+              { text: 'Supplied Block', link: '/utilities/supplied-block' }
+            ]
+          },
           {
             text: 'Enums',
             collapsed: true,
             items: [
-              { text: 'Pack Info', link: '/utilities/pack-info' },
-              { text: 'Platform Info', link: '/utilities/platform-info' },
-              { text: 'Environment Info', link: '/utilities/env-info' }
+              { text: 'Pack Info', link: '/enums/pack-info' },
+              { text: 'Platform Info', link: '/enums/platform-info' },
+              { text: 'Environment Info', link: '/enums/env-info' }
             ]
           }
         ]

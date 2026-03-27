@@ -4,12 +4,9 @@ This page will guide you through getting started with a multiloader project and 
 
 ### Multiloader Setup
 
-The recommended way to use the Unified API is through either Unimined or the multiloader template, both of which allow for easy multiloader development on modern versions through common/fabric/neoforge branches. Architectury Loom is also supported, however it is not recommended seeing as Arch loom is outdated on new releases.
+When using Unified API, it is recommended to do so on a multiloader project. Great examples of multiloader templates include Jared's Multiloader Template, Unimined, or Architectury Loom.
 
-I would recommend you use the [multiloader template](https://github.com/jaredlll08/MultiLoader-Template) to setup your workspace. **[A 26.1 fork can also be found here](https://github.com/AyOhEe/MultiLoader-Template/tree/26.1)**, though you'll need to update the gradle.properties from snapshot-7 to the full release
-
-Alternatively, to create (or migrate) a new workspace with Unimined, you can either [install Unimined directly](https://github.com/unimined/Unimined), or download / clone this [template Unimined project](https://github.com/firstdarkdev/fdd-xplat).
-**
+I would recommend you use the [multiloader template](https://github.com/jaredlll08/MultiLoader-Template) to setup your workspace, however whichever setup you prefer will work fine.
 
 ### Adding the Unified API
 

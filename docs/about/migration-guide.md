@@ -2,6 +2,16 @@
 
 [View Full Changelog](/about/changelog)
 
+### 26.1-b1.0 to 26.1-b2.0
+
+Changes
+- all item registries now return `SuppliedItem` rather than `SuppliedItem`
+- - `SuppliedItem` implements `SuppliedItem`, so you only need to change the actual class specified in your static registration, not any other code
+- all block registries now return `SuppliedBlock` rather than `SuppliedBlock`
+- - `SuppliedBlock` implements `SuppliedBlock`, so you only need to change the actual class specified in your static registration, not any other code
+- methods in `UnifiedHelpers.CREATIVE_ENTRIES` which previously required `ItemStack` now require `ItemStackTemplate` instead
+- - these methods were previously broken on 26.1, and are fixed by this change
+
 ### 1.21.11 to 26.1
 
 Renames

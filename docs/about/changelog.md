@@ -2,6 +2,25 @@
 
 ### 26.1
 
+**26.1-b2.0**
+
+What's New
+- `SuppliedItem`
+- - new item class which implements `Holder<Item>`, `SuppliedItem`, `ItemLike` and `SuppliedItemInterface`
+- - - `SuppliedItemInterface` includes `getTemplate` and `getDefaultInstance` methods
+- `SuppliedBlock`
+- - new block class which implements `Holder<Block>`, `SuppliedBlock`, `ItemLike` and `SuppliedBlockInterface`
+- - - `SuppliedBlockInterface` includes `getTemplate` and `defaultBlockState` methods
+
+Changed
+- `UnifiedRegistries.Items`
+- - now returns `SuppliedItem` instead of `SuppliedItem` in all relevant methods
+- `UnifiedRegistries.Blocks`
+- - - now returns `SuppliedBlock` instead of `SuppliedBlock` in all relevant methods
+- `UnifiedHelpers.CREATIVE_ENTRIES`
+- - methods which previously accepted `ItemStack` now require `ItemStackTemplate`
+- - - this change fixes relevant methods which previously caused loading failure on 26.1
+
 **26.1-b1.0**
 
 What's New

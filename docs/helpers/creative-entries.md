@@ -11,13 +11,13 @@ You can either use `insert` to append the end of a tab, `insertBefore` to insert
 ### Methods
 ```
 void insert(ResourceKey<CreativeModeTab> tab, ItemLike... items);
-void insert(ResourceKey<CreativeModeTab> tab, ItemStack... items);
+void insert(ResourceKey<CreativeModeTab> tab, ItemStackTemplate... items);
 
 void insertAfter(ResourceKey<CreativeModeTab> tab, ItemLike existingItem, ItemLike... addedItems);
-void insertAfter(ResourceKey<CreativeModeTab> tab, ItemLike existingItem, ItemStack... addedItems);
+void insertAfter(ResourceKey<CreativeModeTab> tab, ItemLike existingItem, ItemStackTemplate... addedItems);
 
 void insertBefore(ResourceKey<CreativeModeTab> tab, ItemLike existingItem, ItemLike... addedItems);
-void insertBefore(ResourceKey<CreativeModeTab> tab, ItemLike existingItem, ItemStack... addedItems);
+void insertBefore(ResourceKey<CreativeModeTab> tab, ItemLike existingItem, ItemStackTemplate... addedItems);
 ```
 
 ### Example
