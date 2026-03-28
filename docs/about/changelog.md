@@ -2,6 +2,19 @@
 
 ### 26.1
 
+**26.1-b3.1**
+
+What's New
+- `UnifiedRegistries.EnchantmentCodecs`
+- - allows registering enchantment-related codecs, through `registerProvider`, `registerLevelBasedValue`, `registerEntityEffect`, `registerValueEffect` and `registerLocationBasedEffect`
+- `CreativeModeTabs`
+- - provides easy access to vanilla `CreativeModeTabs` resource keys
+
+Changed
+- `UnifiedEvents.Players`
+- - `onRespawn` now provides a `BiConsumer` with `oldPlayer` and `newPlayer`
+- - - previously, only the new player was provided
+
 **26.1-b2.0**
 
 What's New

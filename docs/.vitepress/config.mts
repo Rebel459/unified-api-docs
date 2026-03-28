@@ -37,7 +37,8 @@ export default defineConfig({
               { text: 'Mob Effects', link: '/registries/mob-effects' },
               { text: 'Data Component Types', link: '/registries/data-component-types' },
               { text: 'Particle Types', link: '/registries/particle-types' },
-              { text: 'Sound Events', link: '/registries/sound-events' }
+              { text: 'Sound Events', link: '/registries/sound-events' },
+              { text: 'Enchantment Codecs', link: '/registries/enchantment-codecs' }
             ]
           },
           {
@@ -121,12 +122,13 @@ export default defineConfig({
             ]
           },
           {
-            text: 'Enums',
+            text: 'Misc',
             collapsed: true,
             items: [
-              { text: 'Pack Info', link: '/enums/pack-info' },
-              { text: 'Platform Info', link: '/enums/platform-info' },
-              { text: 'Environment Info', link: '/enums/env-info' }
+              { text: 'Pack Info', link: '/misc/pack-info' },
+              { text: 'Platform Info', link: '/misc/platform-info' },
+              { text: 'Environment Info', link: '/misc/env-info' },
+              { text: 'Creative Mode Tabs', link: '/misc/creative-mode-tabs' }
             ]
           }
         ]

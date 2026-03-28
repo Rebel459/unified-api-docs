@@ -48,7 +48,7 @@ public static UnifiedRegistries.Items ITEMS = UnifiedRegistries.Items.create(Mod
 
 Once we add the above, we can simply register our content normally. If you're coming from NeoForge, you're familiar with using Suppliers, however Fabric-familiar developers should be aware that all registries use a `Supplier<>` in order to remain compatible with NeoForge's staged system, which in practice means that you'll need to use `.get()` when wanting to safely access your content.
 
-Whilst most content will use a regular `Supplier<Object>`, Items and Blocks use [SuppliedItem](/utilities/supplied-item) and [SuppliedBlock](/utilities/supplied-block) respectively, which are very convenient to use and often do not require the use of `.get()` as they each implement `Holder`, `Supplier`, `ItemLike` and an additional custom interface.
+Whilst most content will use a regular `Supplier<Object>`, Items and Blocks have the option of using [SuppliedItem](/utilities/supplied-item) and [SuppliedBlock](/utilities/supplied-block) respectively, which are very convenient to use and often do not require the use of `.get()` as they each implement `Holder`, `Supplier`, `ItemLike` and an additional custom interface.
 
 ```
 public static final SuppliedItem EXAMPLE_ITEM = ITEMS.register("example_item",

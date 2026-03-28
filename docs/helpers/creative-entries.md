@@ -8,6 +8,10 @@ To create your own custom Creative Tab, check out [Creative Tabs](/registries/cr
 
 You can either use `insert` to append the end of a tab, `insertBefore` to insert items before an existing entry or `insertAfter` to insert items after an existing entry. Multiple ItemLikes or ItemStacks are accepted.
 
+::: info
+Unified API includes its own public [CreativeModeTabs](/misc/creative-mode-tabs) class, which provides easier access to all vanilla creative tab resource keys.
+:::
+
 ### Methods
 ```
 void insert(ResourceKey<CreativeModeTab> tab, ItemLike... items);

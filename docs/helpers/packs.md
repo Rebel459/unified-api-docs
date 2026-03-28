@@ -6,7 +6,7 @@ Allows you to register multiloader resource or data packs.
 
 Note that all packs must be located in common/.../resources/resourcepacks, as Fabric hardcodes the required directory.
 
-Uses [PackInfo](/enums/pack-info).
+Uses [PackInfo](/misc/pack-info).
 
 ### Methods
 ```
