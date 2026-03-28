@@ -13,7 +13,7 @@ UnifiedEvents.Player.onJoin(player -> {
 UnifiedEvents.Player.onLeave(player -> {
     // your custom behaviour here
 });
-UnifiedEvents.Player.onRespawn(player -> {
+UnifiedEvents.Player.onRespawn((oldPlayer, newPlayer) -> {
     // your custom behaviour here
 });
 ```
