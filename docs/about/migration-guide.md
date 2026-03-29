@@ -2,6 +2,15 @@
 
 [View Full Changelog](/about/changelog)
 
+### 26.1-b4.0 to 26.1-b5.0
+
+Changes
+- when registering blocks with `UnifiedRegistries.Blocks`, you must now wrap your `BlockBehaviour.Properties` with a Supplier: `() ->`
+
+Renames
+- renamed `UnifiedEvents.ItemComponents` to `UnifiedEvents.DefaultItemComponents`
+- - renamed `modifyWithFilter` to `modifyFiltered`
+
 ### 26.1-b3.1 to 26.1-b4.0
 
 Changes

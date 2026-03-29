@@ -2,6 +2,20 @@
 
 ### 26.1
 
+**26.1-b5.0**
+
+What's New
+- `UnifiedRegistries.MapDecorationTypes`
+- - allows registering custom map decorations
+
+Changed
+- `UnifiedRegistries.Blocks` methods now expect a supplier for block properties
+- `UnifiedPlatform` can now correctly checks for mods during early-loading on NeoForge
+- fixed `UnifiedHelpers.CREATIVE_ENTRIES.insertBefore` ordering on NeoForge
+- fixed `UnifiedHelpers.BIOME_MODIFICATIONS` not working with non-vanilla biomes, features, carvers and entities
+- renamed `UnifiedEvents.ItemComponents` to `UnifiedEvents.DefaultItemComponents`
+- - renamed `modifyWithFilter` to `modifyFiltered`
+
 **26.1-b4.0**
 
 Changed
@@ -91,6 +105,11 @@ Removed
 *Continued from 21.11-b1.3*
 
 ### 1.21.11
+
+**21.11-b2.0**
+
+Changed
+- `UnifiedRegistries.Blocks` methods now expect a supplier for block properties
 
 **21.11-b1.4**
 

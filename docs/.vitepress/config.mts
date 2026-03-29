@@ -38,7 +38,8 @@ export default defineConfig({
               { text: 'Data Component Types', link: '/registries/data-component-types' },
               { text: 'Particle Types', link: '/registries/particle-types' },
               { text: 'Sound Events', link: '/registries/sound-events' },
-              { text: 'Enchantment Codecs', link: '/registries/enchantment-codecs' }
+              { text: 'Enchantment Codecs', link: '/registries/enchantment-codecs' },
+              { text: 'Map Decoration Types', link: '/registries/map-decoration-types' }
             ]
           },
           {
@@ -90,7 +91,7 @@ export default defineConfig({
             items: [
               { text: 'Unified Events', link: '/unified-events' },
               { text: 'Loot Tables', link: '/events/loot-tables' },
-              { text: 'Item Components', link: '/events/item-components' },
+              { text: 'Default Item Components', link: '/events/default-item-components' },
               { text: 'Commands', link: '/events/commands' },
               { text: 'Players', link: '/events/players' },
               { text: 'Servers', link: '/events/servers' }
