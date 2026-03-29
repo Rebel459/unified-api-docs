@@ -59,7 +59,7 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: 'Unified Helpers', link: '/unified-helpers' },
-              { text: 'Platform', link: '/helpers/platform' },
+              { text: 'Unified Platform', link: '/helpers/unified-platform' },
               { text: 'Packs', link: '/helpers/packs' },
               { text: 'Biome Modifications', link: '/helpers/biome-modifications' },
               { text: 'Creative Entries', link: '/helpers/creative-entries' },

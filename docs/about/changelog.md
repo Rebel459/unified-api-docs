@@ -2,6 +2,19 @@
 
 ### 26.1
 
+**26.1-b4.0**
+
+Changed
+- replaced `UnifiedHelpers.PLATFORM` with `UnifiedPlatform.get()`
+- - this will require mods to update to match this change, however it should address the Platform helper not working in mixin plugins
+
+**26.1-b3.2**
+
+Changed
+- `UnifiedHelpers.PLATFORM`
+- - added `isDevelopmentInstance()` method, which returns a boolean of whether the mod is in a development environment
+- fixed `UnifiedClientHelpers.ENTITY_RENDERERS.addLayerDefinition` crashing on Fabric due to an incorrect cast
+
 **26.1-b3.1**
 
 What's New
@@ -78,6 +91,11 @@ Removed
 *Continued from 21.11-b1.3*
 
 ### 1.21.11
+
+**21.11-b1.4**
+
+Changed
+- fixed `UnifiedClientHelpers.ENTITY_RENDERERS.addLayerDefinition` crashing on Fabric due to an incorrect cast
 
 **21.11-b1.3**
 

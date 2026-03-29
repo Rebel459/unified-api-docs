@@ -2,6 +2,12 @@
 
 [View Full Changelog](/about/changelog)
 
+### 26.1-b3.1 to 26.1-b4.0
+
+Changes
+- replaced `UnifiedHelpers.PLATFORM` with `UnifiedPlatform.get()`
+- - anywhere using `UnifiedHelpers.PLATFORM` will have to update to use `UnifiedPlatform.get()`
+
 ### 26.1-b2.0 to 26.1-b3.1
 
 Changes
