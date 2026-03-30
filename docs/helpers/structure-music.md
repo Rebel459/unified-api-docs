@@ -1,4 +1,4 @@
-# Creative Entries
+# Structure Music
 
 **Class: `UnifiedHelpers / StructureMusic`**
 
