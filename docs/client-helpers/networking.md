@@ -8,8 +8,7 @@ Used to send packets from the client to the server.
 
 There are a couple things to note with Unified API's networking payloads
 - all payloads registries / handlers are combined
-- all networking from this class should be registered in common, not client (don't worry, this is server-safe!)
-- payloads / serverplayers have to be manually cast on the objects in the handler due to the multiloader setup, see the below example for details
+- all networking should be registered in common, not client (don't worry, this is server-safe!)
 
 ### Methods
 ```
