@@ -2,6 +2,11 @@
 
 ### 26.1
 
+**26.1-b7.1**
+
+Changed
+- internal improvements to `UnifiedHelpers.STRUCTURE_MUSIC`
+
 **26.1-b7.0**
 
 Added
