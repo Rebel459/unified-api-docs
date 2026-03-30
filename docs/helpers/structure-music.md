@@ -7,8 +7,10 @@ Allows you to register unique music pools to individual structures, which take p
 ### Methods
 ```
 default void add(Identifier structure, Music music)
+default void add(ResourceKey<Structure> structure, Music music)
 
 default void add(Identifier structure, Music music, boolean fullBox)
+default void add(ResourceKey<Structure> structure, Music music, boolean fullBox)
 ```
 
 ### Example

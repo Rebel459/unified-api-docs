@@ -7,7 +7,7 @@ This event is extremely useful, as it allows you to dynamically modify the compo
 ### Methods
 
 ```
-UnifiedEvents.DefaultItemComponents.modify((item, builder) -> {
+UnifiedEvents.DefaultItemComponents.modify((item, builder, provider) -> {
     // your component modifications here
 });
 
@@ -15,7 +15,7 @@ UnifiedEvents.DefaultItemComponents.modifyFiltered(
         item -> {
             return true; // used to filter applicable items
         },
-        (builder, item) -> {
+        (item, builder, provider) -> {
             // your component modifications here
 });
 ```
@@ -24,7 +24,7 @@ UnifiedEvents.DefaultItemComponents.modifyFiltered(
 
 ```
 UnifiedEvents.DefaultItemComponents.modify(
-        (builder, item) -> {
+        (item, builder, provider) -> {
             if (item.getDefaultInstance().is(Items.TRIDENT)) {
                 builder.set(DataComponents.REPAIRABLE, new Repairable(holderGetter.getOrThrow(CRItemTags.TRIDENT_REPAIR_MATERIALS)));
                 // you can also use UnifiedHelpers.DATA_COMPONENTS.add(builder, DataComponents.REPAIRABLE, new Repairable(holderGetter.getOrThrow(CRItemTags.TRIDENT_REPAIR_MATERIALS))) if you'd like to avoid overwriting existing components

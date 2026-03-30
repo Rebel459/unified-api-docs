@@ -2,6 +2,18 @@
 
 [View Full Changelog](/about/changelog)
 
+### 26.1-b6.0 to 26.1-b7.0
+
+Changes
+- `UnifiedEvents.DefaultItemComponents`
+- - now provides a `TriConsumer` with a `HolderLookup.Provider`
+- - - this will require updating usages of DefaultItemComponent events to use a TriConsumer, rather than the previous BiConsumer
+
+Renames
+- `UnifiedClientEvents.Ticks`
+- - renamed `atStart` to `onStart`
+- - renamed `atEnd` to `onEnd`
+
 ### 26.1-b5.0 to 26.1-b6.0
 
 Changes

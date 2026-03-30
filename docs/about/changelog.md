@@ -2,6 +2,20 @@
 
 ### 26.1
 
+**26.1-b7.0**
+
+Added
+- `UnifiedHelpers.STRUCTURE_MUSIC`
+- - new `add` methods which allow providing `ResourceKey<Structure>`
+
+Changed
+- `UnifiedEvents.DefaultItemComponents`
+- - now provides a `TriConsumer` with a `HolderLookup.Provider`
+- `UnifiedClientEvents.Ticks`
+- - renamed `atStart` to `onStart`
+- - renamed `atEnd` to `onEnd`
+- fixed `UnifiedHelpers.STRUCTURE_MUSIC` crashing when used
+
 **26.1-b6.0**
 
 Added

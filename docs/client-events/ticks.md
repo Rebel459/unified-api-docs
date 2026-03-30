@@ -7,10 +7,10 @@ Runs when the client ticks. `atEnd` Can be useful for providing custom functiona
 ### Methods
 
 ```
-UnifiedEvents.Tick.atStart(minecraft -> {
+UnifiedEvents.Tick.onStart(minecraft -> {
     // your custom behaviour here
 });
-UnifiedEvents.Tick.atEnd(minecraft -> {
+UnifiedEvents.Tick.onEnd(minecraft -> {
     // your custom behaviour here
 });
 ```
