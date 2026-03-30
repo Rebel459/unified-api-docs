@@ -4,7 +4,7 @@
 
 Allows you to access and add to Gui (HUD) elements.
 
-The `renderHotbar` event is particularly useful over an equivalent mixin as Fabric and NeoForge have differing @Inject mixin targets (`renderHotbarAndDecorations` vs `renderHotbar`).
+The `renderHotbar` event is particularly useful over an equivalent mixin as Fabric and NeoForge have differing @Inject mixin targets (`extractHotbarAndDecorations` vs `extractHotbar`).
 
 `Gui` is exposed directly, in addition to all other parameters you'd get from mixining into the equivalent methods.
 
