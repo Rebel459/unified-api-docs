@@ -15,7 +15,7 @@ Once you have your workspace setup, you're going to want to depend on the Unifie
 In your `gradle.properties`, add the following:
 
 ```
-unified_version=21.11-r1.0 # change this to whatever version you're using
+unified_version=26.1-r1.0 # change this to whatever version you're using
 ```
 
 In your root `build.gradle`, add the following:
