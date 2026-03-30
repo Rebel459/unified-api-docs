@@ -66,7 +66,8 @@ export default defineConfig({
               { text: 'Creative Entries', link: '/helpers/creative-entries' },
               { text: 'Networking', link: '/helpers/networking' },
               { text: 'Block Conversions', link: '/helpers/block-conversions' },
-              { text: 'Data Components', link: '/helpers/data-components' }
+              { text: 'Data Components', link: '/helpers/data-components' },
+              { text: 'Structure Music', link: '/helpers/structure-music' }
             ]
           },
           {
@@ -126,9 +127,8 @@ export default defineConfig({
             text: 'Misc',
             collapsed: true,
             items: [
-              { text: 'Pack Info', link: '/misc/pack-info' },
-              { text: 'Platform Info', link: '/misc/platform-info' },
-              { text: 'Environment Info', link: '/misc/env-info' },
+              { text: 'Pack Type', link: '/misc/pack-type' },
+              { text: 'Loader Type', link: '/misc/loader-type' },
               { text: 'Creative Mode Tabs', link: '/misc/creative-mode-tabs' }
             ]
           }

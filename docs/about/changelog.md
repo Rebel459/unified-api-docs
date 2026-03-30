@@ -2,6 +2,35 @@
 
 ### 26.1
 
+**26.1-b6.0**
+
+Added
+- `UnifiedHelpers.STRUCTURE_MUSIC`
+- - new helper that allows registering custom structure music pools
+- `UnifiedEvents.LootTables`
+- - added `editPool`
+- - - allows replacing or adding individual entries within existing loot pools
+- `UnifiedEvents.Servers`
+- - added `onTickStart` and `onTickEnd`
+- - added `onLevelTickStart` and `onLevelTickEnd`
+- `UnifiedPlatform`
+- - added `isClientSide` and `isServerSide`
+
+Changed
+- `UnifiedEvents.LootTables`
+- - renamed `modifyWithFilter` to `modifyFiltered`
+- `UnifiedPlatform`
+- - renamed `getDevelopmentInstance` to `getDevelopmentEnvironment`
+- - renamed `getPlatform` to `getLoader`
+- renamed `PackInfo` to `PackType`
+- renamed `PlatformInfo` to `LoaderType`
+
+Removed
+- `UnifiedPlatform`
+- - removed `getEnvironment`
+- removed unused `WoodTypeBuilder`
+- removed unused `RenderStateDataKey`
+
 **26.1-b5.0**
 
 What's New

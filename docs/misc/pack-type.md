@@ -1,6 +1,6 @@
-# Pack Info
+# Pack Type
 
-**Class: `PackInfo`**
+**Class: `PackType`**
 
 A simple enum class used to represent pack information when adding [Packs](/helpers/packs).
 

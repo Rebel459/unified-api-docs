@@ -2,6 +2,19 @@
 
 [View Full Changelog](/about/changelog)
 
+### 26.1-b5.0 to 26.1-b6.0
+
+Changes
+- `UnifiedPlatform`
+- - replaced `getEnvironment` with `isClientSide` and `isServerSide`
+
+Renames
+- `UnifiedEvents.LootTables`
+- - renamed `modifyWithFilter` to `modifyFiltered`
+- `UnifiedPlatform`
+- - renamed `getDevelopmentInstance` to `getDevelopmentEnvironment`
+- - renamed `getPlatform` to `getLoader`
+
 ### 26.1-b4.0 to 26.1-b5.0
 
 Changes
