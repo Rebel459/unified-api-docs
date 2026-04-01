@@ -2,6 +2,20 @@
 
 ### 26.1
 
+**26.1-b7.2**
+
+Added
+- `UnifiedEvents.Items`
+- - includes `beforeUse`, `afterUse` and `onUseOn`
+- `UnifiedEvents.Blocks`
+- - includes `beforePlace`, `afterPlace` and `onUseOn`
+- `UnifiedEvents.Entities`
+- - includes `onDeath`, `onEquipmentChange`, `onLoad` and `onUnload`
+
+Changed
+- `UnifiedEvents.Players` now directly provides a `ServerPlayer`, rather than `Player`
+- fixed the `replaceCurrentMusic` boolean in the `Music` provided to `UnifiedHelpers.STRUCTURE_MUSIC` being ignored
+
 **26.1-b7.1**
 
 Changed

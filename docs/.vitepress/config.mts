@@ -95,7 +95,10 @@ export default defineConfig({
               { text: 'Default Item Components', link: '/events/default-item-components' },
               { text: 'Commands', link: '/events/commands' },
               { text: 'Players', link: '/events/players' },
-              { text: 'Servers', link: '/events/servers' }
+              { text: 'Entities', link: '/events/entities' },
+              { text: 'Servers', link: '/events/servers' },
+              { text: 'Items', link: '/events/items' },
+              { text: 'Blocks', link: '/events/blocks' }
             ]
           },
           {
