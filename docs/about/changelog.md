@@ -27,6 +27,8 @@ Changed
 - `UnifiedEvents.LootTables`
 - - now accepts a LootTable, ResourceKey and HolderLookup.Provider directly
 - - - `LootTable` context now only provides `addPool` and `editPool` as part of this change
+- `UnifiedEvents.Entities`
+- - `onEquipmentChange` now provides a `QuadConsumer<LivingEntity, EquipmentSlot, ItemStack, ItemStack>`, rather than a `Consumer<EquipmentContext>`
 
 Fixed
 - stopped composters crashing on Fabric
