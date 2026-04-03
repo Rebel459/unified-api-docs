@@ -96,7 +96,7 @@ export default defineConfig({
               { text: 'Commands', link: '/events/commands' },
               { text: 'Players', link: '/events/players' },
               { text: 'Entities', link: '/events/entities' },
-              { text: 'Servers', link: '/events/servers' },
+              { text: 'Server', link: '/events/server' },
               { text: 'Items', link: '/events/items' },
               { text: 'Blocks', link: '/events/blocks' }
             ]
@@ -106,7 +106,8 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: 'Unified Client Events', link: '/unified-client-events' },
-              { text: 'Ticks', link: '/client-events/ticks' },
+              { text: 'Instance', link: '/client-events/instance' },
+              { text: 'Item Tooltips', link: '/client-events/item-tooltips' },
               { text: 'Guis', link: '/client-events/guis' },
               { text: 'Screens', link: '/client-events/screens' }
             ]
@@ -132,6 +133,7 @@ export default defineConfig({
             items: [
               { text: 'Pack Type', link: '/misc/pack-type' },
               { text: 'Loader Type', link: '/misc/loader-type' },
+              { text: 'Event Type', link: '/misc/event-type' },
               { text: 'Creative Mode Tabs', link: '/misc/creative-mode-tabs' }
             ]
           }

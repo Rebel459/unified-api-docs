@@ -7,10 +7,7 @@ Various item events.
 ### Methods
 
 ```
-UnifiedEvents.Items.beforeUse(level, player, hand -> {
-    // your custom behaviour here
-});
-UnifiedEvents.Items.afterUse(level, player, hand -> {
+UnifiedEvents.Items.onUse(EventType.PRE/POST, level, player, hand -> {
     // your custom behaviour here
 });
 UnifiedEvents.Items.onUseOn(context -> {

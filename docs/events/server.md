@@ -1,6 +1,6 @@
-# Servers
+# Server
 
-**Class: `UnifiedEvents.Servers`**
+**Class: `UnifiedEvents.Server`**
 
 Various server-related events.
 
@@ -16,16 +16,10 @@ UnifiedEvents.Servers.onStart(minecraftServer -> {
 UnifiedEvents.Servers.onStop(minecraftServer -> {
     // your custom behaviour here
 });
-UnifiedEvents.Servers.onTickStart(minecraftServer -> {
+UnifiedEvents.Servers.onTick(EventType.PRE/POST, minecraftServer -> {
     // your custom behaviour here
 });
-UnifiedEvents.Servers.onTickEnd(minecraftServer -> {
-    // your custom behaviour here
-});
-UnifiedEvents.Servers.onLevelTickStart(serverLevel -> {
-    // your custom behaviour here
-});
-UnifiedEvents.Servers.onLevelTickEnd(serverLevel -> {
+UnifiedEvents.Servers.onLevelTick(EventType.PRE/POST, serverLevel -> {
     // your custom behaviour here
 });
 ```

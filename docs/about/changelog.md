@@ -2,6 +2,35 @@
 
 ### 26.1
 
+**26.1-b8.0**
+
+Added
+- `UnifiedClientEvents.ItemTooltips`
+- - used to add tooltips to an ItemStack
+- - includes `addDetails`, `addAttributes` and `insertLines` methods
+- `UnifiedClientEvents.Instance`
+- - added `onRespawn` method
+- `EventType`
+- - new enum used to determine whether certain events should run at the start or end of an event
+- - - uses `EventType.PRE` and `EventType.POST` to accomplish this
+
+Changed
+- renamed `UnifiedClientEvents.Ticks` to `UnifiedClientEvents.Instance`
+- - replaced `onStart` and `onEnd` with `onTick`, which accepts `EventType`
+- `UnifiedEvents.Blocks`
+- - replaced `beforePlace` and `afterPlace` with `onPlace`, which accepts `EventType`
+- `UnifiedEvents.Items`
+- - replaced `beforeUse` and `afterUse` with `onUse`, which accepts `EventType`
+- renamed `UnifiedEvents.Servers` to `UnifiedEvents.Server`
+- - replaced `onTickStart` and `onTickEnd` with `onTick`, which accepts `EventType`
+- - replaced `onLevelTickStart` and `onLevelTickEnd` with `onLevelTick`, which accepts `EventType`
+- `UnifiedEvents.LootTables`
+- - now accepts a LootTable, ResourceKey and HolderLookup.Provider directly
+- - - `LootTable` context now only provides `addPool` and `editPool` as part of this change
+
+Fixed
+- stopped composters crashing on Fabric
+
 **26.1-b7.2**
 
 Added

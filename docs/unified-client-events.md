@@ -7,7 +7,7 @@ Unified Client Events work similarly to common [Unified Events](/unified-events)
 The general syntax for Unified API client events is pretty simple:
 
 ```
-UnifiedClientEvents.Ticks.atStart(minecraft -> {
+UnifiedClientEvents.Instance.onTick(EventType.POST, minecraft -> {
     // your custom behaviour here
 });
 ```

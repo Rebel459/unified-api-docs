@@ -4,7 +4,7 @@
 
 Allows you to register custom keybinds and keybind categories.
 
-In order to give your keybinds actual functionality, you should look at client-side events such as the `atEnd` method in the [Ticks](/client-events/ticks) event.
+In order to give your keybinds actual functionality, you should look at client-side events such as the `onTick` method in the [Instance](/client-events/instance) event.
 
 ### Methods
 

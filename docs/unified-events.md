@@ -11,3 +11,7 @@ UnifiedEvents.Players.onJoin(player -> {
     // your custom behaviour here
 });
 ```
+
+::: info
+Some events will require you to specify an [Event Type](/misc/event-type) before providing the event code.
+:::

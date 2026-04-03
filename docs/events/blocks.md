@@ -7,10 +7,7 @@ Various block item events.
 ### Methods
 
 ```
-UnifiedEvents.Blocks.beforePlace(context -> {
-    // your custom behaviour here
-});
-UnifiedEvents.Blocks.afterPlace(context -> {
+UnifiedEvents.Blocks.onPlace(EventType.PRE/POST, context -> {
     // your custom behaviour here
 });
 UnifiedEvents.Blocks.onUseOn(context -> {
