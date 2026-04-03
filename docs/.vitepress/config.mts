@@ -78,7 +78,8 @@ export default defineConfig({
               { text: 'Networking', link: '/client-helpers/networking' },
               { text: 'Particle Providers', link: '/client-helpers/particle-providers' },
               { text: 'Entity Renderers', link: '/client-helpers/entity-renderers' },
-              { text: 'Tooltips', link: '/client-helpers/tooltips' }
+              { text: 'Tooltips', link: '/client-helpers/tooltips' },
+              { text: 'Legacy Baby Armor', link: '/client-helpers/legacy-baby-armor' }
             ]
           }
         ]
@@ -92,7 +93,7 @@ export default defineConfig({
             items: [
               { text: 'Unified Events', link: '/unified-events' },
               { text: 'Loot Tables', link: '/events/loot-tables' },
-              { text: 'Default Item Components', link: '/events/default-item-components' },
+              { text: 'Default Data Components', link: '/events/default-data-components' },
               { text: 'Commands', link: '/events/commands' },
               { text: 'Players', link: '/events/players' },
               { text: 'Entities', link: '/events/entities' },

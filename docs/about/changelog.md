@@ -2,6 +2,15 @@
 
 ### 26.1
 
+**26.1-b8.1**
+
+Added
+- `UnifiedClientHelpers.LEGACY_BABY_ARMOR`
+- - includes an `add` method to allow a given EquipmentAsset resource key to fallback to old 1.21.11 baby armor rendering
+
+Changed
+- renamed `UnifiedEvents.DefaultItemComponents` to `UnifiedEvents.DefaultDataComponents`
+
 **26.1-b8.0**
 
 Added

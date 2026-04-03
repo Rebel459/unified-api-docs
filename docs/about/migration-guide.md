@@ -35,9 +35,11 @@ Helpers
 - - renamed `registerConfigC2S` to `registerConfigToServer`
 - - renamed `registerConfigS2C` to `registerConfigToClient`
 - removed `UnifiedClientHelpers.BLOCK_LAYERS`, as 26.1 vanilla handles this behavior automatically now
+- added `UnifiedClientHelpers.LEGACY_BABY_ARMOR`
+- - the `add` method can be used to add EquipmentAsset resource keys to a list which reverts to pre-26.1 baby armor rendering, providing a fallback for armor sets lacking dedicated baby textures
 
 Events
-- renamed `UnifiedEvents.ItemComponents` to `UnifiedEvents.DefaultItemComponents`
+- renamed `UnifiedEvents.ItemComponents` to `UnifiedEvents.DefaultDataComponents`
 - - `modify` no longer provides an Item predicate
 - - - if you'd like to continue using the predicate, instead use `modifyFiltered`
 - - both methods provide a `TriConsumer` with a `HolderLookup.Provider`

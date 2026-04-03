@@ -1,17 +1,17 @@
-# Default Item Components
+# Default Data Components
 
-**Class: `UnifiedEvents.DefaultItemComponents`**
+**Class: `UnifiedEvents.DefaultDataComponents`**
 
 This event is extremely useful, as it allows you to dynamically modify the components on any given item.
 
 ### Methods
 
 ```
-UnifiedEvents.DefaultItemComponents.modify((item, builder, provider) -> {
+UnifiedEvents.DefaultDataComponents.modify((item, builder, provider) -> {
     // your component modifications here
 });
 
-UnifiedEvents.DefaultItemComponents.modifyFiltered(
+UnifiedEvents.DefaultDataComponents.modifyFiltered(
         item -> {
             return true; // used to filter applicable items
         },
@@ -23,7 +23,7 @@ UnifiedEvents.DefaultItemComponents.modifyFiltered(
 ### Example
 
 ```
-UnifiedEvents.DefaultItemComponents.modify(
+UnifiedEvents.DefaultDataComponents.modify(
         (item, builder, provider) -> {
             if (item.getDefaultInstance().is(Items.TRIDENT)) {
                 builder.set(DataComponents.REPAIRABLE, new Repairable(holderGetter.getOrThrow(CRItemTags.TRIDENT_REPAIR_MATERIALS)));
