@@ -2,6 +2,13 @@
 
 ### 26.1
 
+**26.1-b8.2**
+
+Added
+- `UnifiedClientHelpers.LEGACY_BABY_ARMOR`
+- - added two new `add` methods which can accept a boolean and integer
+- - - this allows for automatic pixel density resizing, so that adult textures can be rescaled to have a similar visible pixel density to baby mobs and vanilla baby armor
+
 **26.1-b8.1**
 
 Added
