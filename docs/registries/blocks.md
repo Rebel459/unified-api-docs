@@ -9,7 +9,7 @@ Unified API also adds an extra block registry method to allow you bind your cust
 :::
 
 ::: info
-If you're looking to create strippable blocks, compostable blocks, or furnace fuel blocks, Unified API contains a multiloader [Data Components](/helpers/data-components) helper to do just that
+If you're looking to create compostable blocks, or furnace fuel blocks, Unified API contains a multiloader [Data Components](/helpers/data-components) helper to do just that - and there's also [Block Conversions](/helpers/block-conversions) for custom behavior like log stripping
 :::
 
 ### Methods

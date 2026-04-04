@@ -9,7 +9,7 @@ Additionally, you can also edit individual pools within a loot table, by filteri
 ### Methods
 
 ```
-UnifiedEvents.LootTables.modify(lootTable -> {
+UnifiedEvents.LootTables.modify((table, key, provider) -> {
             // your loot table additions here
         }
 );
@@ -26,15 +26,15 @@ UnifiedEvents.LootTables.modifyFiltered(lootTableKey -> {
 ### Example
 
 ```
-UnifiedEvents.LootTables.modify(lootTable -> {
-            if (lootTable.getKey() == BuiltInLootTables.SIMPLE_DUNGEON) {
+UnifiedEvents.LootTables.modify((table, key, provider) -> {
+            if (key == BuiltInLootTables.SIMPLE_DUNGEON) {
                 LootPool.Builder pool = LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
                         .add(EmptyLootItem.emptyItem().setWeight(11))
                         .add(LootItem.lootTableItem(Items.DIAMOND).setWeight(1));
-                lootTable.addPool(pool); // adds a new loot pool to the table
+                table.addPool(pool); // adds a new loot pool to the table
             }
-            if (lootTable.getKey() == BuiltInLootTables.ABANDONED_MINESHAFT) {
-                lootTable.editPool(item -> item.value() == Items.IRON_INGOT, LootItem.lootTableItem(Items.NETHERITE_INGOT).setWeight(15), true); // edits existing loot pools within the table
+            if (key == BuiltInLootTables.ABANDONED_MINESHAFT) {
+                table.editPool(item -> item.value() == Items.IRON_INGOT, LootItem.lootTableItem(Items.NETHERITE_INGOT).setWeight(15), true); // edits existing loot pools within the table
             }
         }
 );

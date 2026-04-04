@@ -2,6 +2,25 @@
 
 ### 26.1
 
+**26.1-r1.0**
+
+Added
+- `UnifiedRegistries.DeferredRegistry`
+- - allows you to register content to *any* registry through `create(modId, registry)`
+- - includes `register`, `registerHolder` and `addAlias` methods
+- `UnifiedRegistries.SoundEvents`
+- - added new `register` and `registerHolder` methods which accept a float value for a fixed range
+
+Fixed
+- stopped neoforge biome modifications duplicating on reload
+
+Removed
+- removed the following due to them being made redundant by `UnifiedRegistries.DeferredRegistry`:
+- - `UnifiedRegistries.MobEffects`
+- - `UnifiedRegistries.ParticleTypes`
+- - `UnifiedRegistries.EnchantmentCodecs`
+- - `UnifiedRegistries.MapDecorationTypes`
+
 **26.1-b8.2**
 
 Added

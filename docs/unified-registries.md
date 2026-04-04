@@ -37,16 +37,26 @@ public class ModNameNeoForge {
 - then, our mod's registries are initialised to the deferred registries
 - finally, we add a listener for our common setup, which runs the rest of our mod's code once the registries have been created and are thus accessible by the rest of our mod
 
+::: info
+If you've created a unique registry type in your project not present in vanilla, you must pass that through manually to `NeoForgeUnifiedRegistries`, such as by doing `registerBus(ModName.MOD_ID, modEventBus, YourModRegistries.REGISTRY_NAME, YourModRegistries.OTHER_REGISTRY_NAME)`
+:::
+
 For Fabric setup, you can just initialise your mod as normal - there is no staged mod loading system. We use Suppliers for our registries simply to remain compatible with NeoForge.
 
-### Supplied Registries and Usage Example
+### Deferred Registries and Usage Example
 
 In order to register content, you will use `UnifiedRegistries` in order to register your content in a way that is compatible with both mod loaders, without requiring extra effort on your part. As such, we will not use vanilla (fabric) or neoforge registries, and instead create our own.
+```
+public static UnifiedRegistries.DeferredRegistry REGISTRY = UnifiedRegistries.DeferredRegistry.create(ModName.MOD_ID, BuiltInRegistries.REGISTRY_NAME);
+```
+
+As you can see, it's very easy to set up a [Deferred Registry](/registries/deferred-registry), and you can use any vanilla or modded registry you like. However, Unified API also provides many dedicated registries for specific registry types which contain their own specific methods to make mod development more convenient, such as the one below.
+
 ```
 public static UnifiedRegistries.Items ITEMS = UnifiedRegistries.Items.create(ModName.MOD_ID);
 ```
 
-Once we add the above, we can simply register our content normally. If you're coming from NeoForge, you're familiar with using Suppliers, however Fabric-familiar developers should be aware that all registries use a `Supplier<>` in order to remain compatible with NeoForge's staged system, which in practice means that you'll need to use `.get()` when wanting to safely access your content.
+Once we create our mod-specific registry, we can simply register our content normally. If you're coming from NeoForge, you're familiar with using Suppliers, however Fabric-familiar developers should be aware that all registries use a `Supplier<>` in order to remain compatible with NeoForge's staged system, which in practice means that you'll need to use `.get()` when wanting to safely access your content.
 
 Whilst most content will use a regular `Supplier<Object>`, Items and Blocks have the option of using [SuppliedItem](/utilities/supplied-item) and [SuppliedBlock](/utilities/supplied-block) respectively, which are very convenient to use and often do not require the use of `.get()` as they each implement `Holder`, `Supplier`, `ItemLike` and an additional custom interface.
 
@@ -62,5 +72,5 @@ public static final SuppliedItem EXAMPLE_ITEM = ITEMS.register("example_item",
 As you can see, the syntax is nearly identical to vanilla / fabric registries, except we wrap our registerd `Item` with `Supplier`, and (with items specifically) also use `() ->` to wrap our `Item.Properties` with `Supplier` to ensure we can safely access any custom components we've created. That's it - no extra work for any registries, so it's easy to get started, or even convert an existing single-loader project with a simple find-replace.
 
 ::: info
-Most Unified registries also contain the `void addAlias(Identifier convertedFrom, Identifier convertedTo);` method, in order to easily create registry aliases.
+Most of Unified API's registries also contain the `void addAlias(Identifier convertedFrom, Identifier convertedTo);` method, in order to easily create registry aliases.
 :::

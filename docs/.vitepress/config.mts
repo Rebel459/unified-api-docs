@@ -29,17 +29,14 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: 'Unified Registries', link: '/unified-registries' },
+              { text: 'Deferred Registry', link: '/registries/deferred-registry' },
               { text: 'Items', link: '/registries/items' },
               { text: 'Blocks', link: '/registries/blocks' },
               { text: 'Entity Types', link: '/registries/entity-types' },
               { text: 'Block Entity Types', link: '/registries/block-entity-types' },
               { text: 'Creative Tabs', link: '/registries/creative-tabs' },
-              { text: 'Mob Effects', link: '/registries/mob-effects' },
               { text: 'Data Component Types', link: '/registries/data-component-types' },
-              { text: 'Particle Types', link: '/registries/particle-types' },
-              { text: 'Sound Events', link: '/registries/sound-events' },
-              { text: 'Enchantment Codecs', link: '/registries/enchantment-codecs' },
-              { text: 'Map Decoration Types', link: '/registries/map-decoration-types' }
+              { text: 'Sound Events', link: '/registries/sound-events' }
             ]
           },
           {

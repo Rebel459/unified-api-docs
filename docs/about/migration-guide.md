@@ -7,10 +7,16 @@ This migration guide only covers breaking changes to existing code made to the U
 ### 1.21.11 to 26.1
 
 Registries
+- `UnifiedRegistries.DeferredRegistry`
+- - allows you to register content to any vanilla or modded registry
 - `UnifiedRegistries.Items`
 - - whilst optional, you should use `SuppliedItem` rather than `Supplier<Item>`
 - `UnifiedRegistries.Blocks`
 - - whilst optional, you should use `SuppliedBlock` rather than `Supplier<Block>`
+- removed `UnifiedRegistries.MobEffects`
+- - this was made redundant by `UnifiedRegistries.DeferredRegistry`
+- removed `UnifiedRegistries.ParticleTypes`
+- - this was made redundant by `UnifiedRegistries.DeferredRegistry`
 
 Helpers
 - replaced `UnifiedHelpers.PLATFORM` with `UnifiedPlatform.get()`
