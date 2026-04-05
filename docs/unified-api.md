@@ -9,19 +9,16 @@ Unified API is a simple, general purpose API to aid in multiloader development. 
 - useful utilities such as new [components](/utilities/unified-data-components) or [tags](/utilities/unified-item-tags)
 - custom supplier interfaces for [items](/utilities/supplied-item) and [blocks](/utilities/supplied-block)
 
-::: warning
-Unified API is currently in beta. Whilst there's a ton of content in the API already, bugs may arise, and features may change as development progresses. You can report issues [here](http://github.com/rebel459/unified-api/issues).
-:::
-
 ### Setup
 
 The [Getting Started](/about/getting-started) page will guide you through creating a multiloader project with Unified API.
 
 ### Versions
 
-Unified API fully supports both Fabric & NeoForge.
+Unified API is designed for both Fabric & NeoForge.
 
 The following Minecraft versions are currently supported:
+- 26.1.1
 - 26.1
 - 1.21.11
 

@@ -2,9 +2,13 @@
 
 ### 26.1
 
-**26.1-r1.0.1**
+**26.1-r1.1**
 
-- fixed `UnifiedEvents.LootTables` `editPool` replacement not working on Fabric
+Changed
+- `UnifiedEvents.LootTables` `editPool` provides a `SuppliedItem` predicate, rather than `Supplier<Item>`
+
+Fixed
+- `UnifiedEvents.LootTables` `editPool` replacements now correctly work on Fabric
 
 **26.1-r1.0**
 
