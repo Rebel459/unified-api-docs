@@ -2,6 +2,10 @@
 
 ### 26.1
 
+**26.1-r1.2.1**
+
+- fixed `SuppliedBlock` not correctly attatching Items when using certain `UnifiedRegistries.Blocks` methods
+
 **26.1-r1.2**
 
 Changed
