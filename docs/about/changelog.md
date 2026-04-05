@@ -2,6 +2,14 @@
 
 ### 26.1
 
+**26.1-r1.2**
+
+Changed
+- `UnifiedEvents.LootTables` `editPool` provides a direct `Item` predicate, rather than `SuppliedItem`
+
+Fixed
+- fixed `SuppliedItem` and `SuppliedBlock` `is(Holder<Item> holder)` method
+
 **26.1-r1.1**
 
 Changed

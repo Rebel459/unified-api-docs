@@ -23,7 +23,7 @@ UnifiedEvents.LootTables.modifyFiltered(lootTableKey -> {
 );
 ```
 
-### Example
+### Examples
 
 ```
 UnifiedEvents.LootTables.modify((table, key, provider) -> {
@@ -34,7 +34,7 @@ UnifiedEvents.LootTables.modify((table, key, provider) -> {
                 table.addPool(pool); // adds a new loot pool to the table
             }
             if (key == BuiltInLootTables.ABANDONED_MINESHAFT) {
-                table.editPool(item -> item.get() == Items.IRON_INGOT, LootItem.lootTableItem(Items.NETHERITE_INGOT).setWeight(15), true); // edits existing loot pools within the table
+                table.editPool(item -> item == Items.IRON_INGOT, LootItem.lootTableItem(Items.NETHERITE_INGOT).setWeight(15), true); // edits existing loot pools within the table
             }
         }
 );
