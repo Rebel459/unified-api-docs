@@ -2,6 +2,10 @@
 
 ### 26.1
 
+**26.1-r1.0.1**
+
+- fixed `UnifiedEvents.LootTables` `editPool` replacement not working on Fabric
+
 **26.1-r1.0**
 
 Added
@@ -12,7 +16,7 @@ Added
 - - added new `register` and `registerHolder` methods which accept a float value for a fixed range
 
 Fixed
-- stopped neoforge biome modifications duplicating on reload
+- stopped NeoForge biome modifications duplicating on reload
 
 Removed
 - removed the following due to them being made redundant by `UnifiedRegistries.DeferredRegistry`:
