@@ -2,6 +2,10 @@
 
 ### 26.1
 
+**26.1-r1.2.2**
+
+- fixed `UnifiedClientHelpers.ENTITY_RENDERERS` rendering methods not working on NeoForge by requiring Entities / Block Entities to be wrapped with a Supplier
+
 **26.1-r1.2.1**
 
 - fixed `SuppliedBlock` not correctly attatching Items when using certain `UnifiedRegistries.Blocks` methods
