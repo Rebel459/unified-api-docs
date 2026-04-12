@@ -6,12 +6,15 @@ Allows for simple appending of item components to any ItemLike (Block or Item).
 
 Includes additional methods for `UnifiedDataComponents.FURNACE_FUEL` and `UnifiedDataComponents.COMPOST`.
 
-Can also be used with a `DataComponentMap.Builder` provided by `UnifiedEvents.ItemComponents` in order to add components without overwriting existing ones.
+::: info
+UnifiedHelpers.DATA_COMPONENTS is also great for adding / changing item components on individual blocks, without having to separately register the block's item.
+:::
 
 ### Methods
 ```
-default <T> void add(DataComponentMap.Builder builder, DataComponentType<T> type, T value)
 default <T> void add(ItemLike itemLike, DataComponentType<T> type, T value)
+default <T> void addWithProvider(ItemLike itemLike, DataComponentType<T> type, DataComponentInitializers.SingleComponentInitializer<T> initializer)
+default <T> void addWithKey(ItemLike itemLike, DataComponentType<Holder<T>> type, ResourceKey<T> valueKey)
 
 default void addFurnaceFuel(ItemLike itemLike, int ticks)
 default void addCompost(ItemLike itemLike, float chance)
@@ -21,4 +24,5 @@ default void addCompost(ItemLike itemLike, float chance)
 
 ```
 UnifiedHelpers.DATA_COMPONENTS.addFurnaceFuel(ExampleMod.EXAMPLE_PLANKS, 150)
+UnifiedHelpers.DATA_COMPONENTS.addWithProvider(ExampleMod.EXAMPLE_FIREPROOF_BLOCK, DataComponents.DAMAGE_RESISTANT, (provider) -> new DamageResistant(provider.getOrThrow(DamageTypeTags.IS_FIRE)))
 ```

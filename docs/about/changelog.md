@@ -2,6 +2,34 @@
 
 ### 26.1
 
+**26.1-r1.3**
+
+Added
+- `UnifiedHelpers.DATA_COMPONENTS`
+- - `addWithProvider` method
+- - `addWithKey` method
+- `UnifiedEvents.Players`
+- - `onTick` event
+- `UnifiedEvents.Entities`
+- - `onTick` event
+- - `onLivingTick` event
+
+Changed
+- `UnifiedRegistries.Blocks`
+- - deprecated hybrid block + item `register` methods
+- - - you should either separately register custom block items, or use Unified's data components helper, instead of using these
+- `UnifiedEvents.DefaultDataComponents`
+- - deprecated `modifyFiltered` in favour of `modifyWithFilter`
+- `UnifiedEvents.LootTables`
+- - deprecated `modifyFiltered` in favour of `modifyWithFilter`
+
+Fixed
+- `UnifiedHelpers.BLOCK_CONVERSIONS` is no longer ignored
+
+Removed
+- `UnifiedHelpers.DATA_COMPONENTS`
+- - removed `add(DataComponentMap.Builder builder, DataComponentType<T> type, T value)`
+
 **26.1-r1.2.2**
 
 - fixed `UnifiedClientHelpers.ENTITY_RENDERERS` rendering methods not working on NeoForge by requiring Entities / Block Entities to be wrapped with a Supplier

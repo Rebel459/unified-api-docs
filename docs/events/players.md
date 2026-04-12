@@ -16,4 +16,7 @@ UnifiedEvents.Player.onLeave(player -> {
 UnifiedEvents.Player.onRespawn((oldPlayer, newPlayer) -> {
     // your custom behaviour here
 });
+UnifiedEvents.Player.onTick(EventType.PRE/POST, (player) -> {
+    // your custom behaviour here
+});
 ```

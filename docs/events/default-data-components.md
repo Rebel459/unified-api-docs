@@ -11,7 +11,7 @@ UnifiedEvents.DefaultDataComponents.modify((item, builder, provider) -> {
     // your component modifications here
 });
 
-UnifiedEvents.DefaultDataComponents.modifyFiltered(
+UnifiedEvents.DefaultDataComponents.modifyWithFilter(
         item -> {
             return true; // used to filter applicable items
         },

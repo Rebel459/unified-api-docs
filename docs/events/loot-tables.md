@@ -14,7 +14,7 @@ UnifiedEvents.LootTables.modify((table, key, provider) -> {
         }
 );
 
-UnifiedEvents.LootTables.modifyFiltered(lootTableKey -> {
+UnifiedEvents.LootTables.modifyWithFilter(lootTableKey -> {
             return true;
         },
         lootTable -> {

@@ -21,13 +21,6 @@ If you're looking to create compostable blocks, or furnace fuel blocks, Unified 
 <T extends Block> SuppliedBlock registerWithoutItem(String path, Function<BlockBehaviour.Properties, T> function, Supplier<BlockBehaviour.Properties> properties);
 <T extends Block, Y extends BlockEntity> SuppliedBlock registerWithoutItem(String path, Function<BlockBehaviour.Properties, T> function, Supplier<BlockBehaviour.Properties> properties, BlockEntityType<Y> type);
 
-<T extends Block> SuppliedBlock register(String path, Function<BlockBehaviour.Properties, T> blockFunction, Supplier<BlockBehaviour.Properties> blockProperties, Supplier<Item.Properties> itemProperties);
-<T extends Block> SuppliedBlock register(String path, Function<BlockBehaviour.Properties, T> blockFunction, Supplier<BlockBehaviour.Properties> blockProperties, Function<Item.Properties, Item> itemFunction);
-<T extends Block> SuppliedBlock register(String path, Function<BlockBehaviour.Properties, T> blockFunction, Supplier<BlockBehaviour.Properties> blockProperties, Function<Item.Properties, Item> itemFunction, Supplier<Item.Properties> itemProperties);
-<T extends Block, Y extends BlockEntity> SuppliedBlock register(String path, Function<BlockBehaviour.Properties, T> blockFunction, Supplier<BlockBehaviour.Properties> blockProperties, Supplier<Item.Properties> itemProperties, BlockEntityType<Y> type);
-<T extends Block, Y extends BlockEntity> SuppliedBlock register(String path, Function<BlockBehaviour.Properties, T> blockFunction, Supplier<BlockBehaviour.Properties> blockProperties, Function<Item.Properties, Item> itemFunction, BlockEntityType<Y> type);
-<T extends Block, Y extends BlockEntity> SuppliedBlock register(String path, Function<BlockBehaviour.Properties, T> blockFunction, Supplier<BlockBehaviour.Properties> blockProperties, Function<Item.Properties, Item> itemFunction, Supplier<Item.Properties> itemProperties, BlockEntityType<Y> type);
-
 void addAlias(Identifier convertedFrom, Identifier convertedTo);
 ```
 
@@ -41,20 +34,5 @@ public static final SuppliedBlock EXAMPLE_BLOCK = BLOCKS.register("example_block
         () -> BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
                 .strength(1.8F, 8F),
         BlockEntityType.BED // (optional) this binds our block to a given block entity
-);
-```
-
-::: info
-If you're trying to make blocks with more advanced block items (such as registering a DoorBlock with a DoorItem), you can used the more advanced `register` methods which allow specifying custom item classes & properties
-:::
-
-```
-public static UnifiedRegistries.Blocks BLOCKS = UnifiedRegistries.Blocks.create(ModName.MOD_ID);
-
-public static final SuppliedBlock EXAMPLE_DOOR_BLOCK = BLOCKS.register("example_door_block",
-        DoorBlock::new,
-        () -> BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR)
-        DoorItem::new,
-        () -> new Item.Properties()
 );
 ```

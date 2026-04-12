@@ -19,4 +19,10 @@ UnifiedEvents.Entities.onLoad(entity, level -> {
 UnifiedEvents.Entities.onUnload(entity, level -> {
     // your custom behaviour here
 });
+UnifiedEvents.Entities.onTick(EventType.PRE/POST, (entity) -> {
+    // your custom behaviour here
+});
+UnifiedEvents.Entities.onLivingTick(EventType.PRE/POST, (livingEntity) -> {
+    // your custom behaviour here
+});
 ```
