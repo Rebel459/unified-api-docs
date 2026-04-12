@@ -2,11 +2,6 @@
 
 ### 26.1
 
-**26.1-r2.1**
-
-Fixed
-- `SuppliedItem` and `SuppliedBlock` now implement predicates, allowing 26.1's `is` predicates to work without having to use something like `.get()`
-
 **26.1-r2.0**
 
 Added
