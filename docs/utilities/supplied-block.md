@@ -8,6 +8,10 @@ Used when registering blocks, `SuppliedBlock` allows you to easily access any me
 
 Also includes `SuppliedBlockInterface`, which provides `ItemStackTemplate getTemplate()` and `BlockState defaultBlockState`.
 
+::: warning
+Make sure to use `.get()` or similar when using a vanilla `.is()` check, in order to ensure matching can succeed.
+:::
+
 ### Full Interface Implementation
 
 ```
@@ -48,7 +52,7 @@ public boolean is(TagKey<Block> tagKey) {
 
 @Override
 public boolean is(Holder<Block> holder) {
-    return holder.is(holder);
+    return this.holder == holder;
 }
 
 @Override
@@ -83,7 +87,7 @@ public boolean canSerializeIn(HolderOwner<Block> holderOwner) {
 
 @Override
 public Item asItem() {
-    return holder.value().asItem();
+    return item != null ? item.get() : holder.value().asItem();
 }
 
 @Override
@@ -93,7 +97,7 @@ public BlockState defaultBlockState() {
 
 @Override
 public ItemStackTemplate getTemplate() {
-    return new ItemStackTemplate(holder.value().asItem());
+    return new ItemStackTemplate(asItem());
 }
 
 @Override

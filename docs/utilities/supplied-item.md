@@ -8,6 +8,10 @@ Used when registering items, `SuppliedItem` allows you to easily access any meth
 
 Also includes `SuppliedItemInterface`, which provides `ItemStackTemplate getTemplate()` and `ItemStack getDefaultInstance`.
 
+::: warning
+Make sure to use `.get()` or similar when using a vanilla `.is()` check, in order to ensure matching can succeed.
+:::
+
 ### Full Interface Implementation
 
 ```
@@ -48,7 +52,7 @@ public boolean is(TagKey<Item> tagKey) {
 
 @Override
 public boolean is(Holder<Item> holder) {
-    return holder.is(holder);
+    return this.holder == holder;
 }
 
 @Override
