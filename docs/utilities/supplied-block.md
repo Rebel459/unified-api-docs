@@ -48,7 +48,7 @@ public boolean is(TagKey<Block> tagKey) {
 
 @Override
 public boolean is(Holder<Block> holder) {
-    return holder.is(holder);
+    return this.holder == holder;
 }
 
 @Override
@@ -83,7 +83,7 @@ public boolean canSerializeIn(HolderOwner<Block> holderOwner) {
 
 @Override
 public Item asItem() {
-    return holder.value().asItem();
+    return item != null ? item.get() : holder.value().asItem();
 }
 
 @Override
@@ -93,11 +93,16 @@ public BlockState defaultBlockState() {
 
 @Override
 public ItemStackTemplate getTemplate() {
-    return new ItemStackTemplate(holder.value().asItem());
+    return new ItemStackTemplate(asItem());
 }
 
 @Override
 public Block get() {
     return holder.value();
+}
+
+@Override
+public boolean test(Holder<Block> holder) {
+    return this.holder.is(holder);
 }
 ```

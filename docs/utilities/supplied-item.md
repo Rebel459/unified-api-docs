@@ -48,7 +48,7 @@ public boolean is(TagKey<Item> tagKey) {
 
 @Override
 public boolean is(Holder<Item> holder) {
-    return holder.is(holder);
+    return this.holder == holder;
 }
 
 @Override
@@ -99,5 +99,10 @@ public ItemStackTemplate getTemplate() {
 @Override
 public Item get() {
     return holder.value();
+}
+
+@Override
+public boolean test(Holder<Item> holder) {
+    return this.holder.is(holder);
 }
 ```
