@@ -2,6 +2,20 @@
 
 ### 26.1
 
+**26.1-r2.2**
+
+Changed
+- `UnifiedHelpers.BLOCK_CONVERSIONS`
+- - blocks can now hold multiple different conversions
+
+**26.1-r2.1**
+
+Changed
+- `UnifiedHelpers.BLOCK_CONVERSIONS`
+- - added `addWeathering` method, which accepts a `WeatheringCopperBlocks` record
+- - deprecated `addWaxed` method in favour of `addWeathering`
+- - `addWaxed` / `addWeathering` now also setup oxidization behaviour for added blocks
+
 **26.1-r2.0**
 
 Added

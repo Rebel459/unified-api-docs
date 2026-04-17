@@ -8,7 +8,7 @@ Allows to easily create block conversion functionality, such as axes stripping l
 ```
 default void addStrippable(Block originalBlock, Block convertedBlock)
 
-default void addWaxed(Block block, Block waxedBlock, Block exposedBlock, Block waxedExposedBlock, Block weatheredBlock, Block waxedWeatheredBlock, Block oxidizedBlock, Block waxedOxidizedBlock)
+default void addWeathering(WeatheringCopperBlocks set)
 
 default void add(Predicate<ItemStack> item, Block originalBlock, Block convertedBlock, SoundEvent sound)
 default void add(Predicate<ItemStack> item, Block originalBlock, Block convertedBlock, SoundEvent sound, float volume, float pitch)
