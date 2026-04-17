@@ -2,6 +2,27 @@
 
 ### 26.1
 
+**26.1-r3.0**
+
+Added
+- `UnifiedEvents.LootTables`
+- - added new `editPool` method
+- - - provides an item predicate, and requires a `LootEntry`
+- `LootEntry`
+- - new record which allows for more flexible creation of loot pool entry changes
+- - - `insert(LootPoolEntryContainer.Builder<?> entry)` inserts an entry for the first matching item in each pool
+- - - `replace(LootPoolEntryContainer.Builder<?> entry)` replaces each entry containing the matching item
+- - - `remove()` fully removes all matching entries
+
+Changed
+- `UnifiedEvents.LootTables`
+- - deprecated old `editPool` method
+- - - replaced with new `editPool`
+- - both `editPool` methods now support vanilla `AlternativesEntry`, `EntryGroup` and `SequentialEntry` entries
+
+**26.1-r2.2.1**
+- fixed `UnifiedHelpers.BLOCK_CONVERSIONS` `addWeathering` oxidization not working on NeoForge
+
 **26.1-r2.2**
 
 Changed

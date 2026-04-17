@@ -122,7 +122,8 @@ export default defineConfig({
               { text: 'Unified Data Components', link: '/utilities/unified-data-components' },
               { text: 'Unified Item Tags', link: '/utilities/unified-item-tags' },
               { text: 'Supplied Item', link: '/utilities/supplied-item' },
-              { text: 'Supplied Block', link: '/utilities/supplied-block' }
+              { text: 'Supplied Block', link: '/utilities/supplied-block' },
+              { text: 'Loot Entry', link: '/utilities/loot-entry' }
             ]
           },
           {

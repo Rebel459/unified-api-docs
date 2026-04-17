@@ -2,9 +2,11 @@
 
 **Class: `UnifiedEvents.LootTables`**
 
-This event allows you to add pools to any given loot table, similarly to the fabric loot api.
+This event allows you to add entire pools to any loot table through `addPool`. Further, you can also insert, replace and remove individual entries within any given pool using `editPool`.
 
-Additionally, you can also edit individual pools within a loot table, by filtering for an item and either adding a new entry or replacing existing ones.
+::: info
+`editPool` uses the [`LootEntry`](/utilities/loot-entry) record to determine how entries in a given loot table should be modified.
+:::
 
 ### Methods
 
@@ -34,7 +36,7 @@ UnifiedEvents.LootTables.modify((table, key, provider) -> {
                 table.addPool(pool); // adds a new loot pool to the table
             }
             if (key == BuiltInLootTables.ABANDONED_MINESHAFT) {
-                table.editPool(item -> item == Items.IRON_INGOT, LootItem.lootTableItem(Items.NETHERITE_INGOT).setWeight(15), true); // edits existing loot pools within the table
+                table.editPool(item -> item == Items.IRON_INGOT, LootEntry.replace(LootItem.lootTableItem(Items.NETHERITE_INGOT).setWeight(15), true)); // edits existing loot pools within the table
             }
         }
 );
