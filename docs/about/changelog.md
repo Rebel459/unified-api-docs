@@ -2,6 +2,9 @@
 
 ### 26.1
 
+**26.1-r3.0.1**
+- fixed biome modification api causing crashes on Fabric when used with other biome mods
+
 **26.1-r3.0**
 
 Added
