@@ -2,6 +2,9 @@
 
 ### 26.1
 
+**26.1-r3.0.3**
+- fixed `UnifiedClientEvents.ItemTooltips.addAttributes` being ignored on NeoForge
+
 **26.1-r3.0.2**
 - fixed hopper composting crash on Fabric
 
