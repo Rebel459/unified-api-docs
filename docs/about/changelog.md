@@ -4,6 +4,7 @@
 
 **26.1-r3.1.1**
 
+- fixed `ItemStack stack` always being `null` in `UnifiedEvents.ItemTooltips.afterAttributeAdded` and `UnifiedEvents.ItemTooltips.afterBaseAttributeAdded` on Fabric
 - fixed `UnifiedEvents.ItemTooltips.addAttributes` triggering with incorrect `EventType.POST` timing on NeoForge
 
 **26.1-r3.1**
