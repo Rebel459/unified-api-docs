@@ -2,6 +2,19 @@
 
 ### 26.1
 
+**26.1-r3.1**
+
+Added
+- `UnifiedEvents.ItemTooltips`
+- - added `afterAttributeAdded` method
+- - - allows you to add / check tooltips after each regular attribute tooltip (in vanilla, these are blue)
+- - added `afterBaseAttributeAdded` method
+- - - allows you to add / check tooltips after each base attribute tooltip (in vanilla, these are green)
+
+Changed
+- marked `UnifiedPlatform.get()` as `@ApiStatus.Internal`
+- - you can (and should) now call `UnifiedPlatform` methods directly, without the use of `.get()`
+
 **26.1-r3.0.4**
 - fixed `UnifiedClientEvents.ItemTooltips.addAttributes` being ignored on NeoForge
 
