@@ -2,6 +2,10 @@
 
 ### 26.1
 
+**26.1-r3.1.1**
+
+- fixed `UnifiedEvents.ItemTooltips.addAttributes` triggering with incorrect `EventType.POST` timing on NeoForge
+
 **26.1-r3.1**
 
 Added
