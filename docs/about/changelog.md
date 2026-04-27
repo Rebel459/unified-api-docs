@@ -2,7 +2,7 @@
 
 ### 26.1
 
-**26.1-r3.0.3**
+**26.1-r3.0.4**
 - fixed `UnifiedClientEvents.ItemTooltips.addAttributes` being ignored on NeoForge
 
 **26.1-r3.0.2**
