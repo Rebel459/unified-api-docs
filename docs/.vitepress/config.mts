@@ -95,6 +95,7 @@ export default defineConfig({
               { text: 'Players', link: '/events/players' },
               { text: 'Entities', link: '/events/entities' },
               { text: 'Server', link: '/events/server' },
+              { text: 'Levels', link: '/events/levels' },
               { text: 'Items', link: '/events/items' },
               { text: 'Blocks', link: '/events/blocks' }
             ]

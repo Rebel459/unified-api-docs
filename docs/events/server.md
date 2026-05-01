@@ -19,6 +19,12 @@ UnifiedEvents.Servers.onStop(minecraftServer -> {
 UnifiedEvents.Servers.onTick(EventType.PRE/POST, minecraftServer -> {
     // your custom behaviour here
 });
+UnifiedEvents.Servers.onLevelLoad(serverLevel -> {
+    // your custom behaviour here
+});
+UnifiedEvents.Servers.onLevelUnload(serverLevel -> {
+    // your custom behaviour here
+});
 UnifiedEvents.Servers.onLevelTick(EventType.PRE/POST, serverLevel -> {
     // your custom behaviour here
 });

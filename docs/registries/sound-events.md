@@ -9,7 +9,7 @@ Allows you to register custom sounds, with the option to use either a Supplier o
 ```
 Supplier<SoundEvent> register(String path);
 
-Holder<SoundEvent> registerHolder(String path);
+Holder<SoundEvent> registerForHolder(String path);
 ```
 
 ### Example

@@ -15,7 +15,7 @@ In the rare case of using a custom registry you've created yourself (as opposed 
 ```
 <V, T extends V> Supplier<T> register(String path, Supplier<T> value);
 
-<V, T extends V> Holder<T> registerHolder(String path, Supplier<T> value);
+<V, T extends V> Holder<T> registerForHolder(String path, Supplier<T> value);
 
 void addAlias(Identifier convertedFrom, Identifier convertedTo);
 ```

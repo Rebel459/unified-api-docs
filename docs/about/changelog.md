@@ -2,6 +2,20 @@
 
 ### 26.1
 
+**26.1-r3.2**
+
+Added
+- `UnifiedEvents.Levels`
+- - includes `onLoad` and `onUnload` methods
+- - - `UnifiedClientEvents.Instance` and `UnifiedEvents.Server` have also received similar `onLevelLoad` and `onLevelUnload` events
+- `UnifiedClientEvents.Instance`
+- - added `onStart` and `onStop` methods
+
+Changed
+- `UnifiedRegistries`
+- - deprecated `registerHolder` in favour of identical `registerForHolder` method
+- - - this change affects both `UnifiedRegistries.DeferredRegistry` and `UnifiedRegistries.SoundEvents`
+
 **26.1-r3.1.2**
 
 - fixed `ItemStack stack` always being `null` in `UnifiedEvents.ItemTooltips.afterAttributeAdded` and `UnifiedEvents.ItemTooltips.afterBaseAttributeAdded` on Fabric

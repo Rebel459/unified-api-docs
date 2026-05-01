@@ -16,10 +16,10 @@ UnifiedEvents.LootTables.modify((table, key, provider) -> {
         }
 );
 
-UnifiedEvents.LootTables.modifyWithFilter(lootTableKey -> {
+UnifiedEvents.LootTables.modifyWithFilter(key -> {
             return true;
         },
-        lootTable -> {
+        (table, key, provider) -> {
             // your loot table additions here
         }
 );

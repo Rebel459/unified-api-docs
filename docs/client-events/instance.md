@@ -7,10 +7,22 @@ Client instance-related events. `onTick` Can be useful for providing custom func
 ### Methods
 
 ```
+UnifiedClientEvents.Instance.onStart(minecraft -> {
+    // your custom behaviour here
+});
+UnifiedClientEvents.Instance.onStop(minecraft -> {
+    // your custom behaviour here
+});
 UnifiedClientEvents.Instance.onTick(EventType.PRE/POST, minecraft -> {
     // your custom behaviour here
 });
 UnifiedClientEvents.Instance.onRespawn(player -> {
+    // your custom behaviour here
+});
+UnifiedClientEvents.Instance.onLevelLoad(clientLevel -> {
+    // your custom behaviour here
+});
+UnifiedClientEvents.Instance.onLevelUnload(clientLevel -> {
     // your custom behaviour here
 });
 ```
