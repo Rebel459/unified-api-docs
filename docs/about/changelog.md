@@ -19,11 +19,11 @@ Added
 Changed
 - new `SuppliedItem` class
 - - rewritten in `util.registry`, with the old `SuppliedItem` interface being deprecated
-- - - *Breaking: no longer implements Holder<Item>*
+- - - *Breaking: no longer implements `Holder<Item>`*
 - - now extends `Supplied<Item>`
 - new `SuppliedBlock` class
 - - rewritten in `util.registry`, with the old `SuppliedBlock` interface being deprecated
-- - - *Breaking: no longer implements Holder<Block>*
+- - - *Breaking: no longer implements `Holder<Block>`*
 - - now extends `Supplied<Block>`
 - - now implements `BlockLike`
 - `UnifiedRegistries`
