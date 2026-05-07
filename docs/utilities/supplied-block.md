@@ -4,7 +4,7 @@
 
 Extends `Supplied<Block>` and implements `BlockLike` and `ItemLike`.
 
-Registered blocks provide `SuppliedBlock`, which works much like [Supplied](/utilities/supplied), with additional implementations for [BlockLike](utilities/block-like) and ItemLike.
+Registered blocks provide `SuppliedBlock`, which works much like [Supplied](/utilities/supplied), with additional implementations for [BlockLike](/utilities/block-like) and ItemLike.
 
 ### Methods
 
