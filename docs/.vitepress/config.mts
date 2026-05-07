@@ -120,11 +120,13 @@ export default defineConfig({
             text: 'Utilities',
             collapsed: true,
             items: [
-              { text: 'Unified Data Components', link: '/utilities/unified-data-components' },
-              { text: 'Unified Item Tags', link: '/utilities/unified-item-tags' },
+              { text: 'Supplied', link: '/utilities/supplied' },
               { text: 'Supplied Item', link: '/utilities/supplied-item' },
               { text: 'Supplied Block', link: '/utilities/supplied-block' },
-              { text: 'Loot Entry', link: '/utilities/loot-entry' }
+              { text: 'Unified Data Components', link: '/utilities/unified-data-components' },
+              { text: 'Unified Item Tags', link: '/utilities/unified-item-tags' },
+              { text: 'Loot Entry', link: '/utilities/loot-entry' },
+              { text: 'Block Like', link: '/utilities/block-like' }
             ]
           },
           {

@@ -7,7 +7,7 @@ Allows you to register custom sounds, with the option to use either a Supplier o
 ### Methods
 
 ```
-Supplier<SoundEvent> register(String path);
+Supplied<SoundEvent> register(String path);
 
 Holder<SoundEvent> registerForHolder(String path);
 ```
@@ -17,5 +17,5 @@ Holder<SoundEvent> registerForHolder(String path);
 ```
 public static UnifiedRegistries.SoundEvents SOUNDS = UnifiedRegistries.SoundEvents.create(ModName.MOD_ID);
 
-public static final Supplier<SoundEvent> EXAMPLE_SOUND = SOUNDS.register("item.example_item.example_sound");
+public static final Supplied<SoundEvent> EXAMPLE_SOUND = SOUNDS.register("item.example_item.example_sound");
 ```

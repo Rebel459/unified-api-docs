@@ -1,107 +1,34 @@
 # Supplied Item
 
-**Class: `SuppliedItem / SuppliedItemImpl`**
+**Class: `SuppliedItem`**
 
-Implements `Holder<Item>`, `Supplier<Item>`, `ItemLike` and `SuppliedItemInterface`.
+Extends `Supplied<Item>` and implements `ItemLike`.
 
-Used when registering items, `SuppliedItem` allows you to easily access any methods provided by the above interfaces, and have code requiring the above interface accept the item provided directly, rather than being forced to do `ModItems.EXAMPLE_ITEM.get()...` every time.
+Registered items provide `SuppliedItem`, which works much like [Supplied](/utilities/supplied), with additional implementations for ItemLike.
 
-Also includes `SuppliedItemInterface`, which provides `ItemStackTemplate getTemplate()` and `ItemStack getDefaultInstance`.
-
-::: warning
-Make sure to use `.get()` or similar when using a vanilla `.is()` check, in order to ensure matching can succeed.
-:::
-
-### Full Interface Implementation
+### Methods
 
 ```
-@Override
-public Item value() {
-    return holder.value();
+public ItemStack defaultItemStack() {
+    return this.get().getDefaultInstance();
+}
+
+public ItemStackTemplate defaultTemplate() {
+    return new ItemStackTemplate(this.get());
 }
 
 @Override
-public boolean isBound() {
-    return holder.isBound();
-}
-
-@Override
-public boolean areComponentsBound() {
-    return holder.areComponentsBound();
-}
-
-@Override
-public boolean is(Identifier identifier) {
-    return holder.is(identifier);
-}
-
-@Override
-public boolean is(ResourceKey<Item> resourceKey) {
-    return holder.is(resourceKey);
-}
-
-@Override
-public boolean is(Predicate<ResourceKey<Item>> predicate) {
-    return holder.is(predicate);
-}
-
-@Override
-public boolean is(TagKey<Item> tagKey) {
-    return holder.is(tagKey);
-}
-
-@Override
-public boolean is(Holder<Item> holder) {
-    return this.holder == holder;
-}
-
-@Override
-public Stream<TagKey<Item>> tags() {
-    return holder.tags();
-}
-
-@Override
-public DataComponentMap components() {
-    return holder.components();
-}
-
-@Override
-public Either<ResourceKey<Item>, Item> unwrap() {
-    return holder.unwrap();
-}
-
-@Override
-public Optional<ResourceKey<Item>> unwrapKey() {
-    return holder.unwrapKey();
-}
-
-@Override
-public Kind kind() {
-    return holder.kind();
-}
-
-@Override
-public boolean canSerializeIn(HolderOwner<Item> holderOwner) {
-    return holder.canSerializeIn(holderOwner);
+public Holder<Item> holder() {
+    return super.holder();
 }
 
 @Override
 public Item asItem() {
-    return holder.value().asItem();
-}
-
-@Override
-public ItemStack getDefaultInstance() {
-    return holder.value().getDefaultInstance();
-}
-
-@Override
-public ItemStackTemplate getTemplate() {
-    return new ItemStackTemplate(holder.value());
+    return this.get();
 }
 
 @Override
 public Item get() {
-    return holder.value();
+    return super.get();
 }
 ```

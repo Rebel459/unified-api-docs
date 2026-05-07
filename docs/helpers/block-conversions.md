@@ -6,13 +6,14 @@ Allows to easily create block conversion functionality, such as axes stripping l
 
 ### Methods
 ```
-default void addStrippable(Block originalBlock, Block convertedBlock)
+default void addStrippable(BlockLike originalBlock, BlockLike convertedBlock)
 
+default void addWeathering(BlockLike block, BlockLike exposedBlock, BlockLike weatheredBlock, BlockLike oxidizedBlock, BlockLike waxedBlock, BlockLike waxedExposedBlock, BlockLike waxedWeatheredBlock, BlockLike waxedOxidizedBlock)
 default void addWeathering(WeatheringCopperBlocks set)
 
-default void add(Predicate<ItemStack> item, Block originalBlock, Block convertedBlock, SoundEvent sound)
-default void add(Predicate<ItemStack> item, Block originalBlock, Block convertedBlock, SoundEvent sound, float volume, float pitch)
-default void add(Predicate<ItemStack> item, Block originalBlock, Block convertedBlock, Consumer<UseOnContext> context)
+default void add(Predicate<ItemStack> item, BlockLike originalBlock, BlockLike convertedBlock, SoundEvent sound)
+default void add(Predicate<ItemStack> item, BlockLike originalBlock, BlockLike convertedBlock, SoundEvent sound, float volume, float pitch)
+default void add(Predicate<ItemStack> item, BlockLike originalBlock, BlockLike convertedBlock, Consumer<UseOnContext> context)
 ```
 
 ### Example

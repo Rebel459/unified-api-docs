@@ -2,6 +2,45 @@
 
 ### 26.1
 
+**26.1-r4.0**
+
+Added
+- `Supplied`
+- - new generic class which accepts generics and functions much like `Supplier`
+- - extends `ResourceKey`, implements `Supplier` and provides a registry-searched `Holder` through the `holder` method
+- - all common registries now use `Supplied` instead of `Supplier` (though are backwards compatible), and `SuppliedItem` / `SuppliedBlock` now extend this, too
+- `BlockLike`
+- - basically vanilla's `ItemLike`, but for `Block` instead of `Item`
+- - injected into the vanilla `Block` class
+- - any methods which previously accepted `Block` have been deprecated in favour of new methods which accept `BlockLike`
+- `UnifiedHelpers.BLOCK_CONVERSIONS`
+- - added new `addWeathering` method which matches the deprecated `addWaxed` method, except it allows `BlockLike`
+
+Changed
+- new `SuppliedItem` class
+- - rewritten in `util.registry`, with the old `SuppliedItem` interface being deprecated
+- - - *Breaking: no longer implements Holder<Item>*
+- - now extends `Supplied<Item>`
+- new `SuppliedBlock` class
+- - rewritten in `util.registry`, with the old `SuppliedBlock` interface being deprecated
+- - - *Breaking: no longer implements Holder<Block>*
+- - now extends `Supplied<Block>`
+- - now implements `BlockLike`
+- `UnifiedRegistries`
+- - now provides `Supplied` instead of `Supplier`
+- - - registered content which previously used `Supplier` will still work until backwards-compatability support is fully removed in 26.2
+- - rewrote how much of internal registering is handled to accomodate the many additions and fixes in this update
+- - - registered content now stores `Supplier<Registry>` internally in order to provide fully-functional holders through `Supplied`, `SuppliedItem` and `SuppliedBlock`
+- `UnifiedRegistries.DeferredRegistry`
+- - now allows the defining of generics (`<>`)
+- - - existing DeferredRegistry calls will work as before, though there will be an unchecked warning unless generics are provided
+- `UnifiedRegistries.BlockEntityTypes`
+- - `BlockLike... blocks` is now accepted for the `register` method which previously accepted `Block... blocks`, the latter of which remains (but has been deprecated) for backwards-compatability
+- `UnifiedHelpers.BLOCK_CONVERSIONS`
+- - `addStrippable` and all `add` methods now accept `BlockLike` wherever `Block` was previously accepted, the latter which remain (but have been deprecated) for backwards-compatability
+- `UnifiedHelpers.CREATIVE_ENTRIES`
+- - improved NeoForge-side entry appending to allow `insertBefore` and `insertAfter` to work with modded entries as starting points, rather than only vanilla
+
 **26.1-r3.2**
 
 Added
