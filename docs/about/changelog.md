@@ -2,6 +2,10 @@
 
 ### 26.1
 
+**26.1-r4.0.2**
+
+- fixed Fabric biome modification feature order
+
 **26.1-r4.0.1**
 
 - fixed Fabric client particle providers
