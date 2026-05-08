@@ -2,7 +2,7 @@
 
 ### 26.1
 
-**26.1-r4.0.2**
+**26.1-r4.0.3**
 
 - fixed Fabric biome modification feature order
 
