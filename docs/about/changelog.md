@@ -2,6 +2,10 @@
 
 ### 26.1
 
+**26.1-r4.0.1**
+
+- fixed Fabric client particle providers
+
 **26.1-r4.0**
 
 Added
@@ -400,6 +404,10 @@ Removed
 *Continued from 21.11-b1.3*
 
 ### 1.21.11
+
+**21.11-b2.0.1**
+
+- fixed Fabric client particle providers
 
 **21.11-b2.0**
 
