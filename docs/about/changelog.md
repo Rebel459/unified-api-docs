@@ -2,6 +2,10 @@
 
 ### 26.1
 
+**26.1-r4.0.4**
+
+- fixed composting issues on Fabric
+
 **26.1-r4.0.3**
 
 - fixed Fabric biome modification feature order
