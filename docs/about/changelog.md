@@ -2,6 +2,16 @@
 
 ### 26.1
 
+**26.1-r4.1**
+
+Added
+- `UnifiedHelpers.STRUCTURE_MUSIC`
+- - added support for structure tags
+
+Changed
+- internal structure music refactors
+- moved helper impls into impl subfolders
+
 **26.1-r4.0.4**
 
 - fixed composting issues on Fabric

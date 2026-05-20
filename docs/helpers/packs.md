@@ -8,6 +8,10 @@ Note that all packs must be located in common/.../resources/resourcepacks, as Fa
 
 Uses [PackType](/misc/pack-type).
 
+::: warning
+`UnifiedHelpers.PACKS` must be used in your registries init (client for resources, common for data), in order to be loaded by NeoForge.
+:::
+
 ### Methods
 ```
 void add(Identifier id, PackType type);
