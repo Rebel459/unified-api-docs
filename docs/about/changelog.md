@@ -2,6 +2,17 @@
 
 ### 26.1
 
+**26.1-r4.2**
+
+Added
+- `UnifiedHelpers.NETWORKING` and `UnifiedClientHelpers.NETWORKING`
+- - added `canSend` method
+
+Changed
+- `UnifiedHelpers.NETWORKING` and `UnifiedClientHelpers.NETWORKING`
+- - marked all networking registration methods as optional for NeoForge
+- - `send` methods now check if they can be sent before sending
+
 **26.1-r4.1**
 
 Added

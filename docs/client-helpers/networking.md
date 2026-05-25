@@ -12,6 +12,7 @@ There are a couple things to note with Unified API's networking payloads
 
 ### Methods
 ```
+boolean canSend(CustomPacketPayload payload);
 void send(CustomPacketPayload payload);
 ```
 

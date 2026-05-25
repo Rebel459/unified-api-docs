@@ -21,6 +21,10 @@ There are a couple things to note with Unified API's networking payloads
 <T extends CustomPacketPayload> void registerPlayToClient(CustomPacketPayload.Type<T> type, StreamCodec<? super RegistryFriendlyByteBuf, T> codec, BiConsumer<T, Player> handler);
 <T extends CustomPacketPayload> void registerConfigToServer(CustomPacketPayload.Type<T> type, StreamCodec<? super FriendlyByteBuf, T> codec, BiConsumer<T, ServerPlayer> handler);
 <T extends CustomPacketPayload> void registerConfigToClient(CustomPacketPayload.Type<T> type, StreamCodec<? super FriendlyByteBuf, T> codec, BiConsumer<T, Player> handler);
+
+boolean canSend(CustomPacketPayload payload, ServerPlayer player);
+void send(CustomPacketPayload payload, ServerPlayer player);
+
 ```
 
 ### Example
