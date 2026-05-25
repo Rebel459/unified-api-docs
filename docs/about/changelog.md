@@ -2,6 +2,11 @@
 
 ### 26.1
 
+**26.1-r4.3**
+
+Changed
+- NeoForge-side `UnifiedEvents.LootTables` no longer unnecessarily overrides other mods' NeoForge-driven loot tables
+
 **26.1-r4.2**
 
 Added
