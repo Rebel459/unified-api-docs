@@ -13,7 +13,7 @@ If you're looking to create compostable blocks, or furnace fuel blocks, Unified 
 :::
 
 ::: info
-the `.builders()` method allows you to access block-related [registry builders](/registries/builders/registry-builders), providing a much easier way to register sets of blocks (and related registry content) such as [Wood Sets](/registries/builders/wood-sets)
+the `.builders()` method allows you to access block-related [registry builders](/registries/builders/registry-builders), providing a much easier way to register sets of blocks (and related registry content) such as a [Wood Set](/registries/builders/wood-set)
 :::
 
 ### Methods

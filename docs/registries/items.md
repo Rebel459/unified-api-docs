@@ -5,7 +5,7 @@
 Items are registered similarly to vanilla, though you must make sure to use a Supplier for your components. Note that item registries return a [Supplied Item](/utilities/supplied-item).
 
 ::: info
-the `.builders()` method allows you to access item-related [registry builders](/registries/builders/registry-builders), providing a much easier way to register sets of items such as [Equipment Sets](/registries/builders/equipment-sets)
+the `.builders()` method allows you to access item-related [registry builders](/registries/builders/registry-builders), providing a much easier way to register sets of items such as an [Equipment Set](/registries/builders/equipment-set)
 :::
 
 ### Methods
