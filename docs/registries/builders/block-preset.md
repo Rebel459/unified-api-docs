@@ -8,31 +8,51 @@
 
 `BlockPreset.DEFAULT`
 
-Uses all default blockset settings, which includes the base block, stairs, slab and wall.
+Uses all default blockset settings, which includes the base block, stairs, slab and wall. Destroy time is set to 1.5F and explosion resistance to 6F.
 
 `BlockPreset.BASIC`
 
-Just includes the base block, stairs and slab.
+Just includes the base block, stairs and slab. Uses default destroy time and explosion resistance.
 
-`BlockPreset.CRACKED`
+`BlockPreset.LEGACY`
 
-Includes the base block, stairs, slab, wall and cracked block.
+Includes the base block, stairs, slab (legacy) and wall. The destroy time is set to 2F.
 
-`BlockPreset.CHISELED`
+**Vanilla**
 
-Includes the base block, stairs, slab, wall and chiseled block.
+The following presets are accurate recreations of their corresponding vanilla block sets, and thus will not be individually explained.
 
 `BlockPreset.STONE`
 
-Based on the vanilla Stone blocks, this preset includes the base block, stairs, slab, button and pressure plate.
+`BlockPreset.STONE_BRICKS`
 
-`BlockPreset.POLISHED_BLACKSTONE`
+`BlockPreset.COBBLED_DEEPSLATE`
 
-Based on the vanilla Polished Blackstone blocks, this preset includes the base block, stairs, slab, wall, button, pressure plate and chiseled block.
+`BlockPreset.POLISHED_DEEPSLATE`
+
+`BlockPreset.DEEPSLATE_BRICKS`
+
+`BlockPreset.DEEPSLATE_TILES`
+
+`BlockPreset.TUFF`
+
+`BlockPreset.POLISHED_TUFF`
+
+`BlockPreset.TUFF_BRICKS`
+
+`BlockPreset.MUD_BRICKS`
+
+`BlockPreset.RESIN_BRICKS`
+
+`BlockPreset.SANDSTONE`
 
 `BlockPreset.NETHER_BRICKS`
 
-Based on the vanilla Nether Bricks, this preset includes the base block, stairs, slab, wall, cracked block, fence and chiseled block.
+`BlockPreset.POLISHED_BLACKSTONE`
+
+`BlockPreset.END_STONE_BRICKS`
+
+`BlockPreset.PURPUR`
 
 ### Creation Methods
 

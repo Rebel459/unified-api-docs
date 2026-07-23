@@ -2,7 +2,7 @@
 
 **Classes: `BlockSet / UnifiedRegistries.Blocks.Builders`**
 
-**Builder Method: `blockSet(String name, BlockPreset preset, MapColor color, float hardness, float blastResistance)`**
+**Builder Method: `blockSet(String name, BlockPreset preset, MapColor color`**
 
 **Preset: [Block Preset](/registries/builders/block-preset)**
 
@@ -21,6 +21,14 @@ Methods used when building the Set.
 `creativeInventoryPlacement(Supplier<ItemLike> precedingBuildingItem, Supplier<ItemLike> precedingNaturalItem)`
 
 Used to add items to the creative inventory. Optionally specifying `precedingNaturalItem` will add the base block to the natural creative tab.
+
+`setDestroyTime(float destroyTime)`
+
+Sets how long blocks take to mine.
+
+`setExplosionResistance(float explosionResistance)`
+
+Sets the explosion resistance of blocks.
 
 `setSoundType(Supplier<SoundType> soundType)`
 
@@ -74,6 +82,10 @@ Determines whether to register a wall.
 
 Specifies whether the set name is in plural form. Specifying this is not necessary for set names ending in "bricks" or "tiles", as these are automatically detected.
 
+`hasLegacySlab(boolean hasLegacySlab)`
+
+If set to true, slabs have a destroy time of 2 and explosion resistance of 6, regardless of the rest of set values. Used to mimic the behaviour of many older vanilla slabs.
+
 `canArrowsActivateButton(boolean canArrowsActivateButton)`
 
 Sets button behaviour.
@@ -85,6 +97,10 @@ Sets pressure plate behaviour.
 `baseBlockFunction(Function<BlockBehaviour.Properties, Block> baseBlockFunction)`
 
 Sets the function properties (class) of the base block.
+
+`baseBlockSuffix(Optional<String> baseBlockSuffix)`
+
+Used to add a suffix to the base block (for example, "purpur" with a suffix of "block" would become "purpur block"). `Optional.empty()` skips adding a suffix.
 
 `build()`
 

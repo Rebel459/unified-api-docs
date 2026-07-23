@@ -2,6 +2,30 @@
 
 ### 26.1
 
+**26.1-r5.1**
+
+Added
+- `BlockSet.Settings`
+- - new `getDestroyTime` method
+- - new `getExplosionResistance` method
+- `BlockSet.Builder`
+- - new `setDestroyTime` method
+- - new `setExplosionResistance` method
+- - new `hasLegacySlab` method
+- - new `baseBlockSuffix` method
+- `BlockPreset`
+- - new `LEGACY`, `STONE_BRICKS`, `COBBLED_DEEPSLATE`, `POLISHED_DEEPSLATE`, `DEEPSLATE_BRICKS`, `DEEPSLATE_TILES`, `TUFF`, `POLISHED_TUFF`, `TUFF_BRICKS`, `MUD_BRICKS`, `RESIN_BRICKS`, `SANDSTONE`, `END_STONE_BRICKS` and `PURPUR`presets
+
+Changed
+- `UnifiedRegistries.Blocks.Builders`
+- - deprecated the old `blockSetBuilder` method in favour of a new one which doesn't require two floats
+- `WoodSet.Settings` & `BlockSet.Settings`
+- - fixed incorrect naming of `canArrowsActivateButton`
+- `BlockPreset`
+- - deprecated `CRACKED` and `CHISELED` presets
+- - `STONE` and `POLISHED_BLACKSTONE` and `NETHER_BRICKS` presets now use legacy slabs
+- - the `NETHER_BRICKS` preset now uses the correct sounds
+
 **26.1-r5.0**
 
 Added
