@@ -5,14 +5,14 @@
 **26.1-r5.0**
 
 Added
-- `UnifiedRegistries.Items.Builders`
+- new `UnifiedRegistries.Items.Builders`
 - - `EquipmentSet` and `EquipmentPreset` allow easily creating sets of tools and armor
-- - - see the Equipment Set documentation for details
+- - - see the [Equipment Set](https://unified-api.dev/registries/builders/equipment-set.html) documentation for details
 - `UnifiedRegistries.Blocks.Builders`
 - - `BlockSet` and `BlockPreset` allow easily creating stone and brick-like block sets
-- - - see the Block Set documentation for details
+- - - see the [Block Set](https://unified-api.dev/registries/builders/block-set.html) documentation for details
 - - `WoodSet` and `WoodPreset` allow easily creating entire woodsets
-- - - see the Wood Set documentation for details
+- - - see the [Wood Set](https://unified-api.dev/registries/builders/wood-set.html) documentation for details
 - `UnifiedRegistries.EntityTypes`
 - - added a new `add` method that additionally allows the providing of a `Supplier<AttributeSupplier>`, in order to link attributes to custom mobs
 

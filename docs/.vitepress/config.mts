@@ -36,6 +36,7 @@ export default defineConfig({
                 text: 'Builders',
                 collapsed: true,
                 items: [
+                  { text: 'Registry Builders', link: '/registries/builders/registry-builders' },
                   { text: 'Block Set', link: '/registries/builders/block-set' },
                   { text: 'Block Preset', link: '/registries/builders/block-preset' },
                   { text: 'Wood Set', link: '/registries/builders/wood-set' },
