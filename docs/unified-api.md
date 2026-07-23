@@ -7,6 +7,7 @@ Unified API is a simple, general purpose API to aid in multiloader development. 
 - various [helpers](unified-helpers) to allow access to features such as loot table or creative inventory injection
 - platform-agnostic [events](unified-events), so that mods can implement custom behaviour in common code
 - useful utilities such as new [components](/utilities/unified-data-components) or [tags](/utilities/unified-item-tags)
+- convenient [registry builders](/registries/builders/registry-builders) to automate the creation of woodsets, armor, tools and more
 - all registered content goes through the convenient [supplied](/utilities/supplied) class
 
 ### Setup
