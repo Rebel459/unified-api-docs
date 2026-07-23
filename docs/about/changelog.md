@@ -2,6 +2,34 @@
 
 ### 26.1
 
+**26.1-r5.0**
+
+Added
+- `UnifiedRegistries.Items.Builders`
+- - `EquipmentSet` and `EquipmentPreset` allow easily creating sets of tools and armor
+- - - see the Equipment Set documentation for details
+- `UnifiedRegistries.Blocks.Builders`
+- - `BlockSet` and `BlockPreset` allow easily creating stone and brick-like block sets
+- - - see the Block Set documentation for details
+- - `WoodSet` and `WoodPreset` allow easily creating entire woodsets
+- - - see the Wood Set documentation for details
+- `UnifiedRegistries.EntityTypes`
+- - added a new `add` method that additionally allows the providing of a `Supplier<AttributeSupplier>`, in order to link attributes to custom mobs
+
+Changed
+- `UnifiedRegistries.Blocks`
+- - registration methods containing `BlockEntityType<>` have now been superceded by new methods containing `Supplier<BlockEntityType<>>`
+- - - existing non-supplier `BlockEntityType` methods were deprecated as a result
+- - - this change was made to support custom block entity types
+- `UnifiedClientHelpers.LEGACY_BABY_ARMOR`
+- - the `add(ResourceKey<EquipmentAsset> asset)` now sets `resize` to `true`
+- - - previously, this method defaulted to `false`. For the original behaviour, simply use `add(ResourceKey<EquipmentAsset> asset, boolean resize)` instead
+
+Removed
+- `UnifiedRegistries.Blocks`
+- - removed two previously-deprecated registration methods
+- - - this was required by the addition of the `Supplier<BlockEntityType<>>` methods
+
 **26.1-r4.3**
 
 Changed

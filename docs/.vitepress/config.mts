@@ -32,6 +32,18 @@ export default defineConfig({
               { text: 'Deferred Registry', link: '/registries/deferred-registry' },
               { text: 'Items', link: '/registries/items' },
               { text: 'Blocks', link: '/registries/blocks' },
+              {
+                text: 'Builders',
+                collapsed: true,
+                items: [
+                  { text: 'Block Set', link: '/registries/builders/block-set' },
+                  { text: 'Block Preset', link: '/registries/builders/block-preset' },
+                  { text: 'Wood Set', link: '/registries/builders/wood-set' },
+                  { text: 'Wood Preset', link: '/registries/builders/wood-preset' },
+                  { text: 'Equipment Set', link: '/registries/builders/equipment-set' },
+                  { text: 'Equipment Preset', link: '/registries/builders/equipment-preset' }
+                ]
+              },
               { text: 'Entity Types', link: '/registries/entity-types' },
               { text: 'Block Entity Types', link: '/registries/block-entity-types' },
               { text: 'Creative Tabs', link: '/registries/creative-tabs' },
@@ -126,17 +138,17 @@ export default defineConfig({
               { text: 'Unified Data Components', link: '/utilities/unified-data-components' },
               { text: 'Unified Item Tags', link: '/utilities/unified-item-tags' },
               { text: 'Loot Entry', link: '/utilities/loot-entry' },
-              { text: 'Block Like', link: '/utilities/block-like' }
+              { text: 'Block Like', link: '/utilities/block-like' },
+              { text: 'Creative Mode Tabs', link: '/utilities/creative-mode-tabs' }
             ]
           },
           {
-            text: 'Misc',
+            text: 'Types',
             collapsed: true,
             items: [
-              { text: 'Pack Type', link: '/misc/pack-type' },
-              { text: 'Loader Type', link: '/misc/loader-type' },
-              { text: 'Event Type', link: '/misc/event-type' },
-              { text: 'Creative Mode Tabs', link: '/misc/creative-mode-tabs' }
+              { text: 'Pack Type', link: '/types/pack-type' },
+              { text: 'Loader Type', link: '/types/loader-type' },
+              { text: 'Event Type', link: '/types/event-type' }
             ]
           }
         ]
