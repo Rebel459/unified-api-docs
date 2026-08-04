@@ -156,7 +156,7 @@ export default defineConfig({
                 collapsed: true,
                 items: [
                   { text: 'Packs', link: '/older-versions/26.1/packs' },
-                  { text: 'Pack Type', link: '/old/pack-type' }
+                  { text: 'Pack Type', link: '/older-versions/26.1/pack-type' }
                 ]
               }            
             ]
