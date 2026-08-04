@@ -1,6 +1,6 @@
 # BiomeModifications
 
-**Class: `UnifiedHelpers / HelpersImpl.BiomeModifications`**
+**Class: `UnifiedHelpers / BIOME_MODIFICATIONS`**
 
 A complete biome modification API which allows for
 - adding / removing features & carvers

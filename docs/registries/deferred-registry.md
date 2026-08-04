@@ -20,7 +20,7 @@ In the rare case of using a custom registry you've created yourself (as opposed 
 void addAlias(Identifier convertedFrom, Identifier convertedTo);
 ```
 
-### Examplea
+### Examples
 ```
 public static UnifiedRegistries.DeferredRegistry<MobEffect> EFFECTS = UnifiedRegistries.DeferredRegistry.create(LaLConstants.MOD_ID, BuiltInRegistries.MOB_EFFECT);
 

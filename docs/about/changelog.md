@@ -1,6 +1,65 @@
 # Changelog
 
+### 26.2
+
+Added
+- `UnifiedHelpers.DATA_PACKS` and `UnifiedClientHelpers.RESOURCE_PACKS`
+- - includes `addRequired` and `addOptional` methods
+- - used to load built-in datapacks and resource packs respectively
+
+Changed
+- Unified API packages have been completely redone, so you'll have to re-import all referenced classes
+- - this includes a split with `unified.api.` and `unified.impl.`, which clearly separates developer-focused code from internal-only code
+- - - you can be assured that no breaking changes will be made in the same vanilla drop version within `unified.api.`
+- - it should be much easier to find the classes you're looking for going forward
+- - many internal classes were either exposed in `api.` or renamed within `impl.` for clarity
+- - - these include `BiomeModificationContext` and `LootTableContext`, which were moved into `api.`
+- renamed `UnifiedPlatform` to `UnifiedInstance`
+- - renamed `getLoader` to `getModLoader`
+- renamed `UnifiedEvents.Guis` to `UnifiedEvents.Hud`
+- - this matches changes to vanilla naming
+- renamed `LoaderType` to `ModLoader`
+- renamed `EventType` to `EventTiming`
+- renamed `UnifiedClientHelpers.LEGACY_BABY_ARMOR` to `UnifiedClientHelpers.SIMPLE_BABY_ARMOR`
+- - replaced `add(ResourceKey<EquipmentAsset> asset, boolean resize, int cutoff)` with `add(ResourceKey<EquipmentAsset> asset, int cutoff)`
+- - replaced `add(ResourceKey<EquipmentAsset> asset, boolean resize)` with `addWithoutDownscale`
+- renamed `CreativeModeTabs` to `CreativeModeTabIds`
+
+Removed
+- `UnifiedHelpers.PACKS`
+- - removed in favour of split `UnifiedHelpers.DATA_PACKS` and `UnifiedClientHelpers.RESOURCE_PACKS`
+- `PackType`
+- - no longer needed due to the removal of `UnifiedHelpers.PACKS`
+- `UnifiedHelpers.BLOCK_CONVERSIONS`
+- - removed `addWeathering(WeatheringCopperBlocks set)`
+- - - vanilla removed `WeatheringCopperBlocks` and another `addWeathering` method still exists, so this was removed outright
+- removed all deprecated methods and classes
+
+*Continued from 26.1-r5.3*
+
 ### 26.1
+
+**26.1-r5.3**
+
+Added
+- new `VanillaVersion` record
+- - used to get and compare against the current game version
+
+Changed
+- `UnifiedEvents.Levels`
+- - fixed `onTick` being ignored
+
+
+**26.1-r5.2.1**
+
+- fixed client-side woodset builder boat crash ([#3](https://github.com/Rebel459/unified-api/issues/3)) [NeoForge]
+
+**26.1-r5.2**
+
+Changed
+- `UnifiedHelpers.CREATIVE_ENTRIES`
+- - fixed inverted placement order on NeoForge
+- made builders thread-safe ([#2](https://github.com/Rebel459/unified-api/issues/2))
 
 **26.1-r5.1**
 

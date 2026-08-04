@@ -13,5 +13,5 @@ UnifiedEvents.Players.onJoin(player -> {
 ```
 
 ::: info
-Some events will require you to specify an [Event Type](/types/event-type) before providing the event code.
+Some events will require you to specify [Event Timing](/utilities/event-timing) before providing the event code.
 :::

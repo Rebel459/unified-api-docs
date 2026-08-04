@@ -1,6 +1,6 @@
 # Entity Renderers
 
-**Class: `UnifiedClientHelpers / ClientHelpersImpl.EntityRenderers`**
+**Class: `UnifiedClientHelpers / ENTITY_RENDERERS`**
 
 `addLayerDefinition` is used to add a layer definition (texture) to a custom model.
 

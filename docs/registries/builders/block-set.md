@@ -2,7 +2,7 @@
 
 **Classes: `BlockSet / UnifiedRegistries.Blocks.Builders`**
 
-**Builder Method: `blockSet(String name, BlockPreset preset, MapColor color`**
+**Builder Method: `blockSet(String name, BlockPreset preset, MapColor color)`**
 
 **Preset: [Block Preset](/registries/builders/block-preset)**
 

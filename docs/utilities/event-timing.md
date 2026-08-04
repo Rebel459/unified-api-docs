@@ -1,6 +1,10 @@
-# Event Type
+# Event Timing
 
-**Class: `EventType`**
+**Class: `EventTiming`**
+
+::: info
+Formerly `EventType` on 26.1
+:::
 
 An enum class which determines when certain events should fire.
 

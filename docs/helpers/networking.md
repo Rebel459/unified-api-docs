@@ -1,6 +1,6 @@
 # Networking
 
-**Class: `UnifiedHelpers / HelpersImpl.Networking`**
+**Class: `UnifiedHelpers / NETWORKING`**
 
 Allows for simple multiloader networking, wherein you can register payloads and handle what should happen when they arrive at their target (server/client).
 

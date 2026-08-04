@@ -1,6 +1,6 @@
 # Structure Music
 
-**Class: `UnifiedHelpers / StructureMusic`**
+**Class: `UnifiedHelpers / STRUCTURE_MUSIC`**
 
 Allows you to register unique music pools for structures, which take precedence over biome music.
 

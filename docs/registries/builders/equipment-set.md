@@ -10,7 +10,7 @@ The Equipment Set builder allows you to create an entire set of equipment, inclu
 
 Unlike other sets, there is a somewhat higher level of separation between tools and armor - you can easily have just tools, just armor or both, and method names reflect this.
 
-::: warn
+::: warning
 This builder does not create anything by default. You must make sure to use `.createTools` and/or `.createArmor` in order for tools and armor respectively to actually be created.
 :::
 

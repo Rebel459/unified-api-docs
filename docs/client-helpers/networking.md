@@ -1,6 +1,6 @@
 # Networking
 
-**Class: `UnifiedClientHelpers / ClientHelpersImpl.Networking`**
+**Class: `UnifiedClientHelpers / NETWORKING`**
 
 Used to send packets from the client to the server.
 

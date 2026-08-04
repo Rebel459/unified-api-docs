@@ -70,8 +70,8 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: 'Unified Helpers', link: '/unified-helpers' },
-              { text: 'Unified Platform', link: '/helpers/unified-platform' },
-              { text: 'Packs', link: '/helpers/packs' },
+              { text: 'Unified Instance', link: '/helpers/unified-instance' },
+              { text: 'Data Packs', link: '/helpers/data-packs' },
               { text: 'Biome Modifications', link: '/helpers/biome-modifications' },
               { text: 'Creative Entries', link: '/helpers/creative-entries' },
               { text: 'Networking', link: '/helpers/networking' },
@@ -86,10 +86,11 @@ export default defineConfig({
             items: [
               { text: 'Unified Client Helpers', link: '/unified-client-helpers' },
               { text: 'Networking', link: '/client-helpers/networking' },
+              { text: 'Resource Packs', link: '/client-helpers/resource-packs' },
               { text: 'Particle Providers', link: '/client-helpers/particle-providers' },
               { text: 'Entity Renderers', link: '/client-helpers/entity-renderers' },
               { text: 'Tooltips', link: '/client-helpers/tooltips' },
-              { text: 'Legacy Baby Armor', link: '/client-helpers/legacy-baby-armor' }
+              { text: 'Simple Baby Armor', link: '/client-helpers/simple-baby-armor' }
             ]
           }
         ]
@@ -120,14 +121,14 @@ export default defineConfig({
               { text: 'Unified Client Events', link: '/unified-client-events' },
               { text: 'Instance', link: '/client-events/instance' },
               { text: 'Item Tooltips', link: '/client-events/item-tooltips' },
-              { text: 'Guis', link: '/client-events/guis' },
+              { text: 'Hud', link: '/client-events/hud' },
               { text: 'Screens', link: '/client-events/screens' }
             ]
           }
         ]
       },
       {
-        text: 'Classes',
+        text: 'Misc',
         items: [
           {
             text: 'Utilities',
@@ -140,16 +141,24 @@ export default defineConfig({
               { text: 'Unified Item Tags', link: '/utilities/unified-item-tags' },
               { text: 'Loot Entry', link: '/utilities/loot-entry' },
               { text: 'Block Like', link: '/utilities/block-like' },
-              { text: 'Creative Mode Tabs', link: '/utilities/creative-mode-tabs' }
+              { text: 'Creative Mode Tab Ids', link: '/utilities/creative-mode-tab-ids' },
+              { text: 'Vanilla Version', link: '/utilities/vanilla-version' },
+              { text: 'Mod Loader', link: '/utilities/mod-loader' },
+              { text: 'Event Timing', link: '/utilities/event-timing' }
             ]
           },
           {
-            text: 'Types',
+            text: 'Older Versions',
             collapsed: true,
             items: [
-              { text: 'Pack Type', link: '/types/pack-type' },
-              { text: 'Loader Type', link: '/types/loader-type' },
-              { text: 'Event Type', link: '/types/event-type' }
+              {
+                text: '26.1',
+                collapsed: true,
+                items: [
+                  { text: 'Packs', link: '/older-versions/26.1/packs' },
+                  { text: 'Pack Type', link: '/old/pack-type' }
+                ]
+              }            
             ]
           }
         ]

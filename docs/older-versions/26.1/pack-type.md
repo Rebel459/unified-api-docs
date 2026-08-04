@@ -2,7 +2,7 @@
 
 **Class: `PackType`**
 
-A simple enum class used to represent pack information when adding [Packs](/helpers/packs).
+A simple enum class used to represent pack information when adding [Packs](/older-versions/26.1/packs).
 
 ### Values
 - `OPTIONAL_RESOURCES` - *used for resource packs which players should be able to disable*

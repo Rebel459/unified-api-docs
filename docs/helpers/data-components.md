@@ -1,6 +1,6 @@
 # Data Components
 
-**Class: `UnifiedHelpers / DataComponents`**
+**Class: `UnifiedHelpers / DATA_COMPONENTS`**
 
 Allows for simple appending of item components to any ItemLike (Block or Item).
 

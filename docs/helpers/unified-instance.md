@@ -1,12 +1,16 @@
-# Platform
+# Unified Instance
 
-**Class: `UnifiedPlatform`**
+**Class: `UnifiedInstance`**
+
+::: info
+Formerly `UnifiedPlatform` on 26.1
+:::
 
 Loader-agnostic way to check the current mod loader, loaded mods and the mod environment.
 
 ### Methods
 ```
-LoaderType getLoader();
+ModLoader getModLoader();
 
 boolean isClientSide();
 boolean isServerSide();
@@ -19,7 +23,7 @@ boolean isDevelopmentEnvironment();
 ### Example
 
 ```
-if (UnifiedPlatform.getLoader() == LoaderType.FABRIC && UnifiedPlatform.isServerSide() && UnifiedPlatform.isModLoaded("mod_name")) {
+if (UnifiedInstance.getModLoader() == ModLoader.FABRIC && UnifiedInstance.isServerSide() && UnifiedInstance.isModLoaded("mod_name")) {
     // run your code here
 }
 ```

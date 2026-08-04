@@ -1,6 +1,6 @@
 # Tooltips
 
-**Class: `UnifiedClientHelpers / ClientHelpersImpl.Tooltips`**
+**Class: `UnifiedClientHelpers / TOOLTIPS`**
 
 Used to bind a common tooltip class to its respective client tooltip.
 

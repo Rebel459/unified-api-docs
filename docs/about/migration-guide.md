@@ -4,6 +4,64 @@ This migration guide only covers breaking changes to existing code made to the U
 
 [View Full Changelog](/about/changelog)
 
+### 26.1 to 26.2
+
+*This update has minimal overall API changes, however it comes with a major internal restructuring, which will require the re-importing of all classes. This change was made in order to split all code into `api.` and `impl.`, so that internal-use code is clearly separated from developer-focused code (`api.` code will not receive breaking changes within the same Minecraft release).*
+
+Platform
+- renamed `UnifiedPlatform` to `UnifiedInstance`
+- - privatised `.get()` - this was marked as internal back on 26.1, and you can use all `UnifiedInstance` methods directly instead
+- - renamed `getLoader` to `getModLoader`
+- renamed `LoaderType` to `ModLoader`
+
+Registries
+- `UnifiedRegistries`
+- - all deprecated `registerHolder` methods were removed in favour of the identical `registerForHolder`
+- `UnifiedRegistries.Blocks`
+- - removed deprecated registry methods that required a non-supplied `BlockEntityType`
+- - - you can replace these with new methods that are otherwise identical, but require `Supplier<BlockEntityType`
+- - removed deprecated methods that allowed separate item property registrations
+- - - you should either use `registerWithoutItem` with a separately registered item, or use `UnifiedHelpers.DATA_COMPONENTS` to replace usages of these
+- `UnifiedRegistries.BlockEntityTypes`
+- - the deprecated register method which demanded the use of `Block` has been removed in favour of its `BlockLike` equivalent
+- `Supplied`, `SuppliedItem` and `SuppliedBlock`
+- - if you were using old registration methods, you might've been using `Supplier` - switch to using `Supplied` for additional features
+- - `SuppliedItem` and `SuppliedBlock` extend `ResourceKey` rather than the old (deprecated) ones within 26.1 extending `Holder`
+- - - if you were still using the old `SuppliedItem` and `SuppliedBlock` and need access to a `Holder`, use the `.holder()` method
+
+Helpers
+- replaced `UnifiedHelpers.PACKS` with `UnifiedHelpers.DATA_PACKS` and `UnifiedClientHelpers.RESOURCE_PACKS`
+- - this split was made for clarity, and to remove unnecessary enums
+- - both new helpers contain `addOptional` and `addRequired`, which you can use instead of `add` with `PackType`
+- removed `PackType`
+- - not used anymore due to the replacement of `UnifiedHelpers.PACKS`
+- renamed `UnifiedClientHelpers.LEGACY_BABY_ARMOR` to `UnifiedClientHelpers.SIMPLE_BABY_ARMOR`
+- - replaced `add(ResourceKey<EquipmentAsset> asset, boolean resize, int cutoff)` with `add(ResourceKey<EquipmentAsset> asset, int cutoff)`
+- - replaced `add(ResourceKey<EquipmentAsset> asset, boolean resize)` with `addWithoutDownscale`
+- `UnifiedHelpers`
+- - deprecated methods which demanded the use of a `Block` have been removed in favour of their `BlockLike` equivalents
+- moved `HelpersImpl.BiomeModifications.Context` to `BiomeModificationContext`
+- - now part of `api.`
+
+Events
+- renamed `EventType` to `EventTiming`
+- renamed `UnifiedClientEvents.Guis` to `UnifiedClientEvents.Hud`
+- - matches vanilla renames in 26.2
+- `UnifiedEvents`
+- - deprecated `modifyFiltered` methods and replaced with the identical `modifyWithFilter`
+- `UnifiedEvents.LootTables`
+- - removed the deprecated `editPool` method
+- - - the newer `editPool` method introduced a while back uses a `LootEntry` which supports replacement, insertion and removal, rather than just replacement and insertion
+- `UnifiedHelpers.BLOCK_CONVERSIONS`
+- - removed `addWeathering(WeatheringCopperBlocks set)`
+- - - vanilla removed `WeatheringCopperBlocks` and another `addWeathering` method still exists, so this was removed outright
+- moved `EventsImpl.LootTables.LootTable` to `LootTableContext`
+- - now part of `api.`
+
+Utilities
+- renamed `CreativeModeTabs` to `CreativeModeTabIds`
+- - this was made for consistency with new vanilla id classes, and to distinguish it from the vanilla `CreativeModeTabs` class
+
 ### 1.21.11 to 26.1
 
 Registries
