@@ -2,6 +2,14 @@
 
 ### 26.2
 
+**26.2-r1.1**
+
+Changed
+- fixed a crash caused by `UnifiedClientEvents.Huds` (and related internal classes) providing `Gui` instead of `Hud`
+- `VanillaVersion` `getString` now skips the `patch` if equals zero
+
+**26.2-r1.0**
+
 Added
 - `UnifiedHelpers.DATA_PACKS` and `UnifiedClientHelpers.RESOURCE_PACKS`
 - - includes `addRequired` and `addOptional` methods

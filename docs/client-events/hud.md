@@ -6,7 +6,7 @@
 Formerly `UnifiedClientEvents.Guis` on 26.1
 :::
 
-Allows you to access and add to Gui (HUD) elements.
+Allows you to access and add to Hud elements.
 
 The `renderHotbar` event is particularly useful over an equivalent mixin as Fabric and NeoForge have differing @Inject mixin targets (`extractHotbarAndDecorations` vs `extractHotbar`).
 
