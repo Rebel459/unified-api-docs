@@ -12,5 +12,5 @@ Used to bind a common tooltip class to its respective client tooltip.
 ### Example
 
 ```
-UnifiedClientHelpers.Tooltips.get().bind(ExampleTooltip.class, tooltip -> new ClientExampleTooltip(tooltip.getInt()));
+UnifiedClientHelpers.TOOLTIPS.bind(ExampleTooltip.class, tooltip -> new ClientExampleTooltip(tooltip.getInt()));
 ```

@@ -2,6 +2,20 @@
 
 ### 26.2
 
+**26.2-r2.1**
+
+Added
+- `WoodSet`
+- - second `creativeInventoryPlacement` method, giving the option to not include boats
+- - second `createSapling` method, allowing the placement of saplings in the creative inventory
+- - second `createLeaves` method, allowing the placement of leaves in the creative inventory
+
+Changed
+- `WoodSet`
+- - `precedingNaturalItem` in `creativeInventoryPlacement` now places the set's log after the specified item
+- `UnifiedClientHelpers.PARTICLE_PROVIDERS`
+- - `add` now uses `Supplier<? extends ParticleType<T>` instead of `Supplier<T>`
+
 **26.2-r2.0**
 
 Added
@@ -18,7 +32,7 @@ Added
 Changed
 - `UnifiedRegistries.Items`
 - - deprecated old `registerBlockItem` methods as they were made redundant by the new ones
-- anywhere that previously asked for `Supplier<ItemLike>` now accepts `Supplier<? extends ItemLike>`
+- anywhere that previously asked for `Supplier<? extends ItemLike>` now accepts `Supplier<? extends ItemLike>`
 - `VanillaVersion` `getString` now skips `patch` if it equals zero [26.1]
 
 **26.2-r1.1**
@@ -82,7 +96,7 @@ Added
 Changed
 - `UnifiedRegistries.Items`
 - - deprecated old `registerBlockItem` methods as they were made redundant by the new ones
-- anywhere that previously asked for `Supplier<ItemLike>` now accepts `Supplier<? extends ItemLike>`
+- anywhere that previously asked for `Supplier<? extends ItemLike>` now accepts `Supplier<? extends ItemLike>`
 - `VanillaVersion` `getString` now skips `patch` if it equals zero [26.1]
 
 **26.1-r5.3**

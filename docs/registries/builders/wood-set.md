@@ -16,9 +16,11 @@ Leaves and Saplings are not created by default, and must instead be registered t
 
 Methods used when building the Set.
 
-`creativeInventoryPlacement(Supplier<ItemLike> precedingBuildingItem, Supplier<ItemLike> precedingNaturalItem, Supplier<ItemLike> precedingFunctionalShelfItem, Supplier<ItemLike> precedingFunctionalSignItem,Supplier<ItemLike> precedingUtilitiesItem)`
+`creativeInventoryPlacement(Supplier<? extends ItemLike> precedingBuildingItem, Supplier<? extends ItemLike> precedingNaturalItem, Supplier<? extends ItemLike> precedingFunctionalShelfItem, Supplier<? extends ItemLike> precedingFunctionalSignItem)`
 
-Used to add items to the creative inventory.
+`creativeInventoryPlacement(Supplier<? extends ItemLike> precedingBuildingItem, Supplier<? extends ItemLike> precedingNaturalItem, Supplier<? extends ItemLike> precedingFunctionalShelfItem, Supplier<? extends ItemLike> precedingFunctionalSignItem, Supplier<? extends ItemLike> precedingUtilitiesItem)`
+
+Used to add items to the creative inventory. Optionally specifying `precedingUtilitiesItem` adds boats to the creative inventory.
 
 `setLeafSoundType(Supplier<SoundType> leafSoundType)`
 
@@ -104,11 +106,15 @@ Must be used when finishing the set, to return either a WoodSet or WoodPreset.
 
 `createLeaves(Function<BlockBehaviour.Properties, Block> properties, MapColor mapColor)`
 
-Creates leaves for the WoodSet.
+`createLeaves(Function<BlockBehaviour.Properties, Block> properties, MapColor mapColor, Supplier<? extends ItemLike> precedingCreativeLeaves)`
+
+Creates leaves for the WoodSet. Optionally specifying `precedingCreativeLeaves` adds the leaves to the creative inventory.
 
 `createSapling(Function<BlockBehaviour.Properties, Block> properties, MapColor mapColor)`
 
-Creates a sapling for the WoodSet.
+`createSapling(Function<BlockBehaviour.Properties, Block> properties, MapColor mapColor, Supplier<? extends ItemLike> precedingCreativeSapling)`
+
+Creates a sapling for the WoodSet. Optionally specifying `precedingCreativeSapling` adds the sapling to the creative inventory.
 
 ### Object Methods
 

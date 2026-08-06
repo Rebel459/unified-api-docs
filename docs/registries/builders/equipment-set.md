@@ -18,13 +18,13 @@ This builder does not create anything by default. You must make sure to use `.cr
 
 Methods used when building the Set.
 
-`creativeArmorPlacement(Supplier<ItemLike> precedingCombatArmor)`
+`creativeArmorPlacement(Supplier<? extends ItemLike> precedingCombatArmor)`
 
-`creativeArmorPlacement(Supplier<ItemLike> precedingCombatArmor, Supplier<ItemLike> precedingCombatHorseArmor, Supplier<ItemLike> precedingCombatNautilusArmor)`
+`creativeArmorPlacement(Supplier<? extends ItemLike> precedingCombatArmor, Supplier<? extends ItemLike> precedingCombatHorseArmor, Supplier<? extends ItemLike> precedingCombatNautilusArmor)`
 
 Used to add armor to the creative inventory. Specifying horse and nautilus preceding items will also ensure that horse and nautilus armor is added to the creative inventory (though you'll have to make sure you've actually chosen to register animal armor!).
 
-`creativeToolPlacement(Supplier<ItemLike> precedingUtilitiesItem, Supplier<ItemLike> precedingCombatSword, Supplier<ItemLike> precedingCombatSpear, Supplier<ItemLike> precedingCombatAxe)`
+`creativeToolPlacement(Supplier<? extends ItemLike> precedingUtilitiesItem, Supplier<? extends ItemLike> precedingCombatSword, Supplier<? extends ItemLike> precedingCombatSpear, Supplier<? extends ItemLike> precedingCombatAxe)`
 
 Used to add tools to the creative inventory.
 

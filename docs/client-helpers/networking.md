@@ -19,6 +19,5 @@ void send(CustomPacketPayload payload);
 ### Example
 
 ```
-var networking = UnifiedClientHelpers.NetworkPayloads.get()
-networking.send(new ExamplePacket("string"))
+UnifiedClientHelpers.NETWORKING.send(new ExamplePacket("string"))
 ```

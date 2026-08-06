@@ -16,9 +16,9 @@ The only block that *must* be created in a block set is the base block - all oth
 
 Methods used when building the Set.
 
-`creativeInventoryPlacement(Supplier<ItemLike> precedingBuildingItem)`
+`creativeInventoryPlacement(Supplier<? extends ItemLike> precedingBuildingItem)`
 
-`creativeInventoryPlacement(Supplier<ItemLike> precedingBuildingItem, Supplier<ItemLike> precedingNaturalItem)`
+`creativeInventoryPlacement(Supplier<? extends ItemLike> precedingBuildingItem, Supplier<? extends ItemLike> precedingNaturalItem)`
 
 Used to add items to the creative inventory. Optionally specifying `precedingNaturalItem` will add the base block to the natural creative tab.
 
