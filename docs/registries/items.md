@@ -13,7 +13,8 @@ the `.builders()` method allows you to access item-related [registry builders](/
 ```
 SuppliedItem register(String path, Function<Item.Properties, Item> function, Supplier<Item.Properties> properties);
 
-<T extends Block> SuppliedItem registerBlockItem(String path, Supplier<T> blockSupplier, Supplier<Item.Properties> properties);
+SuppliedItem registerBlockItem(SuppliedBlock block, BiFunction<Block, Item.Properties, Item> function, Supplier<Item.Properties> properties);
+<T extends Block> SuppliedItem registerBlockItem(String path, Supplier<T> block, BiFunction<Block, Item.Properties, Item> function, Supplier<Item.Properties> properties);
 
 void addAlias(Identifier convertedFrom, Identifier convertedTo);
 ```

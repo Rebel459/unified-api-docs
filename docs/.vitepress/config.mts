@@ -37,12 +37,16 @@ export default defineConfig({
                 collapsed: true,
                 items: [
                   { text: 'Registry Builders', link: '/registries/builders/registry-builders' },
-                  { text: 'Block Set', link: '/registries/builders/block-set' },
-                  { text: 'Block Preset', link: '/registries/builders/block-preset' },
                   { text: 'Wood Set', link: '/registries/builders/wood-set' },
                   { text: 'Wood Preset', link: '/registries/builders/wood-preset' },
+                  { text: 'Block Set', link: '/registries/builders/block-set' },
+                  { text: 'Block Preset', link: '/registries/builders/block-preset' },
+                  { text: 'Colored Block Set', link: '/registries/builders/colored-block-set' },
+                  { text: 'Colored Block Preset', link: '/registries/builders/colored-block-preset' },
                   { text: 'Equipment Set', link: '/registries/builders/equipment-set' },
-                  { text: 'Equipment Preset', link: '/registries/builders/equipment-preset' }
+                  { text: 'Equipment Preset', link: '/registries/builders/equipment-preset' },
+                  { text: 'Colored Item Set', link: '/registries/builders/colored-item-set' },
+                  { text: 'Colored Item Preset', link: '/registries/builders/colored-item-preset' }
                 ]
               },
               { text: 'Entity Types', link: '/registries/entity-types' },
@@ -77,7 +81,8 @@ export default defineConfig({
               { text: 'Networking', link: '/helpers/networking' },
               { text: 'Block Conversions', link: '/helpers/block-conversions' },
               { text: 'Data Components', link: '/helpers/data-components' },
-              { text: 'Structure Music', link: '/helpers/structure-music' }
+              { text: 'Structure Music', link: '/helpers/structure-music' },
+              { text: 'Reload Listeners', link: '/helpers/reload-listeners' }
             ]
           },
           {
@@ -90,7 +95,8 @@ export default defineConfig({
               { text: 'Particle Providers', link: '/client-helpers/particle-providers' },
               { text: 'Entity Renderers', link: '/client-helpers/entity-renderers' },
               { text: 'Tooltips', link: '/client-helpers/tooltips' },
-              { text: 'Simple Baby Armor', link: '/client-helpers/simple-baby-armor' }
+              { text: 'Simple Baby Armor', link: '/client-helpers/simple-baby-armor' },
+              { text: 'Reload Listeners', link: '/client-helpers/reload-listeners' }
             ]
           }
         ]

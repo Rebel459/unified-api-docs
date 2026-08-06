@@ -1,6 +1,6 @@
 # Loot Tables
 
-**Class: `UnifiedEvents.LootTables`**
+**Class: `UnifiedEvents.LootTables / LootTableContext`**
 
 This event allows you to add entire pools to any loot table through `addPool`. Further, you can also insert, replace and remove individual entries within any given pool using `editPool`.
 

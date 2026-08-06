@@ -1,6 +1,6 @@
-# BiomeModifications
+# Biome Modifications
 
-**Class: `UnifiedHelpers / BIOME_MODIFICATIONS`**
+**Class: `UnifiedHelpers / BIOME_MODIFICATIONS / BiomeModificationContext`**
 
 A complete biome modification API which allows for
 - adding / removing features & carvers
@@ -17,46 +17,14 @@ Basically, it's a multiloader equivalent of Fabric's biome modification API, so 
 
 ### Methods
 ```
-interface Worldgen {
-    void addFeature(ResourceKey<PlacedFeature> feature, GenerationStep.Decoration step);
-    void removeFeature(ResourceKey<PlacedFeature> feature, GenerationStep.Decoration step);
-    void addCarver(ResourceKey<ConfiguredWorldCarver<?>> carverKey);
-    void removeCarver(ResourceKey<ConfiguredWorldCarver<?>> carverKey);
-}
-
-interface Effects {
-    void setWaterColor(int color);
-    void setFoliageColor(int color);
-    void setDryFoliageColor(int color);
-    void setGrassColor(int color);
-}
-
-interface Climate {
-    void setTemperature(float temperature);
-    void setDownfall(float downfall);
-    void setPrecipitation(boolean hasPrecipitation);
-}
-
-interface EnvironmentAttributes {
-    <Value> void set(EnvironmentAttribute<Value> attribute, Value value);
-}
-
-interface MobSpawns {
-    void addSpawn(MobSpawnSettings.SpawnerData data, int weight);
-    void removeSpawn(EntityType<?> entityType);
-
-    void addCharge(EntityType<?> entityType, double charge, double energyBudget);
-    void removeCharge(EntityType<?> entityType);
-}
-
-final class Context {
+public final class BiomeModificationContext {
     private final Worldgen worldgen;
     private final Effects effects;
     private final Climate climate;
     private final EnvironmentAttributes environmentAttributes;
     private final MobSpawns mobSpawns;
 
-    Context(Worldgen worldgen, Effects effects, Climate climate, EnvironmentAttributes environmentAttributes, MobSpawns mobSpawns) {
+    public BiomeModificationContext(Worldgen worldgen, Effects effects, Climate climate, EnvironmentAttributes environmentAttributes, MobSpawns mobSpawns) {
         this.worldgen = worldgen;
         this.effects = effects;
         this.climate = climate;
@@ -83,11 +51,46 @@ final class Context {
     public MobSpawns getMobSpawns() {
         return mobSpawns;
     }
+
+    public interface Worldgen {
+        void addFeature(ResourceKey<PlacedFeature> feature, GenerationStep.Decoration step);
+        void removeFeature(ResourceKey<PlacedFeature> feature, GenerationStep.Decoration step);
+        void addCarver(ResourceKey<ConfiguredWorldCarver<?>> carverKey);
+        void removeCarver(ResourceKey<ConfiguredWorldCarver<?>> carverKey);
+    }
+
+    public interface Effects {
+        void setWaterColor(int color);
+        void setFoliageColor(int color);
+        void setDryFoliageColor(int color);
+        void setGrassColor(int color);
+    }
+
+    public interface Climate {
+        void setTemperature(float temperature);
+        void setDownfall(float downfall);
+        void setPrecipitation(boolean hasPrecipitation);
+    }
+
+    public interface EnvironmentAttributes {
+        <Value> void set(EnvironmentAttribute<Value> attribute, Value value);
+    }
+
+    public interface MobSpawns {
+        void addSpawn(MobSpawnSettings.SpawnerData data, int weight);
+        void removeSpawn(EntityType<?> entityType);
+
+        void addCharge(EntityType<?> entityType, double charge, double energyBudget);
+        void removeCharge(EntityType<?> entityType);
+    }
 }
 
-void register(ResourceKey<Biome> biome, Consumer<Context> context);
-void register(List<ResourceKey<Biome>> biomes, Consumer<Context> context);
-void register(TagKey<Biome> biome, Consumer<Context> context);
+public interface BiomeModifications {
+
+    void register(ResourceKey<Biome> biome, Consumer<BiomeModificationContext> context);
+    void register(List<ResourceKey<Biome>> biomes, Consumer<BiomeModificationContext> context);
+    void register(TagKey<Biome> biome, Consumer<BiomeModificationContext> context);
+}
 ```
 
 ### Example

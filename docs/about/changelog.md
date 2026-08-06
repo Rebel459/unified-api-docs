@@ -2,11 +2,30 @@
 
 ### 26.2
 
+**26.2-r2.0**
+
+Added
+- new `ColoredBlockSet` and `ColoredBlockPreset`
+- - used to create a set of blocks in all 16 colors
+- new `ColoredItemSet` and `ColoredItemPreset`
+- - used to create a set of items in all 16 colors
+- - can be bound to a `ColoredBlockSet` if you want separate block-items
+- new `UnifiedHelpers.RELOAD_LISTENERS` and `UnifiedClientHelpers.RELOAD_LISTENERS`
+- - used to register data and resource reload listeners respectively
+- `UnifiedRegistries.Items`
+- - 2 new `registerBlockItem` methods, which allow specifying the item's function (eg `BlockItem::new`)
+
+Changed
+- `UnifiedRegistries.Items`
+- - deprecated old `registerBlockItem` methods as they were made redundant by the new ones
+- anywhere that previously asked for `Supplier<ItemLike>` now accepts `Supplier<? extends ItemLike>`
+- `VanillaVersion` `getString` now skips `patch` if it equals zero [26.1]
+
 **26.2-r1.1**
 
 Changed
 - fixed a crash caused by `UnifiedClientEvents.Huds` (and related internal classes) providing `Gui` instead of `Hud`
-- `VanillaVersion` `getString` now skips the `patch` if equals zero
+- `VanillaVersion` `getString` now skips `patch` if it equals zero
 
 **26.2-r1.0**
 
@@ -46,6 +65,25 @@ Removed
 *Continued from 26.1-r5.3*
 
 ### 26.1
+
+**26.1-r6.0**
+
+Added
+- new `ColoredBlockSet` and `ColoredBlockPreset`
+- - used to create a set of blocks in all 16 colors
+- new `ColoredItemSet` and `ColoredItemPreset`
+- - used to create a set of items in all 16 colors
+- - can be bound to a `ColoredBlockSet` if you want separate block-items
+- new `UnifiedHelpers.RELOAD_LISTENERS` and `UnifiedClientHelpers.RELOAD_LISTENERS`
+- - used to register data and resource reload listeners respectively
+- `UnifiedRegistries.Items`
+- - 2 new `registerBlockItem` methods, which allow specifying the item's function (eg `BlockItem::new`)
+
+Changed
+- `UnifiedRegistries.Items`
+- - deprecated old `registerBlockItem` methods as they were made redundant by the new ones
+- anywhere that previously asked for `Supplier<ItemLike>` now accepts `Supplier<? extends ItemLike>`
+- `VanillaVersion` `getString` now skips `patch` if it equals zero [26.1]
 
 **26.1-r5.3**
 
