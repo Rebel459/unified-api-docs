@@ -80,6 +80,20 @@ Removed
 
 ### 26.1
 
+**26.1-r6.1**
+
+Added
+- `WoodSet`
+- - second `creativeInventoryPlacement` method, giving the option to not include boats
+- - second `createSapling` method, allowing the placement of saplings in the creative inventory
+- - second `createLeaves` method, allowing the placement of leaves in the creative inventory
+
+Changed
+- `WoodSet`
+- - `precedingNaturalItem` in `creativeInventoryPlacement` now places the set's log after the specified item
+- `UnifiedClientHelpers.PARTICLE_PROVIDERS`
+- - `add` now uses `Supplier<? extends ParticleType<T>` instead of `Supplier<T>`
+
 **26.1-r6.0**
 
 Added
