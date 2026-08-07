@@ -12,7 +12,7 @@ Whilst it's recommended you bind your blocks to your custom block entity here, y
 
 ```
 @NotNull <T extends BlockEntity> Supplied<BlockEntityType<T>> register(String path, @NotNull BlockEntityType.BlockEntitySupplier<T> builder);
-@NotNull <T extends BlockEntity> Supplied<BlockEntityType<T>> register(String path, @NotNull BlockEntityType.BlockEntitySupplier<T> builder, BlockLike... blocks);
+@NotNull <T extends BlockEntity> Supplied<BlockEntityType<T>> register(String path, BlockEntityType.BlockEntitySupplier<T> builder, Supplier<? extends BlockLike>... blocks);
 
 void addAlias(Identifier convertedFrom, Identifier convertedTo);
 ```

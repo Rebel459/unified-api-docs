@@ -4,6 +4,8 @@
 
 Allows you to register multiloader data packs.
 
+`addRequired` sets the pack to always be enabled, whilst `addOptional` defaults it to disabled and gives the player full control over enabling it.
+
 ::: warning
 All packs must be located in common/.../resources/resourcepacks, as Fabric hardcodes the required directory.
 :::

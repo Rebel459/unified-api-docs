@@ -2,6 +2,23 @@
 
 ### 26.2
 
+**26.2-r2.2**
+
+Added
+- `UnifiedRegistries.BlockEntityTypes`
+- - added `register(String path, BlockEntityType.BlockEntitySupplier<T> builder, Supplier<? extends BlockLike>... blocks)`
+
+Changed
+- `ColoredBlockSet` and `ColoredItemSet`
+- - fixed crash when `creativeInventoryPlacement` isn't used
+- `UnifiedHelpers.DATA_PACKS` and `UnifiedClientHelpers.RESOURCE_PACKS` [26.2]
+- - `addOptional` now defaults to disabled on Fabric, matching NeoForge behaviour
+- `PackType` [26.1]
+- - `OPTIONAL_RESOURCES` and `OPTIONAL_DATA` now default packs to disabled on Fabric, matching NeoForge behaviour
+- `UnifiedRegistries.BlockEntityTypes`
+- - deprecated `register(String path, BlockEntityType.BlockEntitySupplier<T> builder, BlockLike... blocks)`
+- fixed NeoForge crash caused by incorrect event bus for server reload listeners
+
 **26.2-r2.1**
 
 Added
@@ -79,6 +96,23 @@ Removed
 *Continued from 26.1-r5.3*
 
 ### 26.1
+
+**26.1-r6.2**
+
+Added
+- `UnifiedRegistries.BlockEntityTypes`
+- - added `register(String path, BlockEntityType.BlockEntitySupplier<T> builder, Supplier<? extends BlockLike>... blocks)`
+
+Changed
+- `ColoredBlockSet` and `ColoredItemSet`
+- - fixed crash when `creativeInventoryPlacement` isn't used
+- `UnifiedHelpers.DATA_PACKS` and `UnifiedClientHelpers.RESOURCE_PACKS` [26.2]
+- - `addOptional` now defaults to disabled on Fabric, matching NeoForge behaviour
+- `PackType` [26.1]
+- - `OPTIONAL_RESOURCES` and `OPTIONAL_DATA` now default packs to disabled on Fabric, matching NeoForge behaviour
+- `UnifiedRegistries.BlockEntityTypes`
+- - deprecated `register(String path, BlockEntityType.BlockEntitySupplier<T> builder, BlockLike... blocks)`
+- fixed NeoForge crash caused by incorrect event bus for server reload listeners
 
 **26.1-r6.1**
 
