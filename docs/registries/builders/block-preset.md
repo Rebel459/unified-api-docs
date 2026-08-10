@@ -54,6 +54,14 @@ The following presets are accurate recreations of their corresponding vanilla bl
 
 `BlockPreset.PURPUR`
 
+`BlockPreset.SULFUR`
+
+`BlockPreset.POLISHED_SULFUR`
+
+`BlockPreset.CINNABAR`
+
+`BlockPreset.POLISHED_CINNABAR`
+
 ### Creation Methods
 
 `.create()`

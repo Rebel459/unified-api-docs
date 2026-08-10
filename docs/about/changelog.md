@@ -2,6 +2,21 @@
 
 ### 26.2
 
+**26.2-r2.3**
+
+Added
+- `BlockPreset`
+- - new `SULFUR`, `POLISHED_SULFUR` and `SULFUR_BRICKS` presets
+- - new `CINNABAR`, `POLISHED_CINNABAR` and `CINNABAR_BRICKS` presets
+
+Changed
+- `WoodSet`
+- - deprecated `setLeafSoundType` and `getLeafSoundType` in favour of new `setLeavesSoundType` and `getLeavesSoundType` respectively
+- `WoodPreset`
+- - `WoodPreset.CHERRY` now includes Cherry Leaves sounds
+- deprecated `UnifiedRegistries.BlockEntityTypes`
+- deprecated `UnifiedRegistries.CreativeTabs`
+
 **26.2-r2.2**
 
 Added
@@ -96,6 +111,16 @@ Removed
 *Continued from 26.1-r5.3*
 
 ### 26.1
+
+**26.2-r2.3**
+
+Changed
+- `WoodSet`
+- - deprecated `setLeafSoundType` and `getLeafSoundType` in favour of new `setLeavesSoundType` and `getLeavesSoundType` respectively
+- `WoodPreset`
+- - `WoodPreset.CHERRY` now includes Cherry Leaves sounds
+- deprecated `UnifiedRegistries.BlockEntityTypes`
+- deprecated `UnifiedRegistries.CreativeTabs`
 
 **26.1-r6.2**
 

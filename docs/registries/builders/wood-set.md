@@ -22,7 +22,7 @@ Methods used when building the Set.
 
 Used to add items to the creative inventory. Optionally specifying `precedingUtilitiesItem` adds boats to the creative inventory.
 
-`setLeafSoundType(Supplier<SoundType> leafSoundType)`
+`setLeavesSoundType(Supplier<SoundType> leavesSoundType)`
 
 Sets the sounds of leaves.
 

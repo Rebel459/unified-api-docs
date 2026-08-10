@@ -50,8 +50,6 @@ export default defineConfig({
                 ]
               },
               { text: 'Entity Types', link: '/registries/entity-types' },
-              { text: 'Block Entity Types', link: '/registries/block-entity-types' },
-              { text: 'Creative Tabs', link: '/registries/creative-tabs' },
               { text: 'Data Component Types', link: '/registries/data-component-types' },
               { text: 'Sound Events', link: '/registries/sound-events' }
             ]
