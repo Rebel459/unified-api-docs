@@ -6,8 +6,8 @@
 
 Added
 - `BlockPreset`
-- - new `SULFUR`, `POLISHED_SULFUR` and `SULFUR_BRICKS` presets
-- - new `CINNABAR`, `POLISHED_CINNABAR` and `CINNABAR_BRICKS` presets
+- - new `SULFUR` and `POLISHED_SULFUR` presets
+- - new `CINNABAR` and `POLISHED_CINNABAR` presets
 
 Changed
 - `WoodSet`
