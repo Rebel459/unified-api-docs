@@ -145,6 +145,7 @@ export default defineConfig({
               { text: 'Unified Item Tags', link: '/utilities/unified-item-tags' },
               { text: 'Loot Entry', link: '/utilities/loot-entry' },
               { text: 'Block Like', link: '/utilities/block-like' },
+              { text: 'Creative Mode Tab Builder', link: '/utilities/creative-mode-tab-builder' },
               { text: 'Creative Mode Tab Ids', link: '/utilities/creative-mode-tab-ids' },
               { text: 'Vanilla Version', link: '/utilities/vanilla-version' },
               { text: 'Mod Loader', link: '/utilities/mod-loader' },

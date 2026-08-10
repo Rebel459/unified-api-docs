@@ -34,11 +34,15 @@ Sets the base properties of all items.
 
 `setComponent(Supplier<DataComponentType<Y>> type, Y value)`
 
+`setComponentWithDye(Supplier<DataComponentType<Y>> type, Function<DyeColor, Y> dyeValue)`
+
 `setComponentWithProvider(Supplier<DataComponentType<Y>> type, DataComponentInitializers.SingleComponentInitializer<Y> initializer)`
 
 `setComponentWithKey(Supplier<DataComponentType<Holder<Y>>> type, ResourceKey<Y> valueKey)`
 
 Used to set individual components for all items.
+
+`setComponentWithDye` specifically allows you to set a component based on the dye color (`dyeColor ->`).
 
 `build()`
 

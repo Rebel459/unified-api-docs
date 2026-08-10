@@ -2,6 +2,19 @@
 
 ### 26.2
 
+**26.2-r2.4**
+
+Added
+- new `CreativeModeTabBuilder`
+- - used to build custom creative tabs, which can then be registered via the Unified's deferred registry
+- `ColoredItemSet`
+- - new `setComponentWithDye`
+- - - used to add components using a per-item `DyeColor`
+
+Changed
+- `ColoredItemSet`
+- - fixed individually-set components not applying
+
 **26.2-r2.3**
 
 Added
@@ -111,6 +124,19 @@ Removed
 *Continued from 26.1-r5.3*
 
 ### 26.1
+
+**26.1-r6.4**
+
+Added
+- new `CreativeModeTabBuilder`
+- - used to build custom creative tabs, which can then be registered via the Unified's deferred registry
+- `ColoredItemSet`
+- - new `setComponentWithDye`
+- - - used to add components using a per-item `DyeColor`
+
+Changed
+- `ColoredItemSet`
+- - fixed individually-set components not applying
 
 **26.1-r6.3**
 

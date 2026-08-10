@@ -6,6 +6,8 @@ Allows easily adding vanilla & modded items to vanilla & modded creative tabs.
 
 You can either use `insert` to append the end of a tab, `insertBefore` to insert items before an existing entry or `insertAfter` to insert items after an existing entry. Multiple ItemLikes or ItemStacks are accepted.
 
+To create your own custom tab, check out the [Creative Mode Tab Builder](/utilities/creative-mode-tab-builder).
+
 ::: info
 Unified API includes its own [CreativeModeTabIds](/utilities/creative-mode-tab-ids) class, which provides easier access to all vanilla creative tab resource keys.
 :::
