@@ -2,6 +2,15 @@
 
 ### 26.2
 
+**26.2-r2.5**
+
+Changed
+- `WoodSet`
+- - sign and hanging signs now use the block description prefix
+- - the set's `WoodType` and `BlockSetType` are now automatically registered
+- `BlockSet`
+- - the set's `BlockSetType` is now automatically registered
+
 **26.2-r2.4**
 
 Added
@@ -124,6 +133,15 @@ Removed
 *Continued from 26.1-r5.3*
 
 ### 26.1
+
+**26.1-r6.5**
+
+Changed
+- `WoodSet`
+- - sign and hanging signs now use the block description prefix
+- - the set's `WoodType` and `BlockSetType` are now automatically registered
+- `BlockSet`
+- - the set's `BlockSetType` is now automatically registered
 
 **26.1-r6.4**
 
