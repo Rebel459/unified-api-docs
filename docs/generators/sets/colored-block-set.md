@@ -4,7 +4,7 @@
 
 **Builder Method: `coloredStoneSet(String name, ColoredBlockPreset preset)`**
 
-**Preset: [Colored Block Preset](/registries/builders/colored-block-preset)**
+**Preset: [Colored Block Preset](/generators/sets/colored-block-preset)**
 
 The Colored Block Set builder registers a set of blocks in all 16 colors. This set is basic, but extremely flexible.
 

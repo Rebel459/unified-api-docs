@@ -2,7 +2,7 @@
 
 **Class: `EquipmentPreset`**
 
-**Set: [Equipment Set](/registries/builders/equipment-set)**
+**Set: [Equipment Set](/generators/sets/equipment-set)**
 
 ### Included Presets
 

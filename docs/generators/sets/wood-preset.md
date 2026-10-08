@@ -2,7 +2,7 @@
 
 **Class: `WoodPreset`**
 
-**Set: [Wood Set](/registries/builders/wood-set)**
+**Set: [Wood Set](/generators/sets/wood-set)**
 
 ### Included Presets
 

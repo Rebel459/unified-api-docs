@@ -1,6 +1,6 @@
 ### Items
 
-*Type: Registry | Location: data/<namespace>/unified/registry/items*
+*Type: Registry | Location: `data/<namespace>/unified/registry/items`*
 
 Used to register new items. There are two types of items - items and block items.
 

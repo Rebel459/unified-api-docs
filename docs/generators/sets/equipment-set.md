@@ -4,7 +4,7 @@
 
 **Builder Method: `equipmentSet(String name, EquipmentPreset preset)`**
 
-**Preset: [Equipment Preset](/registries/builders/equipment-preset)**
+**Preset: [Equipment Preset](/generators/sets/equipment-preset)**
 
 The Equipment Set builder allows you to create an entire set of equipment, including weapons, tools, humanoid armor and animal armor. Everything other than datagen is handled simply by registering the set.
 

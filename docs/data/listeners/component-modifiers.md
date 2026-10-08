@@ -1,6 +1,6 @@
 ### Component Modifiers
 
-*Type: Data | Location: data/<namespace>/unified/component-modifiers*
+*Type: Data | Location: `data/<namespace>/unified/component-modifiers`*
 
 Used to change the default components on the specified items.
 

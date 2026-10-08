@@ -5,7 +5,7 @@
 A generic class which implements Supplier and stores additional information, used for conveniently accessing most content registered by Unified API.
 
 ::: info
-Whilst `Supplied` works great for most content, items and blocks have their own dedicated classes - [SuppliedItem](/utilities/supplied-item) and [SuppliedBlock](/utilities/supplied-block) - which include additional methods and implement additional interfaces
+Whilst `Supplied` works great for most content, items and blocks have their own dedicated classes - [SuppliedItem](/registries/supplied-item) and [SuppliedBlock](/registries/supplied-block) - which include additional methods and implement additional interfaces
 :::
 
 ### Methods

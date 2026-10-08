@@ -4,7 +4,7 @@
 
 **Builder Method: `coloredItemSet(String name, ColoredItemPreset preset)`**
 
-**Preset: [Colored Item Preset](/registries/builders/colored-item-preset)**
+**Preset: [Colored Item Preset](/generators/sets/colored-item-preset)**
 
 The Colored Item Set builder registers a set of items in all 16 colors. This set is basic, but extremely flexible.
 

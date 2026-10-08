@@ -1,6 +1,6 @@
 ### Mob Variants
 
-*Type: Data | Location: data/<namespace>/unified/mob-variants*
+*Type: Data | Location: `data/<namespace>/unified/mob-variants`*
 
 A powerful mob variant system that lets you create variants of almost any vanilla or modded mob. For example, creating a new fox or zombie variant.
 

@@ -1,6 +1,6 @@
 ### Block Set Types
 
-*Type: Registry | Location: data/<namespace>/unified/registry/block-set-types*
+*Type: Registry | Location: `data/<namespace>/unified/registry/block-set-types`*
 
 Used to register custom Block Set Types, which are required by certain blocks.
 

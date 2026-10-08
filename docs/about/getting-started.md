@@ -1,7 +1,7 @@
 # Getting Started
 
 ::: info
-If you're a datapack or modpack developer looking to use Unified API as a data-driven JSON library, you should instead refer to the [data-driven overview](/data-driven-overview).
+If you're a datapack or modpack developer looking to use Unified API as a data-driven JSON library, you should instead refer to the [data-driven overview](/data/overview).
 :::
 
 This page will guide you through getting started with a multiloader project and the Unified API. It is assumed that you are already somewhat familiar with mod development using [IntelliJ IDEA](https://www.jetbrains.com/idea/).
@@ -120,4 +120,4 @@ private static void commonSetup(final FMLCommonSetupEvent event) {
 }
 ```
 
-You'll also notice that we call `NeoForgeUnifiedBus.register` before we initialise the registries - this is done to ensure the NeoForge deferred registers are setup before they are called. For more information on Unified API's registries, please refer [here](/unified-registries).
+You'll also notice that we call `NeoForgeUnifiedBus.register` before we initialise the registries - this is done to ensure the NeoForge deferred registers are setup before they are called. For more information on Unified API's registries, please refer [here](/registries/unified-registries).

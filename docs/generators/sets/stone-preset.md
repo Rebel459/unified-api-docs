@@ -2,7 +2,7 @@
 
 **Class: `StonePreset`**
 
-**Set: [Block Set](/registries/builders/block-set)**
+**Set: [Stone Set](/generators/sets/stone-set)**
 
 ### Included Presets
 

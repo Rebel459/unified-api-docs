@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Wiki
-      link: /unified-api
+      link: /about/unified-api
     - theme: alt
       text: Source Code
       link: https://github.com/Rebel459/unified-api

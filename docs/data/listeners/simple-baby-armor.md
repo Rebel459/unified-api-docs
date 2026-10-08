@@ -1,6 +1,6 @@
 ### Simple Baby Armor
 
-*Type: Asset | Location: assets/<namespace>/unified/simple-baby-armor*
+*Type: Asset | Location: `assets/<namespace>/unified/simple-baby-armor`*
 
 If you're adding custom armor but don't want to make separate baby armor textures, you can use this to automatically rescale your adult armor textures for baby mobs.
 

@@ -2,7 +2,7 @@
 
 **Class: `UnifiedClientHelpers / PARTICLE_PROVIDERS`**
 
-Used to provide a registered Particle Type, registerable via [Deferred Registry](/registries/deferred-registry) with a sprite sheet / particle provider.
+Used to provide a registered Particle Type, registerable via [Deferred Registry](/registries/unified-registries) with a sprite sheet / particle provider.
 
 ### Methods
 ```

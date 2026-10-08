@@ -1,6 +1,6 @@
 ### Sound Events
 
-*Type: Registry | Location: data/<namespace>/unified/registry/sound-events*
+*Type: Registry | Location: `data/<namespace>/unified/registry/sound-events`*
 
 Allows the registering of custom sound events. Whilst sounds.json is client-side, you will need to actually register custom events here to reference them in other content, such as registered blocks.
 

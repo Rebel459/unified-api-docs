@@ -1,6 +1,6 @@
 ### Biome Modifiers
 
-*Type: Data | Location: data/<namespace>/unified/biome-modifiers*
+*Type: Data | Location: `data/<namespace>/unified/biome-modifiers`*
 
 Biome modifiers allow you to modify any existing biome, whether it's worldgen, effects, climate, attributes or spawns.
 

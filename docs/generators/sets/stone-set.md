@@ -4,7 +4,7 @@
 
 **Builder Method: `blockSet(String name, StonePreset preset, MapColor color)`**
 
-**Preset: [Block Preset](/registries/builders/block-preset)**
+**Preset: [Stone Preset](/generators/sets/stone-preset)**
 
 The Block Set builder allows you to create an entire blockset based on stone / bricks. Everything other than datagen is handled simply by registering the set.
 

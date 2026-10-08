@@ -2,7 +2,7 @@
 
 **Class: `ColoredBlockPreset`**
 
-**Set: [Colored Block Set](/registries/builders/colored-block-set)**
+**Set: [Colored Block Set](/generators/sets/colored-block-set)**
 
 ### Included Presets
 

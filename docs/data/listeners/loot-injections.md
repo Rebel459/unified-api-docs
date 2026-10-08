@@ -1,6 +1,6 @@
 ### Loot Injections
 
-*Type: Data | Location: data/<namespace>/unified/loot-injections*
+*Type: Data | Location: `data/<namespace>/unified/loot-injections`*
 
 Used to both add new loot table pools and modify existing ones.
 

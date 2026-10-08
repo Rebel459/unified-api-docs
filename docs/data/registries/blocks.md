@@ -1,6 +1,6 @@
 ### Blocks
 
-*Type: Registry | Location: data/<namespace>/unified/registry/blocks*
+*Type: Registry | Location: `data/<namespace>/unified/registry/blocks`*
 
 Used to register custom blocks. Most blocks will need a corresponding [block item](/data/registries/items) - one is not automatically created from a block JSON.
 
@@ -294,4 +294,4 @@ Sets the block's flammability.
 "oxidizes_into": <block identifier>
 ```
 
-Sets the block that this block oxidizes into. Useful for making a group of oxidizing / waxable copper blocks, in conjunction with [block conversions](/data/block-conversions) and relevant block types
+Sets the block that this block oxidizes into. Useful for making a group of oxidizing / waxable copper blocks, in conjunction with [block conversions](/data/listeners/block-conversions) and relevant block types

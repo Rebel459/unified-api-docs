@@ -4,7 +4,7 @@
 
 Allows for simple multiloader networking, wherein you can register payloads and handle what should happen when they arrive at their target (server/client).
 
-There's also [UnifiedClientHelpers.NETWORKING](/client-helpers/networking), which allows clients to send packets to the server.
+There's also [UnifiedClientHelpers.NETWORKING](/helpers/client/networking), which allows clients to send packets to the server.
 
 There are a couple things to note with Unified API's networking payloads
 - all payloads registries / handlers are combined (though you can do register-only if you need to)

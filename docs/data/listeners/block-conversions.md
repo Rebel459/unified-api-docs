@@ -1,6 +1,6 @@
 ### Block Conversions
 
-*Type: Data | Location: data/<namespace>/unified/block-conversions*
+*Type: Data | Location: `data/<namespace>/unified/block-conversions`*
 
 Block Conversions let you create block-swapping behaviour. For example, waxing copper or stripping logs.
 

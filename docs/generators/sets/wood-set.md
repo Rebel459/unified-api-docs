@@ -4,7 +4,7 @@
 
 **Builder Method: `woodSet(String name, WoodPreset preset, MapColor barkColor, MapColor plankColor)`**
 
-**Preset: [Wood Preset](/registries/builders/wood-preset)**
+**Preset: [Wood Preset](/generators/sets/wood-preset)**
 
 The Wood Set builder allows you to create an entire woodset, including all items, entities and blocks. Everything other than datagen is handled simply by registering the set.
 

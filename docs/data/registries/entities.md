@@ -1,6 +1,6 @@
 ### Entities
 
-*Type: Registry | Location: data/<namespace>/unified/registry/entities*
+*Type: Registry | Location: `data/<namespace>/unified/registry/entities`*
 
 Used to register custom entities. 
 

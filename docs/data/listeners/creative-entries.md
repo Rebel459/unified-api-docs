@@ -1,6 +1,6 @@
 ### Creative Entries
 
-*Type: Asset | Location: assets/<namespace>/unified/creative-entries*
+*Type: Asset | Location: `assets/<namespace>/unified/creative-entries`*
 
 Allows you to add items to any creative tab.
 

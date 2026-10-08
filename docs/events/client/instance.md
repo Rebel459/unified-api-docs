@@ -2,7 +2,7 @@
 
 **Class: `UnifiedClientEvents.Instance`**
 
-Client instance-related events. `onTick` Can be useful for providing custom functionality to [Key Mappings](/client-registries/key-mappings).
+Client instance-related events. `onTick` Can be useful for providing custom functionality to [Key Mappings](/helpers/client/key-mappings).
 
 ### Methods
 

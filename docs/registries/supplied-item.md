@@ -4,7 +4,7 @@
 
 Extends `Supplied<Item>` and implements `ItemLike`.
 
-Registered items provide `SuppliedItem`, which works much like [Supplied](/utilities/supplied), with additional implementations for ItemLike.
+Registered items provide `SuppliedItem`, which works much like [Supplied](/registries/supplied), with additional implementations for ItemLike.
 
 ### Methods
 

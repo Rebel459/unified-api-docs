@@ -1,6 +1,6 @@
 ### Creative Tabs
 
-*Type: Registry | Location: data/<namespace>/unified/registry/creative-tabs*
+*Type: Registry | Location: `data/<namespace>/unified/registry/creative-tabs`*
 
 Used to add all-new Creative Tabs. All fields are optional, though your tab won't do much without any.
 

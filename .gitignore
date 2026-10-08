@@ -5,3 +5,4 @@ commands.txt
 /node_modules
 /docs/.vitepress/dist
 /.idea
+/docs/.vitepress/cache

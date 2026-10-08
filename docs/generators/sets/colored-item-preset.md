@@ -2,7 +2,7 @@
 
 **Class: `ColoredItemPreset`**
 
-**Set: [Colored Item Set](/registries/builders/colored-item-set)**
+**Set: [Colored Item Set](/generators/sets/colored-item-set)**
 
 ### Included Presets
 

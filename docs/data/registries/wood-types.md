@@ -1,6 +1,6 @@
 ### Wood Types
 
-*Type: Registry | Location: data/<namespace>/unified/registry/wood-types*
+*Type: Registry | Location: `data/<namespace>/unified/registry/wood-types`*
 
 Used to register custom Wood Types, which are required by certain blocks.
 
