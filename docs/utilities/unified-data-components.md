@@ -5,7 +5,7 @@
 The Unified API contains custom item components to expose additional functionality in an easy-to-use, crossloader manner.
 
 ::: info
-These components can also be easily added to blocks and vanilla items using [UnifiedHelpers.DATA_COMPONENTS](/helpers/data-components)
+This class was made redundant by new vanilla components and thus removed on 26.3 & above
 :::
 
 ### Furnace Fuel

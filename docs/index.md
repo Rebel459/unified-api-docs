@@ -8,20 +8,20 @@ hero:
   tagline: A multiloader API built to enable easy cross-loader mod development
   actions:
     - theme: brand
-      text: Getting Started
-      link: /about/getting-started
+      text: Wiki
+      link: /unified-api
     - theme: alt
       text: Source Code
       link: https://github.com/Rebel459/unified-api
 
 features:
-  - title: About
-    details: View the Unified API documentation
-    link: /unified-api
+  - title: Getting Started
+    details: The full guide for mod developers using Unified API
+    link: /about/getting-started
+  - title: Data-Driven Documentation
+    details: Want information on the plethora of data-driven features? If you're a datapacker, head here
+    link: /data/overview
   - title: Changelog
-    details: View the full Unified API changelogs
+    details: View all Unified API changelogs to see what's new, fixed or tweaked
     link: /about/changelog
-  - title: Migration Guide
-    details: View the guide on migrating between major Unified API releases
-    link: /about/migration-guide
 ---

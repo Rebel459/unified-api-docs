@@ -2,10 +2,6 @@
 
 **Class: `CreativeModeTabIds`**
 
-::: info
-Formerly `CreativeModeTabs` on 26.1
-:::
-
 A simple class which provides access to many vanilla creative tab resource keys.
 
 ### Resource Keys
