@@ -8,7 +8,7 @@ hero:
   tagline: A multiloader API built to enable easy cross-loader mod development
   actions:
     - theme: brand
-      text: Wiki
+      text: Documentation
       link: /about/unified-api
     - theme: alt
       text: Source Code
