@@ -202,6 +202,7 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: 'Unified Platform', link: '/utilities/unified-platform' },
+          { text: 'Unified Attachments', link: '/utilities/unified-attachments' },
           { text: 'Block Like', link: '/utilities/block-like' },
           { text: 'Creative Mode Tab Ids', link: '/utilities/creative-mode-tab-ids' },
           { text: 'Event Timing', link: '/utilities/event-timing' },

@@ -5,7 +5,7 @@
 Used to add data registry listeners (for example, vanilla uses this for Sulfur Cube Archetypes)
 
 ::: warning
-`UnifiedHelpers.DATA_REGOSTROES` must be used in your registries init, not your common init.
+`UnifiedHelpers.DATA_REGISTRIES` must be used in your registries init, not your common init.
 :::
 
 ### Methods

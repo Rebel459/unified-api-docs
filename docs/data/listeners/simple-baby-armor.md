@@ -13,10 +13,10 @@ If you're adding custom armor but don't want to make separate baby armor texture
 **Format**
 
 ```json5
-"equipment_asset": <equipment asset identifier>
+"equipment_assets": [<equipment asset identifier>]
 ```
 
-The name of the equipment asset to apply Simple Baby Armor to
+The name of the equipment assets to apply Simple Baby Armor to
 
 ```json5
 "downscale": <boolean> // optional, defaults to true

@@ -2005,7 +2005,7 @@
     "satisfying_blocks": <identifier>, // optional
     "nearby_satisfying_blocks_required": <int>, // optional, defaults to `1`, range: `0` or greater
     "nearby_same_leaves_required": <int> // optional, defaults to `3`, range: `0` or greater
-  }
+  } // optional, defaults to `AmbientLeavesBlockSoundPlayer.noAmbientSound()`
 }
 ```
 
@@ -2023,7 +2023,7 @@
     "satisfying_blocks": <identifier>, // optional
     "nearby_satisfying_blocks_required": <int>, // optional, defaults to `1`, range: `0` or greater
     "nearby_same_leaves_required": <int> // optional, defaults to `3`, range: `0` or greater
-  }
+  } // optional, defaults to `AmbientLeavesBlockSoundPlayer.noAmbientSound()`
 }
 ```
 

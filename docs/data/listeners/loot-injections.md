@@ -13,10 +13,10 @@ Used to both add new loot table pools and modify existing ones.
 **Format**
 
 ```json5
-"target": <loot table identifier>
+"targets": [<loot table identifier>]
 ```
 
-The loot table to change.
+The loot tables to change.
 
 ```json5
 "pools": [<loot table>] // https://minecraft.wiki/w/Loot_table

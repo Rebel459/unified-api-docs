@@ -26,28 +26,18 @@ However, there are a ton of additional features that vanilla mob variants do not
 The target entity the variant should be created from.
 
 ```json5
-"texture": <texture identifier> // optional
-
-"texture": { // optional
-    "original": <texture identifier>, // optional
-    "replacement": <texture identifier>
-}
+"texture_replacements": [
+    {
+        "type": <string>, // optional, accepts "replace_adult_texture", "replace_baby_texture" or "replace_texture". Defaults to "replace_texture"
+        "original": <texture identifier>, // used only by "replace_texture"
+        "replacement": <texture identifier>
+    }
+] // optional
 ```
 
-The texture location to be used by the mob variant. 
+The texture replacements to be used by the mob variant. 
 
-You can optionally write this in long form so that the new texture is only applied on a mob instance that used a specified texture. This is useful, for example, if you want to add a variant for mobs which have multiple models - such as cows - so that you don't try and make apply a normal cow texture to what would've originally been a horned cow, for example.
-
-```json5
-"baby_texture": <texture identifier> // optional
-
-"baby_texture": { // optional
-    "original": <texture identifier>, // optional
-    "replacement": <texture identifier>
-}
-```
-
-Same as the adult texture setter, but for the baby texture.
+You can specify a target texture, and the texture the variant replaces it with. Supports both base entity textures and most outer layers. The adult & baby-specific replacements are for convenience, so that you don't have to look up vanilla texture identifiers for most mob variants you create.
 
 ```json5
 "sounds": { // optional

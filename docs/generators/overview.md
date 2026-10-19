@@ -22,7 +22,7 @@ public final class UnifiedTestModDatagen implements DataGeneratorEntrypoint {
 
 Once this is done, you've correctly linked Unified API datagen to your mod and are ready to enjoy the convenience of `UnifiedData`.
 
-::: warn
+::: warning
 Make sure you use FabricUnifiedDatagen.Pack when calling `addProvider`, and not the one provided by Fabric itself. Furthermore, you should use `TagGenerator` instead of extending Fabric's tag classes to avoid duplication.
 :::
 
@@ -73,7 +73,7 @@ Unlike normal data-driven content, registry content is not reloadable and must b
 The full list
 - `ItemGenerator`
 - `BlockGenerator`
-- `EntitykGenerator`
+- `EntityGenerator`
 - `CreativeTabGenerator`
 - `SoundEventGenerator`
 - `BlockSetTypeGenerator`

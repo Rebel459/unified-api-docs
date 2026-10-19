@@ -66,6 +66,7 @@ In order for your entity to spawn naturally, you'll still need to use [biome mod
 ```json5
 "default_attributes": {
     "copy_from": <entity identifier>, // optional
+    "reference": <entity attribute supplier identifier>, // optional
     "attributes": [ // optional
         {
             "attribute": <attribute identifier>,
@@ -77,11 +78,12 @@ In order for your entity to spawn naturally, you'll still need to use [biome mod
 
 Sets the attributes used by the mob, and their default values. You are also able to specify an existing mob to copy attributes from.
 
+The `reference` field allows you to refer to runtime attribute creation builders, to ensure compatability with other mods that add attributes to common entity classes such as `LivingEntity`. Uses [entity attributes](/data/codecs/entity-attribute)
+
 **Variant Properties**
 
 Entities re-use many properties from [mob variants](/data/listeners/mob-variants). You should refer there for the following properties, which work identically here, but for the registered entity:
-- `texture`
-- `baby_texture`
+- `texture_replacements`
 - `sounds`
 - `attack_effects`
 - `burn_in_daylight`

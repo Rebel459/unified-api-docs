@@ -8,4 +8,4 @@ A custom record used by the `modifyPool` method in the [Loot Tables](/events/com
 
 `replace(LootPoolEntryContainer.Builder<?> entry)` - accepts a loot table entry, which replaces every occurence of the item predicate in each pool.
 
-`remove()` - removes every occurence of the item predicate in each pool.
+`remove()` - removes every occurrence of the item predicate in each pool.

@@ -41,13 +41,15 @@ The block that was interacted with
 The block that the original block should become. Any valid states will be preserved automatically
 
 ```json5
-"use_context": <use context>
+"use_context": [<use context>]
 
-"use_context": {
-    "type": <use context identifier>,
-    <use context field>: <value>,
-    ...
-}
+"use_context": [
+    {
+        "type": <use context identifier>,
+        <use context field>: <value>,
+        ...
+    }
+]
 ```
 
 What should happen when the interaction succeeds. Uses [use context](/data/codecs/use-context)
