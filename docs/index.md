@@ -18,7 +18,7 @@ features:
   - title: Getting Started
     details: The full guide for mod developers using Unified API
     link: /about/getting-started
-  - title: Data-Driven Documentation
+  - title: Data-Driven Overview
     details: Want information on the plethora of data-driven features? If you're a datapacker, head here
     link: /data/overview
   - title: Changelog
