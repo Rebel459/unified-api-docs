@@ -2,7 +2,7 @@
 
 `unified:template_pool` is a [configured feature](https://minecraft.wiki/w/Configured_feature) which allows you to create features by saving structures in-game, with a variety of intutive tools.
 
-:::info
+::: info
 On 26.3 and above, configured features are stored in `data/[namespace]/worldgen/feature/`. In older versions, they are stored in `data/[namespace]/worldgen/configured_feature/` and values are stored inside a `config` object
 :::
 
@@ -47,7 +47,7 @@ How many levels of jigsaws to generate out from the first piece. The default of 
 
 How far jigsaw pieces can extend from the origin. Defaults to 16 horizontally with no vertical limit.
 
-::: warn
+::: warning
 Features can only place blocks in the chunk they generate in and the chunks directly surrounding it. Anything further than that is cut off, so structures should stay within 16 blocks of the origin horizontally.
 :::
 
