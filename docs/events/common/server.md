@@ -7,25 +7,25 @@ Various server-related events.
 ### Methods
 
 ```
-UnifiedEvents.Servers.onDatapackLoad(minecraftServer -> {
+UnifiedEvents.Server.onDatapackLoad(minecraftServer -> {
     // your custom behaviour here
 });
-UnifiedEvents.Servers.onStart(minecraftServer -> {
+UnifiedEvents.Server.onStart(minecraftServer -> {
     // your custom behaviour here
 });
-UnifiedEvents.Servers.onStop(minecraftServer -> {
+UnifiedEvents.Server.onStop(minecraftServer -> {
     // your custom behaviour here
 });
-UnifiedEvents.Servers.onTick(EventType.PRE/POST, minecraftServer -> {
+UnifiedEvents.Server.onTick(EventTiming.PRE/POST, minecraftServer -> {
     // your custom behaviour here
 });
-UnifiedEvents.Servers.onLevelLoad(serverLevel -> {
+UnifiedEvents.Server.onLevelLoad(serverLevel -> {
     // your custom behaviour here
 });
-UnifiedEvents.Servers.onLevelUnload(serverLevel -> {
+UnifiedEvents.Server.onLevelUnload(serverLevel -> {
     // your custom behaviour here
 });
-UnifiedEvents.Servers.onLevelTick(EventType.PRE/POST, serverLevel -> {
+UnifiedEvents.Server.onLevelTick(EventTiming.PRE/POST, serverLevel -> {
     // your custom behaviour here
 });
 ```

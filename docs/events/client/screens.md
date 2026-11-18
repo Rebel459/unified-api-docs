@@ -7,7 +7,7 @@ Provides access to `AbstractContainerScreen`, which is useful if you need to reg
 ### Example
 
 ```
-UnifiedClientEvents.Screen.initAbstractContainerScreen(abstractContainerScreen -> {
+UnifiedClientEvents.Screens.initAbstractContainerScreen(abstractContainerScreen -> {
     abstractContainerScreen.addItemSlotMouseAction(new ExampleMouseActions(abstractContainerScreen.minecraft));
 });
 ```

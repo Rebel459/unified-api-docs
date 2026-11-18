@@ -102,6 +102,10 @@ Sets pressure plate behaviour.
 
 Sets whether the woodset is from the Overworld. Used to determine whether the logs should be added to the overworld logs tag.
 
+`isTrapdoorOrientable(boolean isTrapdoorOrientable)`
+
+Whether the trapdoor uses the orientable model, where the texture rotates with the direction the trapdoor is facing. Defaults to true, which matches most vanilla woodsets. Set to false for trapdoors like Oak, where the texture looks the same in every direction.
+
 `logRecipe(BiConsumer<Item, RecipeProvider> consumer)`
 
 Sets a crafting recipe for the log. As an example, this would be used when replicating the vanilla bamboo set.

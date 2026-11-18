@@ -7,16 +7,16 @@ Various player-related events.
 ### Methods
 
 ```
-UnifiedEvents.Player.onJoin(player -> {
+UnifiedEvents.Players.onJoin(player -> {
     // your custom behaviour here
 });
-UnifiedEvents.Player.onLeave(player -> {
+UnifiedEvents.Players.onLeave(player -> {
     // your custom behaviour here
 });
-UnifiedEvents.Player.onRespawn((oldPlayer, newPlayer) -> {
+UnifiedEvents.Players.onRespawn((oldPlayer, newPlayer) -> {
     // your custom behaviour here
 });
-UnifiedEvents.Player.onTick(EventType.PRE/POST, (player) -> {
+UnifiedEvents.Players.onTick(EventTiming.PRE/POST, (player) -> {
     // your custom behaviour here
 });
 ```

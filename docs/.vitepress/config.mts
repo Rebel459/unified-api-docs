@@ -79,6 +79,7 @@ export default defineConfig({
             text: 'Other',
             collapsed: true,
             items: [
+              { text: 'Template Pool Feature', link: '/data/other/template-pool-feature' },
               { text: 'Unified Data Components', link: '/data/other/unified-data-components' },
               { text: 'Unified Item Tags', link: '/data/other/unified-item-tags' },
             ]

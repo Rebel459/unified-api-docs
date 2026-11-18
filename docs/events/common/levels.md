@@ -13,4 +13,7 @@ UnifiedEvents.Levels.onLoad(level -> {
 UnifiedEvents.Levels.onUnload(level -> {
     // your custom behaviour here
 });
+UnifiedEvents.Levels.onTick(EventTiming.PRE/POST, level -> {
+    // your custom behaviour here
+});
 ```

@@ -13,7 +13,7 @@ UnifiedClientEvents.Instance.onStart(minecraft -> {
 UnifiedClientEvents.Instance.onStop(minecraft -> {
     // your custom behaviour here
 });
-UnifiedClientEvents.Instance.onTick(EventType.PRE/POST, minecraft -> {
+UnifiedClientEvents.Instance.onTick(EventTiming.PRE/POST, minecraft -> {
     // your custom behaviour here
 });
 UnifiedClientEvents.Instance.onRespawn(player -> {
@@ -29,7 +29,7 @@ UnifiedClientEvents.Instance.onLevelUnload(clientLevel -> {
 ### Example
 
 ```
-UnifiedClientEvents.Instance.onTick(EventType.POST, minecraft -> {
+UnifiedClientEvents.Instance.onTick(EventTiming.POST, minecraft -> {
     // your custom behaviour here
     while (ModKeyMappings.EXAMPLE_KEY.get().consumeClick()) {
         // custom keybind behaviour

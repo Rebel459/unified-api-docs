@@ -23,11 +23,11 @@ Allows you to add items to any creative tab.
 The creative tab to target. The vanilla ones are [found here](https://minecraft.wiki/w/Creative_inventory#Data_values)
 
 ```json5
-"insertion": <string>, // can be "insert", "insert_before" or "insert_after"
+"type": <string>, // optional, can be "insert", "insert_before" or "insert_after", defaults to "insert"
 "target": <item identifier> // required for insert_before or insert_after, ignored by insert
 ```
 
-The type of insertion
+The type of insertion. The target can also be written as an item stack, in the same format as `items` below
 
 ```json5
 "items": <item identifier>
